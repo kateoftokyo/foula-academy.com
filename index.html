@@ -1,0 +1,899 @@
+<!DOCTYPE HTML>
+<!--
+	Industrious by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Foula Esthetics Academy</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link href="images/favicon.ico" rel="shortcut icon" />
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+
+
+		<!-- スライダー用 -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+
+		<script type="text/javascript" charset="Shift_JIS">
+		$(function() {
+			$('.sliderMiddle').slick({
+		        focusOnSelect:true,
+					autoplay: true,
+					speed: 500,
+					infinite: true,
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					arrows: true,
+					pauseOnHover: true,
+					accessibility: false,
+					arrows: false,
+					centerMode: true,
+					centerPadding: '100px',
+					focusOnSelect:true,
+		     });
+		});
+		</script>
+
+
+		<!-- 講師プロフｨ－ル -->
+		<script type="text/javascript" charset="Shift_JIS">
+		$(function() {
+		  $('#card').draggable();
+		  $('.block').on('click', function() {
+		    $('.info').toggleClass('active');
+		  });
+		});
+		</script>
+
+
+		<!--Google Calendar-->
+		<link rel="stylesheet" type="text/css" href="assets/css/fullcalendar.css">
+		<script src="assets/js/lib/moment.min.js"></script>
+		<!--<script src="assets/js/lib/jquery.min.js"></script>-->
+		<script src="assets/js/fullcalendar.min.js"></script>
+		<script src="assets/js/gcal.min.js"></script>
+		<script src="assets/js/lang/ja.js"></script>
+		<script src="assets/js/locale/ja.js"></script>
+		
+		<script>
+		  $(document).ready(function() {
+		    $('#calendar').fullCalendar({
+		      header: {
+		        left: 'prev,next today',
+		        center: 'title',
+		        right: 'month,listYear'
+		      },
+		      displayEventTime: false, 
+		      googleCalendarApiKey: 'AIzaSyB9kiEj8w1LxTlunXnliKPLhMdd5xJiJ-k',
+		      events: 'c_9dier4nsa5ujhse3smf8cfpgig@group.calendar.google.com',
+		      eventClick: function(event) {
+		        // opens events in a popup window
+		        window.open(event.url, 'gcalevent', 'width=700,height=600');
+		        return false;
+		      },
+		      loading: function(bool) {
+		        $('#loading').toggle(bool);
+		      }
+		    });
+		  });
+		</script>
+		
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+					<a class="logo" href="index.html">
+						<img src="images/fea_logo.png" alt="fealogo" style="height: 100%;"/>
+					</a>
+				<nav>
+					<a href="#menu">Menu</a>
+				</nav>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#cate1">Foula Esthetics Academyの特徴</a></li>
+					<li><a href="#cate2">セミナーリスト</a></li>
+					<li><a href="#cate3">セミナースケジュール</a></li>
+					<li><a href="#cate4">講師プロフィール</a></li>
+					<li><a href="#cate5">会場アクセス</a></li>
+					<li><a href="#cate6">受講までの流れ</a></li>
+					<li><a href="#cate7">申し込みフォーム</a></li>
+					<li><a href="tel:0364197164">お電話でお問い合わせ</a></li>
+				</ul>
+			</nav>
+
+		<!-- Banner -->
+			<section id="banner">
+				<div class="inner">
+					<!--<h1><img src="images/fea_logo_title.png" alt="fealogo" style="width: 100%;"/></h1> -->
+					<h1 style="color: #DDD;padding-bottom: 0.5em;">世界で通用する<br class="br-sp">技術を身につける</h1>
+					<p>全くの初心者から、技術を見直したい<br class="br-sp">プロの方まで安心して受講出来ます。</p>
+					<p>経験豊富な講師が、<br class="br-sp">プロの技術をしっかりとお伝えします。</p>
+				</div>
+				<!--<img src="images/lashlitpagetop.png" alt="" />-->
+				<video autoplay loop muted playsinline src="images/movie/shibuya.mp4"></video>
+			</section>
+
+
+
+		<!-- CTA -->
+			<section id="cta" class="wrapper">
+				<div class="inner" id="cate1">
+					<div class="balloon1">
+						<p>Foula Esthetics Academyの特徴</p>
+					</div>
+					<div class="whatisfeacontents">
+						<p class="whatisfeacontents3">多言語での対応</p>
+						<p>海外展開を行なっている当社。</p>
+						<hr />
+						<p class="whatisfeacontents2">少多言語での講習が可能です。教科書や動画は各言語に翻訳されており、世界中で使用されています。</p>
+					</div>
+
+					<div class="whatisfeacontents">
+						<p class="whatisfeacontents3">商材製造会社ならではの知識</p>
+						<p>当社では商材の製造販売しています。</p>
+						<hr />
+						<p class="whatisfeacontents2">溶剤などの成分から、まつげエクステの原糸やラッシュリフトのロッドなど、単なる使い方だけでなく選び方まで幅広い指導を行います。溶剤を知れば、薬剤トラブルや、事故を未然に防ぐ事ができます。</p>
+					</div>
+
+					<div class="whatisfeacontents">
+						<p class="whatisfeacontents3">トレンドを取り入れた教育</p>
+						<p>アジア人、白人、黒人など、人種によって<br class="br-sp">まつ毛の長さ、生え方、クセなど様々です。</p>
+						<hr />
+						<p class="whatisfeacontents2">世界で講習を行なっているFEAは、他国籍の人々に対応できる知識と技術を持っています。また、美容のトレンドはヨーロッパから始まり、アメリカ、アジアへと入ってきます。FEAは一早く世界のトレンドを取り入れた講習を行なっています。</p>
+						<br>
+
+
+					<div align="center" style="margin:0px;">
+					<!-- ↓スライダー本体 -->
+						<ul class="sliderMiddle">
+							<li>
+								<img src="images/top/seminar_top_img_1.jpg" alt="セミナー風景1" width="100%" />
+							</li>
+							<li>
+								<img src="images/top/seminar_top_img_2.jpg" alt="セミナー風景2" width="100%" />
+							</li>
+							<li>
+								<img src="images/top/seminar_top_img_3.jpg" alt="セミナー風景3" width="100%" />
+							</li>
+							<li>
+								<img src="images/top/seminar_top_img_4.jpg" alt="セミナー風景4" width="100%" />
+							</li>
+							<li>
+								<img src="images/top/seminar_top_img_5.jpg" alt="セミナー風景5" width="100%" />
+							</li>
+							<li>
+								<img src="images/top/seminar_top_img_6.jpg" alt="セミナー風景6" width="100%" />
+							</li>
+							<li>
+								<img src="images/top/seminar_top_img_7.jpg" alt="セミナー風景7" width="100%" />
+							</li>
+						</ul>
+					</div>
+
+
+
+					</div>
+				</div>
+			</section>
+
+
+
+
+		<!-- Highlights -->
+			<section class="wrapper" id="cate2">
+				<div class="inner">
+					<header class="special">
+						<h2>Seminar List</h2>
+						<p>セミナーリスト</p>
+					</header>
+					
+					<!--LahLiftバナー
+					<div class="highlights">
+						<section style="width: 100%;">
+							<div class="content">
+								<header>
+									<img src="images/lashlitpagetop.png" alt="" />
+								</header>
+							</div>
+						</section>
+					</div>
+					-->
+
+					<div class="highlights">
+
+						<section>
+							<div class="content">
+								<a href="seminar/901-1-seminar.html">
+								<header>
+									<img src="images/top/contents_seminar_list_2.png" alt="lashlift" style="width: 100%;"/>
+									<h3>901-1</h3>
+									<h3>Lash Lift 上まつ毛<br>BASICコース</h3>
+								</header>
+								<p>初心者やブランクがある方向けのコースです。しっかり、じっくり疑問ゼロでお帰りいただけます。</p>
+								</a>
+						    <p><a href="seminar/901-1-seminar.html" class="button primary">申し込み</a></p>
+							</div>
+						</section>
+
+						<section>
+							<div class="content">
+								<a href="seminar/901-2-seminar.html">
+								<header>
+									<img src="images/top/contents_seminar_list_2.png" alt="lashlift" style="width: 100%;"/>
+									<h3>901-2</h3>
+									<h3>Lash Lift 下まつ毛コース<br>※経験者のみ</h3>
+								</header>
+								<p>上下同時施術で客単価アップを目指せます。下まつ毛の生え方は人それぞれ、全てのお客様に対応できる知識が身に付きます。</p>
+								</a>
+						    <p><a href="seminar/901-2-seminar.html" class="button primary">申し込み</a></p>
+							</div>
+						</section>
+
+						<section>
+							<div class="content">
+								<a href="seminar/901-3-seminar.html">
+								<header>
+									<img src="images/top/contents_seminar_list_2.png" alt="lashlift" style="width: 100%;"/>
+									<h3>901-3</h3>
+									<h3>Lash Lift<br>上まつ毛 ADVANCEコース<br>(デザイン)</h3>
+								</header>
+								<p>座学のみのセミナーが実技付きで疑問、不安を全て解決!!基礎的な技術と知識をお持ちの方限定のコースになります。</p>
+								</a>
+						    <p><a href="seminar/901-3-seminar.html" class="button primary">申し込み</a></p>
+							</div>
+						</section>
+
+						<section>
+							<div class="content">
+								<a href="seminar/901-5-seminar.html">
+								<header>
+									<img src="images/top/contents_seminar_list_3.png" alt="lashlift" style="width: 100%;"/>
+									<h3>901-5</h3>
+									<h3>WAX STYLING<br>セミナー</h3>
+								</header>
+								<p>これからサロン導入を目指す方へ、WAXの基礎から眉デザイン、気になる小鼻・口回り。うなじWAXまで徹底講習</p>
+								</a>
+						    <p><a href="seminar/901-5-seminar.html" class="button primary">申し込み</a></p>
+							</div>
+						</section>
+
+						<section>
+							<div class="content">
+								<a href="seminar/101-seminar.html">
+								<header>
+									<img src="images/top/contents_seminar_list_1.jpg" alt="lashlift" style="width: 100%;"/>
+									<h3>101</h3>
+									<h3>アイリスト養成スクール<br>【理論・実技】</h3>
+								</header>
+								<p>初心者向けのアイリストになるための知識と技術を学ぶコースです。</p>
+								</a>
+						    <p><a href="seminar/101-seminar.html" class="button primary">申し込み</a></p>
+							</div>
+						</section>
+
+						<section>
+							<div class="content">
+								<a href="seminar/108-seminar.html">
+								<header>
+									<img src="images/top/contents_seminar_list_4.jpg" alt="lashlift" style="width: 100%;"/>
+									<h3>108</h3>
+									<h3>技術スキルチェック<br>【実技】</h3>
+								</header>
+								<p>不安解消！！自身を持てるアイリストに！！</p>
+								</a>
+						    <p><a href="seminar/108-seminar.html" class="button primary">申し込み</a></p>
+							</div>
+						</section>
+
+						<section>
+							<div class="content">
+								<a href="seminar/800-seminar.html">
+								<header>
+									<img src="images/top/contents_seminar_list_5.jpg" alt="lashlift" style="width: 100%;"/>
+									<h3>800</h3>
+									<h3>マンツーマン<br>ボリュームアイラッシュ<br>セミナー<br>【実技】</h3>
+								</header>
+								<p>マンツーマンでの授業で一流のアイリストに！！！</p>
+								</a>
+						    <p><a href="seminar/800-seminar.html" class="button primary">申し込み</a></p>
+							</div>
+						</section>
+
+					</div>
+
+					<header class="special" id="cate3">
+						<h2>Seminar Schedule</h2>
+						<p>セミナースケジュール</p>
+					</header>
+
+					<!-- Table -->
+					<table class="tbl-r02">
+					  <tr>
+					    <th rowspan="2">901-1<br>Lash Lift 上まつ毛BASICコース</th>
+					    <td>東京</td>
+					    <td>2021/09/28 (火)<br />2021/10/06 (水)<br />2021/10/26 (火)</td>
+					    <td>10:00 - 15:00</td>
+					    <td>&yen;54,780(キット有り) <br /> &yen;45,980(キット無し)</td>
+					    <td><a href="seminar/901-1-seminar.html" class="button primary">申し込み</a></td>
+					  </tr>
+
+					  <tr>
+					    <td>大阪</td>
+					    <td><span style="text-align: center;text-decoration: line-through;text-decoration-color: red;";>2021/10/19 (火)</span></td>
+					    <td>10:00 - 15:00</td>
+					    <td>&yen;54,780(キット有り) <br /> &yen;45,980(キット無し)</td>
+					    <td><a href="seminar/901-1-seminar.html" class="button primary" style="background-color: #ef2909;">満員御礼</a></td>
+					  </tr>
+
+					  <tr>
+					    <th>901-2<br>Lash Lift 下まつ毛コース<br>※経験者のみ</th>
+					    <td>東京</td>
+					    <td>2021/10/25 (月)</td>
+					    <td>10:00 - 15:00</td>
+					    <td>&yen;54,780(キット有り) <br /> &yen;45,980(キット無し)</td>
+					    <td><a href="seminar/901-2-seminar.html" class="button primary">申し込み</a></td>
+					  </tr>
+
+					  <tr>
+					    <th rowspan="2">901-3<br>Lash Lift 上まつ毛<br>ADVANCEコース(デザイン)</th>
+					    <td>東京</td>
+					    <td>2021/9/29 (水)<br />2021/10/27 (水)</td>
+					    <td>10:00 - 15:00</td>
+					    <td>&yen;54,780(キット有り) <br /> &yen;45,980(キット無し)<br /> &yen;32,780<br />(上まつげ BASICコース受講者 キット無し)</td>
+					    <td><a href="seminar/901-3-seminar.html" class="button primary">申し込み</a></td>
+					  </tr>
+
+					  <tr>
+					    <td>大阪</td>
+					    <td><span style="text-align: center;text-decoration: line-through;text-decoration-color: red;";>2021/10/20 (水)</span></td>
+					    <td>10:00 - 15:00</td>
+					    <td>&yen;54,780(キット有り) <br /> &yen;45,980(キット無し)<br /> &yen;32,780<br />(上まつげ BASICコース受講者 キット無し)</td>
+					    <td><a href="seminar/901-3-seminar.html" class="button primary" style="background-color: #ef2909;">満員御礼</a></td>
+					  </tr>
+
+					  <tr>
+					    <th rowspan="2">901-5<br>WAX STYLING セミナー</th>
+					    <td>東京</td>
+					    <td>2021/9/27 (月)<br />2021/9/30 (木)<br />2021/10/07 (木)<br />2021/10/11 (月)<br />2021/10/28 (木)</td>
+					    <td>10:00 - 19:00</td>
+					    <td>&yen;94,600(キット有り) <br /> &yen;82,500(キット無し)</td>
+					    <td><a href="seminar/901-5-seminar.html" class="button primary">申し込み</a></td>
+					  </tr>
+					  <tr>
+					    <td>大阪</td>
+					    <td><span style="text-align: center;text-decoration: line-through;text-decoration-color: red;";>2021/10/21 (木)</span></td>
+					    <td>10:00 - 19:00</td>
+					    <td>&yen;94,600(キット有り) <br /> &yen;82,500(キット無し)</td>
+					    <td><a href="seminar/901-5-seminar.html" class="button primary" style="background-color: #ef2909;">満員御礼</a></td>
+					  </tr>
+
+					  <tr>
+					    <th>101<br>アイリスト養成スクール【理論・実技】</br>～アイリストになるための知識と技術～</th>
+					    <td>ご申し込み後<br>後程ご連絡</td>
+					    <td>ご申し込み後<br>後程ご連絡</td>
+					    <td>3日間（21時間)</td>
+					    <td>&yen;144,000</td>
+					    <td><a href="seminar/101-seminar.html" class="button primary">申し込み</a></td>
+					  </tr>
+					  <tr>
+					    <th>108<br>技術スキルチェック【実技】</br>～不安解消!!自信を持てるアイリストに～</th>
+					    <td>ご申し込み後<br>後程ご連絡</td>
+					    <td>随時 要予約</td>
+					    <td>1回 約1.5時間</td>
+					    <td>&yen;10,000</td>
+					    <td><a href="seminar/108-seminar.html" class="button primary">申し込み</a></td>
+					  </tr>
+
+					  <tr>
+					    <th rowspan="2">800<br>マンツーマン</br>ボリュームアイラッシュセミナー</th>
+					    <td>東京</td>
+					    <td>ご申し込み後<br>後程ご連絡</td>
+					    <td>ご申し込み後<br>後程ご連絡</td>
+					    <td>&yen;38,000</td>
+					    <td><a href="seminar/800-seminar.html" class="button primary">申し込み</a></td>
+					  </tr>
+					  <tr>
+					    <td>大阪</td>
+					    <td>ご申し込み後<br>後程ご連絡</td>
+					    <td>ご申し込み後<br>後程ご連絡</td>
+					    <td>&yen;38,000</td>
+					    <td><a href="seminar/800-seminar.html" class="button primary">申し込み</a></td>
+					  </tr>
+
+					</table>
+					<!-- /Table --> 
+					
+					<br>
+
+					<!--
+					<div class="cal_wrapper">
+						<div class="googlecal">
+							<iframe src="https://calendar.google.com/calendar/embed?src=c_9dier4nsa5ujhse3smf8cfpgig%40group.calendar.google.com&ctz=Asia%2FTokyo" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+						</div>
+					</div>
+					-->
+
+				</div>
+			</section>
+
+
+			<!-- section_lecture_profile -->
+			<section id="section_lecture_profile" class="wrapper">
+
+				<div class="inner" id="cate4">
+
+					<header class="special">
+						<h2>Lecturer profile</h2>
+						<p style="color: #FFFFFF;">講師プロフィール</p>
+					</header>
+
+
+
+					<div class="highlights">
+
+						<section>
+
+							<div id="card">
+							  <div id="blur">
+							    <div id="color"></div>
+							  </div>
+							  <div id="profile">
+							    <img src="images/lecturer/section_lecture_tsukada.jpg" alt="Junko Tsukada" />
+							    <h1>Junko Tsukada</h1>
+							    <p>塚田 純子</p>
+							    <p>国内海外</p>
+							    <div class="info">
+							      <i class="fa fa-info fa-1x block"></i>
+							      <i class="fa fa-angle-down fa-2x block"></i>
+							      <p>In short, I spend my earthly time striving to create some darned awesome UI designs, and also develop a few. Student @ <a href="http://en.ict.edu.rs/" target="_blank">ICT College</a>.</p>
+							      <p>Find me on:</p>
+							      <a class="link" href="https://twitter.com/Masquetina/" target="_blank"><i class="fa fa-twitter fa-2x social"></i></a>
+							      <a class="link" href="http://dribbble.com/Masquetina/" target="_blank"><i class="fa fa-dribbble fa-2x social"></i></a>
+							      <a class="link" href="https://codepen.io/Masquetina" target="_blank"><i class="fa fa-codepen fa-2x social"></i></a>
+							    </div>
+							  </div>
+							</div>
+
+						</section>
+
+						<section>
+						
+							<div id="card">
+							  <div id="blur">
+							    <div id="color"></div>
+							  </div>
+							  <div id="profile">
+							    <img src="images/lecturer/section_lecture_nishida.jpg" alt="Ayaka Nishida" />
+							    <h1>Ayaka Nishida</h1>
+							    <p>西田 あやか</p>
+							    <p>日本</p>
+							    <div class="info">
+							      <i class="fa fa-info fa-1x block"></i>
+							      <i class="fa fa-angle-down fa-2x block"></i>
+							      <p>In short, I spend my earthly time striving to create some darned awesome UI designs, and also develop a few. Student @ <a href="http://en.ict.edu.rs/" target="_blank">ICT College</a>.</p>
+							      <p>Find me on:</p>
+							      <a class="link" href="https://twitter.com/Masquetina/" target="_blank"><i class="fa fa-twitter fa-2x social"></i></a>
+							      <a class="link" href="http://dribbble.com/Masquetina/" target="_blank"><i class="fa fa-dribbble fa-2x social"></i></a>
+							      <a class="link" href="https://codepen.io/Masquetina" target="_blank"><i class="fa fa-codepen fa-2x social"></i></a>
+							    </div>
+							  </div>
+							</div>
+							
+						</section>
+
+						<section>
+						
+							<div id="card">
+							  <div id="blur">
+							    <div id="color"></div>
+							  </div>
+							  <div id="profile">
+							    <img src="images/lecturer/section_lecture_yukoshimizu.jpg" alt="sakura" />
+							    <h1>Yuko Shimizu</h1>
+							    <p>清水 裕子</p>
+							    <p>日本</p>
+							    <div class="info">
+							      <i class="fa fa-info fa-1x block"></i>
+							      <i class="fa fa-angle-down fa-2x block"></i>
+							      <p>TEST</p>
+							      <p>Find me on:</p>
+							      <a class="link" href="https://twitter.com/Masquetina/" target="_blank"><i class="fa fa-twitter fa-2x social"></i></a>
+							      <a class="link" href="http://dribbble.com/Masquetina/" target="_blank"><i class="fa fa-dribbble fa-2x social"></i></a>
+							      <a class="link" href="https://codepen.io/Masquetina" target="_blank"><i class="fa fa-codepen fa-2x social"></i></a>
+							    </div>
+							  </div>
+							</div>
+							
+						</section>
+
+						<section>
+						
+							<div id="card">
+							  <div id="blur">
+							    <div id="color"></div>
+							  </div>
+							  <div id="profile">
+							    <img src="images/lecturer/section_lecture_sakura.jpg" alt="sakura" />
+							    <h1>Sakura Sharma</h1>
+							    <p>サクラ シャルマ</p>
+							    <p>海外</p>
+							    <div class="info">
+							      <i class="fa fa-info fa-1x block"></i>
+							      <i class="fa fa-angle-down fa-2x block"></i>
+							      <p>TEST</p>
+							      <p>Find me on:</p>
+							      <a class="link" href="https://twitter.com/Masquetina/" target="_blank"><i class="fa fa-twitter fa-2x social"></i></a>
+							      <a class="link" href="http://dribbble.com/Masquetina/" target="_blank"><i class="fa fa-dribbble fa-2x social"></i></a>
+							      <a class="link" href="https://codepen.io/Masquetina" target="_blank"><i class="fa fa-codepen fa-2x social"></i></a>
+							    </div>
+							  </div>
+							</div>
+							
+						</section>
+
+						<section>
+						
+							<div id="card">
+							  <div id="blur">
+							    <div id="color"></div>
+							  </div>
+							  <div id="profile">
+							    <img src="images/lecturer/section_lecture_shobeibei.jpg" alt="User" />
+							    <h1>SHO BEIBEI</h1>
+							    <p>蔣 蓓蓓</p>
+							    <p>中国</p>
+							    <div class="info">
+							      <i class="fa fa-info fa-1x block"></i>
+							      <i class="fa fa-angle-down fa-2x block"></i>
+							      <p>TEST</p>
+							      <p>Find me on:</p>
+							      <a class="link" href="https://twitter.com/Masquetina/" target="_blank"><i class="fa fa-twitter fa-2x social"></i></a>
+							      <a class="link" href="http://dribbble.com/Masquetina/" target="_blank"><i class="fa fa-dribbble fa-2x social"></i></a>
+							      <a class="link" href="https://codepen.io/Masquetina" target="_blank"><i class="fa fa-codepen fa-2x social"></i></a>
+							    </div>
+							  </div>
+							</div>
+							
+						</section>
+
+						<section>
+						
+							<div id="card">
+							  <div id="blur">
+							    <div id="color"></div>
+							  </div>
+							  <div id="profile">
+							    <img src="images/lecturer/section_lecture_noelchan.jpg" alt="User" />
+							    <h1>Noel Chan</h1>
+							    <p>ノエル チェン</p>
+							    <p>香港</p>
+							    <div class="info">
+							      <i class="fa fa-info fa-1x block"></i>
+							      <i class="fa fa-angle-down fa-2x block"></i>
+							      <p>Noel先生は長年のスタイリストの経験を通して、より一層まつ毛エクステ分野を求めて専門的なアイリストになります。<br>
+ペアのキラキラとした明るい目を持つことに感铭を受けました。ファッション美人の一番の吸晴の魅力です。目の前の技术と个人の造形を専门的に研究して、専门的な技术で、个人の特色の気质によって、完璧でファッション的な美しさを提供します。<br>
+Noel先生はみんなに美しい目を認識させることに力を尽くしています。学生にもっと美しいまつげの知識を共有して得させます。まつ毛エクステ先生たちに勉強に成果があり、ある程度の収穫を払います。<br>
+近年、積極的にプロモーションのラッシュリフトを目前の技術訓練を普及させ、1回の操作時間で、すぐにまつげをカールさせる効果を達成し、耐久性も高いです。そして100%の日本製のラッシュリフトを採用して、目の前の商業材料を上げて、学生にもっと大きな自信を持って保証することができます。<br>
+<br>
+2011年 日本東京FEAで正統日本式まつ毛エクステ技術を受け入れています。<br>
+2013年 韓国でまつ毛エクステ国際オリンピック技術大会で優秀賞を受賞しました。<br>
+2014年 東京Beauty World美容展示会で、まつ毛エクステ技術を披露しました。<br>
+2015年 東京、大阪、福岡の美容展示会で、まつ毛エクステ技術を披露しました。<br>
+2015年 ラスベガスのIBS美容展示会で、まつ毛エクステ技術を披露しました。<br>
+2016年 オーストラリアBEAUT　EXPO美容展示会でまつ毛エクステ技術を披露しました。<br>
+2016-17年 二回連続で韓国まつ毛エクステ国際オリンピック技術大会優秀賞を獲得しました。<br>
+2018年 ニューヨークIBS美容展示会でまつ毛エクステ技術を披露しました。<br>
+2018年 オーストラリアBEAUT　EXPO美容展示会でまつ毛エクステ技術を披露しました。<br>
+2019年 ニューヨークIBS美容展示会で、まつ毛エクステやラッシュリフトの技術を披露しました。<br>
+2019年 オーストラリアBEAUT　EXPO美容展示会でまつ毛エクステ技術を披露しました。<br>
+2019年 シンガポールASIA BEAUTY美容展示会で、まつ毛エクステ技術とまつ毛エクステンションの商材教育を披露しました。<br>
+</p>
+							      <p>Find me on:</p>
+							      <a class="link" href="https://twitter.com/Masquetina/" target="_blank"><i class="fa fa-twitter fa-2x social"></i></a>
+							      <a class="link" href="http://dribbble.com/Masquetina/" target="_blank"><i class="fa fa-dribbble fa-2x social"></i></a>
+							      <a class="link" href="https://codepen.io/Masquetina" target="_blank"><i class="fa fa-codepen fa-2x social"></i></a>
+							    </div>
+							  </div>
+							</div>
+							
+						</section>
+
+<!--
+
+						<section>
+
+							<div id="card">
+							  <div id="blur">
+							    <div id="color"></div>
+							  </div>
+							  <div id="profile">
+							    <img src="images/lecturer/section_lecture_noimage.jpg" alt="User" />
+							    <h1>Belle</h1>
+							    <p> </p>
+							    <div class="info">
+							      <i class="fa fa-info fa-1x block"></i>
+							      <i class="fa fa-angle-down fa-2x block"></i>
+							      <p>In short, I spend my earthly time striving to create some darned awesome UI designs, and also develop a few. Student @ <a href="http://en.ict.edu.rs/" target="_blank">ICT College</a>.</p>
+							      <p>Find me on:</p>
+							      <a class="link" href="https://twitter.com/Masquetina/" target="_blank"><i class="fa fa-twitter fa-2x social"></i></a>
+							      <a class="link" href="http://dribbble.com/Masquetina/" target="_blank"><i class="fa fa-dribbble fa-2x social"></i></a>
+							      <a class="link" href="https://codepen.io/Masquetina" target="_blank"><i class="fa fa-codepen fa-2x social"></i></a>
+							    </div>
+							  </div>
+							</div>
+
+						</section>
+
+-->
+
+
+					</div>
+
+
+				</div>
+
+			</section>
+
+
+			<!-- section_access -->
+			<section id="section_access" class="wrapper">
+
+				<div class="inner" id="cate5">
+
+					<header class="special">
+						<h2>Access</h2>
+						<p>会場アクセス</p>
+					</header>
+
+					<div class="access_box_both">
+
+						<div class="access_box_left">
+							<p>
+							<b>フーラエステティックアカデミー 東京校</b><br>
+							〒150-0001<br>
+							東京都渋谷区神宮前6-19-20 第15荒井ビル 7階<br>
+							Foula Esthetics Academy 東京校<br>
+							<br>
+							渋谷駅 B1出口より徒歩5分<br>
+							</p>
+							<br>
+							<a href="https://goo.gl/maps/jHMKuDJKVoScHmM67" class="button primary" target="_blank">Google Map</a>
+						</div>
+
+						<div  class="access_box_right">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.5297994639373!2d139.7003458152583!3d35.663954680198344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ca63766daa1%3A0x943568a6dec15f79!2z5qCq5byP5Lya56S-44Kx44Kk44OI44Kq44OW5p2x5LqsIOacrOekvu-8iEthdGUgb2YgVG9reW8gQ28uLEx0ZC4gSGVhZHF1YXRlcnPvvIk!5e0!3m2!1sja!2sjp!4v1631063596956!5m2!1sja!2sjp" class="access_googlemap" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+						</div>
+
+					</div>
+
+					<br>
+
+				</div>
+
+
+
+			</section>
+
+
+
+
+
+
+
+
+
+
+		<!-- CTA -->
+			<section id="cta" class="wrapper">
+				<div class="inner" id="cate6">
+					<div class="balloon1">
+						<p>受講までの流れ</p>
+					</div>
+					<div class="whatisfeacontents">
+						<p class="whatisfeacontents3">Step 1</p>
+						<p>お電話にてご予約ください。</p>
+						<hr />
+						<p class="whatisfeacontents2">受講を決定されましたら、下記までお電話ください。</p>
+					    <div class="arrow1"></div>
+
+
+	    					<table class="tbl-r03">
+								<tr>
+									<th>ご予約<br/>お問い合わせ</th>
+									<td><span class="tbl-r03tellno1"><i class="fi-telephone"></i> 03-6419-7164<br/></span><span class="tbl-r03tellno2">受付時間 10:00 ～ 19:00</span></td>
+								</tr>
+	    					</table>
+						<p style="text-align: center;line-height: 1.5em;">
+							<a href="tel:0364197164" target="_blank" class="btn btn--pink btn-c" style="text-decoration: none;color: #222;font-size: 1.6em;">電話でお問い合わせ</a>
+						</p>
+
+
+					    <div class="arrow1"></div>
+
+						<p class="whatisfeacontents2" style="padding-top: 2em;">
+							弊社スタッフに<br><br>
+							<b>
+							・お名前<br>
+							・ご住所<br>
+							・受講講習コード<br>
+							・お振込み予定銀行名<br>
+							・サロン名<br>
+							・ご連絡可能なお電話番号<brbr>
+							・お支払いの際のご名義<br>
+							</b>
+							<br>
+							など詳細をお伝えいただき、ご予約ください。
+						</p>
+
+
+
+
+
+
+					</div>
+
+					<div class="whatisfeacontents">
+						<p class="whatisfeacontents3">Point 2</p>
+						<p>経験者はさらにスキルアップ</p>
+						<hr />
+						<p class="whatisfeacontents2">エクステンションを学ぶのは技術だけではありません。アイリストとしてお客様に信頼を得るためには、お客様に使用する道具の知識も身に付け、プロとして的確に対応できなければなりません。また、苦手な分野のみを選んで受講することも可能です。</p>
+					</div>
+
+					<div class="whatisfeacontents">
+						<p class="whatisfeacontents3">Point 3</p>
+						<p>サロンの業務もレベルアップ</p>
+						<hr />
+						<p class="whatisfeacontents2">技術・知識以外にもサロンを盛り上げる方法やホームページの写真の取り方や集客について、経営者・幹部の方向けのセミナーも開講しております。</p>
+					</div>
+
+					<div class="whatisfeacontents">
+						<p class="whatisfeacontents3">Point 4</p>
+						<p>新技法でも短期間で取得可能</p>
+						<hr />
+						<p class="whatisfeacontents2">サロンにお勤めですとなかなか新しい技術を身につける機械がありません。現役のアイリストの方でもお仕事に支障なく受講できる短期集中で新しい技術を身につけられます。いち早くサロンのメニューに導入して他店と差をつけられます。</p>
+					</div>
+
+					<div class="whatisfeacontents">
+						<p class="whatisfeacontents3">Point 5</p>
+						<p>低コストで充実した授業内容</p>
+						<hr />
+						<p class="whatisfeacontents2">ご自身が受けたい授業のみをピンポイントで受講できるので無駄な料金がかかりません。セミナー1つ1つがリーズナブルな価格に設定されていますが、内容に妥協はなく全力でアイリストの皆様をサポートさせていただきます。</p>
+					</div>
+
+			<iframe frameborder="0" scrolling="auto" src="https://pro.form-mailer.jp/fms/1074ea96123467" title="HTML Form" class="section_application_form_iframe" id="cate7">
+				<a href="https://pro.form-mailer.jp/fms/1074ea96123467" title="Contact">この部分はインラインフレームを使用しています</a>
+			</iframe>
+
+
+				</div>
+
+
+
+
+
+			</section>
+
+
+
+
+		<!-- 受講者の声 
+			<section class="wrapper">
+				<div class="inner">
+					<header class="special">
+						<h2>Testimonials from students</h2>
+						<p>受講者の声</p>
+					</header>
+					<div class="testimonials">
+						<section>
+							<div class="content">
+								<blockquote>
+									<p>前から興味があったので受講させていただきました。少し難しかったのですが出来るようになればお客様への提案の幅が広がると思うので出来るように頑張りたいと思います。 楽しく出来ました。ありがとうございました。</p>
+								</blockquote>
+								<div class="author">
+									<div class="image">
+										<img src="images/student/pic01.jpg" alt="" />
+									</div>
+									<p class="credit">- <strong>M・D様</strong> -<br><span>プロチーズ</span></p>
+								</div>
+							</div>
+						</section>
+						<section>
+							<div class="content">
+								<blockquote>
+									<p>今回の受講目的は他サロンとの差別化と、2号店の目玉メニューがほしかかったためです。ビューティーワールドで「こんな技術が！！」と衝撃を受け、早速帰宅後に独学で始めてみましたが、「やっぱり習いたい！！」と、受講することを決めました。自分の中での疑問を色々聞けたし、一緒に受けた人達もいい人で、和気あいあいとしっかり学べました。今後も今日のことを生かしてサロン営業します。ありがとうございました。先生おもしろい。</p>
+								</blockquote>
+								<div class="author">
+									<div class="image">
+										<img src="images/student/pic03.jpg" alt="" />
+									</div>
+									<p class="credit">- <strong>Tatsuya Hayama</strong> -<br><span>株式会社ケイトオブ東京</span></p>
+								</div>
+							</div>
+						</section>
+						<section>
+							<div class="content">
+								<blockquote>
+									<p>ビューティーワールドで見て、習いたいと思いました♡本当に楽しくて早く習得したいです！導入出来るように頑張ります！！ありがとうございましたー♡♡♡</p>
+								</blockquote>
+								<div class="author">
+									<div class="image">
+										<img src="images/student/pic02.jpg" alt="" />
+									</div>
+									<p class="credit">- <strong>Yuta Nizuka</strong> -<br><span>Foula Store 大阪梅田店</span></p>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+			</section>
+			-->
+
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<div class="content">
+						<section>
+							<h3><img src="images/new_kotlogo_w.svg" width="220px"></h3>
+							<p>株式会社ケイトオブ東京<br>
+							〒150-0001<br>
+							東京都渋谷区神宮前6-19-20 第15荒井ビル 7F<br>
+							代表者 佐藤佳以子<br>
+							TEL：0120-428-355</p>
+						</section>
+						<section>
+							<h4>サイトナビ</h4>
+							<ul class="alt">
+					<li><a href="#cate1">Foula Esthetics Academyの特徴</a></li>
+					<li><a href="#cate2">セミナーリスト</a></li>
+					<li><a href="#cate3">セミナースケジュール</a></li>
+					<li><a href="#cate4">講師プロフィール</a></li>
+					<li><a href="#cate5">会場アクセス</a></li>
+					<li><a href="#cate6">受講までの流れ</a></li>
+					<li><a href="#cate7">申し込みフォーム</a></li>
+					<li><a href="tel:0364197164">お電話でお問い合わせ</a></li>
+							</ul>
+						</section>
+						<section>
+							<h4>SNS</h4>
+							<ul class="plain">
+								<li><a href="https://www.instagram.com/foulaeyelashacademy/" target="_blank"><i class="fab fa-instagram">&nbsp;</i>Instagram</a></li>
+								<li><a href="https://twitter.com/academyfoula" target="_blank"><i class="fab fa-twitter">&nbsp;</i>Twitter</a></li>
+								<li><a href="https://www.facebook.com/FoulaEyelashAcademy" target="_blank"><i class="fab fa-facebook">&nbsp;</i>Facebook</a></li>
+							</ul>
+						</section>
+					</div>
+					<div class="copyright">
+						&copy; 2021 Kate of Tokyo. All Rights Reserved.<br>
+						<i class="fab fa-android" style="color: #222222;"></i>
+					</div>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<!--<script src="assets/js/jquery.min.js"></script> -->
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
