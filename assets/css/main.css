@@ -3159,16 +3159,16 @@ table {
 }
 
 
-/*google ƒJƒŒƒ“ƒ_[ƒŒƒXƒ|ƒ“ƒVƒu‘Î‰*/
+/*google ã‚«ãƒ¬ãƒ³ãƒ€ãƒ¼ãƒ¬ã‚¹ãƒãƒ³ã‚·ãƒ–å¯¾å¿œ*/
 .cal_wrapper {
-  max-width: 800px; /* Å‘å• */
-  min-width: 300px; /* Å¬• */
+  max-width: 800px; /* æœ€å¤§å¹… */
+  min-width: 300px; /* æœ€å°å¹… */
   margin: 2.0833% auto;
 }
  
 .googlecal {
   position: relative;
-  padding-bottom: 100%; /* c‰¡”ä */
+  padding-bottom: 100%; /* ç¸¦æ¨ªæ¯” */
   height: 0;
   overflow: hidden;
 }
@@ -3181,14 +3181,14 @@ table {
 }
  
 @media only screen and (min-width: 600px) {
-  /* ‰æ–Ê•‚ª600pxˆÈã‚Ìê‡‚Ìc‰¡”ä‚Ìw’è */
+  /* ç”»é¢å¹…ãŒ600pxä»¥ä¸Šã®å ´åˆã®ç¸¦æ¨ªæ¯”ã®æŒ‡å®š */
   .googlecal {
     padding-bottom: 75%;
   }
 }
-/*google ƒJƒŒƒ“ƒ_[ƒŒƒXƒ|ƒ“ƒVƒu‘Î‰ ‚±‚±‚Ü‚Å*/
+/*google ã‚«ãƒ¬ãƒ³ãƒ€ãƒ¼ãƒ¬ã‚¹ãƒãƒ³ã‚·ãƒ–å¯¾å¿œ ã“ã“ã¾ã§*/
 
-/*FEA‚Æ‚ÍŒ©o‚µ*/
+/*FEAã¨ã¯è¦‹å‡ºã—*/
 .balloon1 {
   position: relative;
   display: inline-block;
@@ -3218,17 +3218,17 @@ table {
   padding: 0;
 }
 
-/*FEA‚Æ‚ÍŒ©o‚µ ‚±‚±‚Ü‚Å*/
+/*FEAã¨ã¯è¦‹å‡ºã— ã“ã“ã¾ã§*/
 
 
-/*FEA‚Æ‚ÍƒRƒ“ƒeƒ“ƒc*/
+/*FEAã¨ã¯ã‚³ãƒ³ãƒ†ãƒ³ãƒ„*/
 .whatisfeacontents {
     position: relative;
     padding: 1em 1.5em;
 /*    margin: 2em 0;*/
     margin-bottom: 2rem;
-    background-color: #ffffff;/*”wŒiF*/
-    color: #ac9b8a;/*•¶šF*/
+    background-color: #ffffff;/*èƒŒæ™¯è‰²*/
+    color: #ac9b8a;/*æ–‡å­—è‰²*/
     z-index: 1;
     border: 2px #ac9b8a solid;
 	font-size: 1.5rem;
@@ -3249,7 +3249,7 @@ table {
     z-index: -1;
 }
 .whatisfeacontents::after {
-    background-color: #ffffff;/*ƒYƒŒ‚Ä‚¢‚é•û‚Ì”wŒiF*/
+    background-color: #ffffff;/*ã‚ºãƒ¬ã¦ã„ã‚‹æ–¹ã®èƒŒæ™¯è‰²*/
     top: 5px;
     left: 5px;
     z-index: -2;
@@ -3278,9 +3278,9 @@ table {
 	font-size: 3rem;
 }
 
-/*FEA‚Æ‚ÍƒRƒ“ƒeƒ“ƒc ‚±‚±‚Ü‚Å*/
+/*FEAã¨ã¯ã‚³ãƒ³ãƒ†ãƒ³ãƒ„ ã“ã“ã¾ã§*/
 
-/*‚â‚¶‚é‚µ*/
+/*ã‚„ã˜ã‚‹ã—*/
 
 .arrow{
   width: 30px;
@@ -3315,7 +3315,7 @@ table {
   margin: auto;
 }
 
-/*‚â‚¶‚é‚µ ‚±‚±‚Ü‚Å*/
+/*ã‚„ã˜ã‚‹ã— ã“ã“ã¾ã§*/
 
 
 /*TELL toiawase*/
@@ -3377,7 +3377,7 @@ table {
  } 
 }
 
-/*TELL ‚±‚±‚Ü‚Å*/
+/*TELL ã“ã“ã¾ã§*/
 
 
 
@@ -3386,7 +3386,7 @@ table {
 
 
 
-/* utƒvƒƒtƒB[ƒ‹ */
+/* è¬›å¸«ãƒ—ãƒ­ãƒ•ã‚£ãƒ¼ãƒ« */
 body #section_lecture_profile {
 /*  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/225748/MD_background.png) no-repeat center center fixed;*/
   background: url(../../images/banner.jpg) no-repeat center center fixed;
@@ -3601,7 +3601,7 @@ a:hover {
 }
 
 
-/*PC‚Ì‚İ”½‰f*/
+/*PCã®ã¿åæ˜ */
 @media screen and (min-width:640px){
 	.br-sp {
 		display: none;
@@ -3633,11 +3633,11 @@ a:hover {
 	}
 	.section_application_form_iframe {
 		width: 100%;
-		height: 170rem;
+		height: 185rem;
 	}
 }
 
-/*SP ”½‰f*/
+/*SP åæ˜ */
 @media screen and (max-width:640px){
 	.whatisfeacontents{
 		font-size: 1rem;
