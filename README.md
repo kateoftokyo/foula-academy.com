@@ -7,3 +7,6 @@ Information Systems Division <it@kateoftokyo.com>
 
 ### &copy; Kate of Tokyo, Co. Ltd. 
 Do not distribute. Unauthorized use is punishable by law.
+
+### URL
+https://www.foula-academy.com/
