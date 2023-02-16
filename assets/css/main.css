@@ -3405,6 +3405,7 @@ body #section_lecture_profile {
   overflow: hidden;
 }
 
+
 #blur {
   background: url(../../images/banner.jpg) no-repeat center center fixed;
   background-size: cover;
@@ -3476,6 +3477,7 @@ a:hover {
   color: rgba(34, 34, 34, .70);
   transition: color 0.4s; 
 }
+
 
 .info {
   text-align: center;
