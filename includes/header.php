@@ -1,0 +1,84 @@
+    <div class="page-top">
+        <a href="#top"></a>
+    </div>
+    <div class="header">
+        <div class="logo">
+            <img src="img/fea_logo.png" alt="">
+        </div>
+        <div class="nav-item">
+            <ul>
+                <li><a href="#CONCEPT">CONCEPT</a></li>
+                <li><a href="#SEMINAR">SEMINAR</a></li>
+                <li><a href="#INSTRUCTOR">INSTRUCTOR</a></li>
+                <li><a href="#SCHEDULE">SCHEDULE</a></li>
+                <li><a href="#FORM">FORM(Square)</a></li>
+                <li><a href="#FAQ">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="contact">
+            <a href="#FORM">
+                <p>MAIL</p>
+                <img src="img/mail.png" alt="">
+            </a>
+            <a href="#FORM">
+                <p>TEL</p>
+                <img src="img/call.png" alt="">
+            </a>
+        </div>
+    </div>
+
+
+
+    <div class="sp-header">
+        <div class="logo">
+            <img src="img/fea_logo.png" alt="">
+        </div>
+        <div class="sp-toggle">
+            <a class="toggle">
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+    </div>
+
+
+
+    <div class="modal-menu__container">
+        <div class="modal-menu__contents">
+            <div class="modal-menu__contents-inner">
+                <ul>
+                    <li><a href="#CONCEPT">CONCEPT
+                        <span>わたしたちについて</span>
+                    </a></li>
+                    <li><a href="#SEMINAR">SEMINAR
+                        <span>セミナー</span></a></li>
+                    <li><a href="#INSTRUCTOR">INSTRUCTOR
+                        <span>講師プロフィール</span></a></li>
+                    <li><a href="#SCHEDULE">SCHEDULE<span>スケジュール</span></a></li>
+                    <li><a href="#FAQ">FAQ<span>よくある質問</span></a></li>
+                    <li><a href="#FORM">FORM(Square)<span>申し込みフォーム</span></a></li>
+                  </ul>
+
+                <div class="contact">
+
+                </div>
+                <div class="address">
+                    <a href=""><img src="https://www.foula-academy.com/images/new_kotlogo_w.svg" alt=""
+                        class="footer-logo"></a>
+                    株式会社ケイトオブ東京<br>
+                    〒150-0001<br>
+                    東京都渋谷区神宮前6-19-20 第15荒井ビル 7F<br>
+                    営業時間：10:00 - 17:00<br>
+                    休業日：土日祝
+                </div>
+
+                <div class="sns">
+                    <!--<p>OFFICIAL SNS</p> -->
+                    <a href="https://www.instagram.com/foulaeyelashacademy/"><img src="img/instagram.png" alt=""></a>
+                    <a href="https://twitter.com/academyfoula"><img src="img/twitter.png" alt=""></a>
+                    <a href="https://www.facebook.com/FoulaEyelashAcademy"><img src="img/facebook.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
