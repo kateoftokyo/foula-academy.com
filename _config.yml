@@ -1,2 +1,11 @@
-theme: minima
-include: ["_includes"]
+title: Foula Esthetics Academy
+description: "Foula Esthetics Academyの公式サイト"
+baseurl: ""  # 必要なら "/your-repo-name" を設定
+url: "https://www.foula-academy.com/"  # あなたの GitHub Pages URL
+theme: null  # Jekyll のデフォルトテーマを無効化
+exclude:
+  - node_modules
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - README.md
