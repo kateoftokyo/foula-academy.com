@@ -141,6 +141,7 @@
 @media screen and (max-width: 798px) {
     .course-benefits-inner {
         flex-direction: column;
+        margin-top: 35px;
     }
 
     .course-benefits {
