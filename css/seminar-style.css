@@ -46,7 +46,7 @@
     align-items: center;
 }
 
-.course-schedule-inner a{
+.course-schedule-inner a {
     border: 1px solid #000;
     width: 300px;
     text-align: center;
@@ -55,7 +55,7 @@
     transition: 0.4s;
 }
 
-.course-schedule-inner a:hover{
+.course-schedule-inner a:hover {
     background-color: #333;
     color: #fff;
 }
@@ -153,6 +153,7 @@
         width: 100%;
         margin-bottom: 35px;
     }
+
     .course-benefits-index p {
         font-size: 21px;
         padding: 0px 15px;
@@ -212,6 +213,7 @@
     .course-recommended {
         padding-top: 20px;
     }
+
     .course-recommended-inner {
         max-width: initial;
         padding: 0 15px;
@@ -457,6 +459,7 @@
     .course-curriculum-inner .section-title {
         margin: 0 auto 30px;
     }
+
     .course-curriculum {
         padding: 15px;
     }
@@ -579,41 +582,48 @@ access-section
 
 **************************************************************************/
 .location-section {
-    background-color: #f5f5f5;
-    padding: 150px 25px 75px;
+    background-color: #fbfbfb;
+    padding: 35px 25px 75px;
 }
 
 .location-section-inner {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1280px;
     padding: 35px 0;
     margin: auto;
     display: flex;
     justify-content: center;
-    gap: 1%;
+    gap: 5%;
 }
 
+.location-section-content{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
 .location-address {
-    width: 48%;
+    width: 100%;
     font-size: 14px;
     line-height: 1.7;
 }
 
 .location-section-title {
     font-size: 18px;
-    font-weight: bold;
+ /*    font-weight: bold; */
     margin-bottom: 5px;
 }
 
 .location-map {
-    width: 48%;
+    width: 100%;
+    margin-bottom: 5px;
 }
 
 .location_googlemap {
     width: 100%;
     filter: grayscale(1);
-    height: 350px;
+    height: 275px;
 }
+
 
 .location-address a {
     display: block;
@@ -624,12 +634,19 @@ access-section
     color: #232323;
     border: 1px solid #bbb6af;
     letter-spacing: 3px;
-    background-color: #f1f1f1;
+    /* background-color: #f1f1f1; */
 }
 
 
 
 @media screen and (max-width: 798px) {
+    .location-section-inner {
+    flex-direction: column;
+    }
+    .location-section-content {
+        width: 100%;
+        margin-bottom: 25px;
+    }
     .access-section {
         padding: 15px 15px;
     }
