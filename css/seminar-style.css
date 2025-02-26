@@ -516,6 +516,10 @@
 
     .for-model {
         padding: 0px;
+        text-align: center;
+        text-decoration: none;
+        color: #f00;
+        font-size: 16px;
     }
 
     .diploma-area {
