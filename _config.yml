@@ -1,8 +1,10 @@
 title: Foula Esthetics Academy
 description: "Foula Esthetics Academyの公式サイト"
-baseurl: "" 
-url: "https://www.foula-academy.com/"  # あなたの GitHub Pages URL
+baseurl: ""  # ルートにデプロイされる場合は空のままでOK（サブディレクトリなら "/repo-name" を設定）
+url: "https://www.foula-academy.com/"  # GitHub PagesのURL
 theme: null  # Jekyll のデフォルトテーマを無効化
+permalink: /:title/  # 記事ごとにフォルダURLを作成
+
 exclude:
   - node_modules
   - vendor
