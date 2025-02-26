@@ -23,22 +23,6 @@
     transform: translateX(-50%);
 }
 
-/**************************************************************************
-
-.key-visual-course 各コース用
-
-**************************************************************************/
-/* .key-visual-course {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-.key-visual-course-img{
-    width: 50%;;
-}
-.key-visual-course-img img{
-    width: 100%;
-} */
 
 
 
@@ -62,14 +46,34 @@
     align-items: center;
 }
 
-.course-schedule-inner a {
+.course-schedule-inner a{
     border: 1px solid #000;
     width: 300px;
     text-align: center;
     padding: 20px 0;
     color: #333;
+    transition: 0.4s;
 }
 
+.course-schedule-inner a:hover{
+    background-color: #333;
+    color: #fff;
+}
+
+@media screen and (max-width: 798px) {
+    .course-schedule {
+        padding-top: 0px;
+    }
+
+    .course-schedule-inner {
+        margin: 30px auto;
+    }
+
+    .course-schedule-inner a {
+        background-color: #333;
+        color: #fff;
+    }
+}
 
 /**************************************************************************
 
@@ -93,7 +97,7 @@
 }
 
 .course-benefits-index {
-    border-radius: 30% 30% 5% 5%;
+    /*     border-radius: 30% 30% 5% 5%; */
     width: 32%;
     display: flex;
     flex-direction: column;
@@ -134,6 +138,24 @@
     font-size: 14px;
 }
 
+@media screen and (max-width: 798px) {
+    .course-benefits-inner {
+        flex-direction: column;
+    }
+
+    .course-benefits {
+        padding-top: 0px;
+    }
+
+    .course-benefits-index {
+        padding: 0px;
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    .course-benefits-index p {
+        padding: 0px 15px;
+    }
+}
 
 /**************************************************************************
 
@@ -184,17 +206,13 @@
 }
 
 @media screen and (max-width: 798px) {
-    .course-benefits-inner {
-        flex-direction: column;
+    .course-recommended {
+        padding-top: 20px;
     }
-
-    .course-benefits-index {
-        width: 100%;
-    }
-
     .course-recommended-inner {
         max-width: initial;
         padding: 0 15px;
+        margin-bottom: 35px;
     }
 
     .course-recommended-inner li {
@@ -433,6 +451,9 @@
 }
 
 @media screen and (max-width: 798px) {
+    .course-curriculum-inner .section-title {
+        margin: 0 auto 30px;
+    }
     .course-curriculum {
         padding: 15px;
     }
@@ -449,7 +470,7 @@
     }
 
     .course-curriculum-inner {
-        padding: 35px 15px;
+        padding: 25px 15px;
         border: 1px solid;
         box-shadow: none;
         margin: 0;
@@ -467,9 +488,11 @@
     .course-curriculum-info div {
         width: 100%;
     }
-    .course-curriculum-info div:last-child span{
+
+    .course-curriculum-info div:last-child span {
         display: none;
-      }
+    }
+
     .lectures,
     .practical {
         width: 100%;
