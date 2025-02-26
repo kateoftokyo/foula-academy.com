@@ -3,6 +3,7 @@ description: "Foula Esthetics Academyの公式サイト"
 baseurl: ""  # 必要なら "/your-repo-name" を設定
 url: "https://www.foula-academy.com/"  # あなたの GitHub Pages URL
 theme: null  # Jekyll のデフォルトテーマを無効化
+permalink: pretty
 exclude:
   - node_modules
   - vendor
