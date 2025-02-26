@@ -153,7 +153,9 @@
         margin-bottom: 35px;
     }
     .course-benefits-index p {
+        font-size: 21px;
         padding: 0px 15px;
+        font-size: 16px;
     }
 }
 
@@ -561,4 +563,92 @@
     }
 
 
+}
+
+
+
+
+/**************************************************************************
+
+access-section 
+
+**************************************************************************/
+.location-section {
+    background-color: #f5f5f5;
+    padding: 150px 25px 75px;
+}
+
+.location-section-inner {
+    width: 100%;
+    max-width: 1000px;
+    padding: 35px 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+}
+
+.location-address {
+    width: 48%;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.location-section-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.location-map {
+    width: 48%;
+}
+
+.location_googlemap {
+    width: 100%;
+    filter: grayscale(1);
+    height: 350px;
+}
+
+.location-address a {
+    display: block;
+    width: 270px;
+    text-align: center;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    color: #232323;
+    border: 1px solid #bbb6af;
+    letter-spacing: 3px;
+    background-color: #f1f1f1;
+}
+
+
+
+@media screen and (max-width: 798px) {
+    .access-section {
+        padding: 15px 15px;
+    }
+
+    .access-section-inner {
+        padding-top: 0;
+        flex-direction: column;
+    }
+
+    .access-address {
+        width: 100%;
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .button.primary {
+        display: none;
+    }
+
+    .access-map {
+        width: 100%;
+    }
+
+    .access_googlemap {
+        height: 250px;
+    }
 }
