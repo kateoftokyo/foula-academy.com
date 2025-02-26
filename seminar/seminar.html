@@ -11,7 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shippori+Mincho&display=swap"
         rel="stylesheet">
         <script src="../js/main.js" defer></script>
-    <title>【コース】Foula Esthetics Academy</title>
+    <title>【901-1】Lash Lift 上まつ毛BASICコース</title>
 </head>
 
 <body class="fullMoon">
@@ -335,8 +335,8 @@
     <!--access-section -->
     <div class="access-section" id="ACCESS">
         <p class="section-title">ACCESS</p>
-        <div class="access-section-inner">
-            <div class="access-address">
+        <div class="location-section-inner">
+            <div class="location-address">
                 <img src="https://www.foula-academy.com/images/fea_logo.png" alt=""
                     style="display: block;width: 300px;filter: brightness(0.1);">
                 <p class="access-section-title">フーラエステティックアカデミー 東京校</p>
@@ -350,10 +350,10 @@
                 <a href="https://goo.gl/maps/jHMKuDJKVoScHmM67" class="button primary" target="_blank">Google
                     Map</a>
             </div>
-            <div class="access-map">
+            <div class="location-map">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.5297994639373!2d139.7003458152583!3d35.663954680198344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ca63766daa1%3A0x943568a6dec15f79!2z5qCq5byP5Lya56S-44Kx44Kk44OI44Kq44OW5p2x5LqsIOacrOekvu-8iEthdGUgb2YgVG9reW8gQ28uLEx0ZC4gSGVhZHF1YXRlcnPvvIk!5e0!3m2!1sja!2sjp!4v1631063596956!5m2!1sja!2sjp"
-                    class="access_googlemap" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    class="location_googlemap" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </div>
@@ -468,7 +468,43 @@
             &copy; 2021 Kate of Tokyo. All Rights Reserved.
         </div>
         </div>
-    
+
+
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".topSwiper", {
+                slidesPerView: 1,
+                spaceBetween: 0,
+                loop: true,
+                speed: 1000,
+                effect: "fade",
+                autoplay: {
+                    delay: 3000,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+
+
+            var swiper = new Swiper(".instructorSwiper", {
+                slidesPerView: 4,
+                spaceBetween: 50,
+                /*   centeredSlides: true, */
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+        </script>
 </body>
 
 </html>
