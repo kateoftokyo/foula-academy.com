@@ -287,12 +287,13 @@
 }
 
 .course-curriculum-info {
-    /*   width: 750px; */
+    /* width: 750px; */
     margin: 35px auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 1%;
+    line-height: 255%;
 }
 
 .course-curriculum-info div {
@@ -302,7 +303,6 @@
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
-    height: 100px;
 }
 
 .course-curriculum-info div {
@@ -493,12 +493,25 @@
 
     .course-curriculum-info div {
         width: 100%;
+        margin-bottom: 15px;
     }
-
+    .course-curriculum-info div:last-child {
+        margin-bottom: 35px;
+    }
     .course-curriculum-info div:last-child span {
-        display: none;
+        /* display: none; */
+        background: #003b57;
+        color: #fff;
+        width: max-content;
+        margin: 5px auto 15px;
+        padding: 0 15px;
+        border-radius: 20px;
+        /* height: 42px; */
+        font-size: 16px;
     }
-
+    .course-curriculum-info div:last-child span:first-child{
+        background: #570000;
+    }
     .lectures,
     .practical {
         width: 100%;
