@@ -1,4 +1,28 @@
 document.addEventListener("DOMContentLoaded", () => {
+ 
+  const loading = document.querySelector(".loading");
+
+  if (!loading) return; // .loading が存在しない場合は処理を中断
+
+  if (sessionStorage.getItem("visit")) {
+    loading.style.display = "none";
+  } else {
+    sessionStorage.setItem("visit", "true");
+
+    setTimeout(() => {
+      let opacity = 1;
+      const fadeOut = setInterval(() => {
+        if (opacity <= 0) {
+          clearInterval(fadeOut);
+          loading.style.display = "none";
+        } else {
+          opacity -= 0.05;
+          loading.style.opacity = opacity;
+        }
+      }, 25);
+    }, 3000);
+  }
+
   // ヘッダーのスクロール処理
   const header = document.querySelector(".header");
   const keyVisual = document.querySelector(".key-visual");
