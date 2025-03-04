@@ -49,6 +49,65 @@ p {
 TOPへ戻る
 
 **************************************************************************/
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999999;
+    background-color: #1B1B1B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loading__logo {
+    opacity: 0;
+    animation: logo_fade 2s 0.5s forwards;
+    width: 500px;
+}
+.loading img{
+width: 100%;
+max-width: 350px;
+}
+.pc-show{
+    display: block;
+}
+.sp-show{
+    display: none;
+}
+@keyframes logo_fade {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@media screen and (max-width: 798px) {
+
+    .pc-show{
+        display: none;
+    }
+    .sp-show{
+        display: block;
+    }
+    .loading img{
+        width: 250px;
+    }
+}
+/**************************************************************************
+
+TOPへ戻る
+
+**************************************************************************/
 .page-top {
     position: fixed;
     right: 10px;
