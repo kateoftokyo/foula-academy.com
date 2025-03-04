@@ -419,12 +419,13 @@ key-visual キービジュアル
     margin-bottom: 5px;
 }
 
-.main-slogan span{
+.main-slogan span {
     font-size: 31px;
     display: block;
     margin-bottom: 15px;
     padding-left: 3px;
 }
+
 .sub-slogan {
     font-size: 21px;
     line-height: 200%;
@@ -496,9 +497,11 @@ key-visual キービジュアル
     .key-visual img {
         height: 95vh
     }
+
     .key-visual.sem901-3 img {
         object-position: center;
     }
+
     .pc-show {
         display: none;
     }
@@ -815,9 +818,11 @@ seminar-section セミナーリスト
 .seminar-contents-detail .text {
     position: relative;
     font-size: 16px;
-    background: linear-gradient(132deg, #C1903F 0%, #C99D58 45%, #EBB561 70%, #ca9d55 85%, #B78D4A 90% 100%);
+    /* background: linear-gradient(132deg, #C1903F 0%, #C99D58 45%, #EBB561 70%, #ca9d55 85%, #B78D4A 90% 100%); */
+    background-color: #000;
+    border: 1px solid #000;
     color: #fff;
-    border: 1px solid #C1903F;
+    /* border: 1px solid #C1903F; */
     padding: 5px 10px;
     width: 95%;
     margin: 5px auto 10px;
@@ -832,6 +837,20 @@ seminar-section セミナーリスト
     content: "";
     width: 0;
     height: 100%;
+    background-color: #f7f7f7;
+    left: 0;
+    top: 0;
+    transition: 0.4s;
+    /* transition-delay: 0.2s; */
+    z-index: 1;
+}
+
+/* 
+.seminar-contents .text::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
     background-color: #352B24;
     left: 0;
     top: 0;
@@ -839,8 +858,10 @@ seminar-section セミナーリスト
     transition-delay: 0.2s;
     z-index: 1;
 }
-
-.seminar-contents a:hover .text {}
+ */
+.seminar-contents a:hover .text {
+    color: #000;
+}
 
 .seminar-contents a:hover .text::after {
     position: absolute;
@@ -947,7 +968,9 @@ seminar-section セミナーリスト
 
     .seminar-contents-detail .text {
         font-size: 18px;
-
+        background: linear-gradient(132deg, #C1903F 0%, #C99D58 45%, #EBB561 70%, #ca9d55 85%, #B78D4A 90% 100%);
+        border: 1px solid #C1903F;
+        color: #fff;
     }
 
     .seminar-contents-detail br {
