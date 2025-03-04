@@ -1154,7 +1154,11 @@ CROWN LASH LIFT 束巻きパーマ実践コース
     font-family: "Noto Sans JP", sans-serif;
     font-weight: initial;
 }
-
+.cll-lecturer-detail__row-sec a{
+  font-size: 14px;
+  color: #003cff;
+  padding-left: 3px;
+}
 .cll-lecturer-detail__insta {
     margin-top: 25px;
 }
@@ -1332,6 +1336,9 @@ CROWN LASH LIFT 束巻きパーマ実践コース
     .cll-lecturer-career-index {
         padding-left: 5px;
         padding-right: 5px;
+    }
+    .cll-lecturer-detail__insta{
+        display: none;
     }
 }
 
