@@ -828,27 +828,38 @@ seminar-section セミナーリスト
 
 
 .seminar-index ul {
-    width: 100%;
+    width:calc(100% - 5%);
     padding: 0 3%;
-    /* max-width: 1280px; */
+ /*    max-width: 1440px; */
     margin: 15px auto 75px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    gap: 15px;
 }
 
 .seminar-contents {
-    width: 25%;
+    width: 32%;
     padding: 15px 15px;
-    min-height: 600px;
+    min-height: 670px;
     border: 1px solid #cbcbcb;
-    border-right: 0;
+   /*  border-right: 0; */
     transition: 0.4s;
 }
 
+.seminar-contents.coming {
+    /* filter: blur(1px); */
+    background-color: #808080;
+    mix-blend-mode: difference;
+}
+
+.seminar-contents.coming .seminar-contents-detail{
+    color: #353535;
+}
+
 .seminar-contents:last-child {
-    border-right: 1px solid #cbcbcb;
+    /* border-right: 1px solid #cbcbcb; */
 }
 
 .seminar-contents-img {}
@@ -876,7 +887,7 @@ seminar-section セミナーリスト
 
 .seminar-contents-detail .text {
     position: relative;
-    font-size: 16px;
+    font-size: 21px;
     /* background: linear-gradient(132deg, #C1903F 0%, #C99D58 45%, #EBB561 70%, #ca9d55 85%, #B78D4A 90% 100%); */
     background-color: #000;
     border: 1px solid #000;
@@ -888,9 +899,14 @@ seminar-section セミナーリスト
     transition: 0.4s;
     z-index: 3;
     font-family: serif;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Noto Sans JP", sans-serif;
     font-weight: bold;
 }
-
+/* 
 .seminar-contents .text::after {
     position: absolute;
     content: "";
@@ -900,9 +916,9 @@ seminar-section セミナーリスト
     left: 0;
     top: 0;
     transition: 0.4s;
-    /* transition-delay: 0.2s; */
+    transition-delay: 0.2s;
     z-index: 1;
-}
+} */
 
 /* 
 .seminar-contents .text::after {
@@ -919,7 +935,7 @@ seminar-section セミナーリスト
 }
  */
 .seminar-contents a:hover .text {
-    color: #000;
+   opacity: 0.8;
 }
 
 .seminar-contents a:hover .text::after {
@@ -957,13 +973,15 @@ seminar-section セミナーリスト
     /* padding: 7px; */
     padding-left: 7px;
     text-align: start;
-    margin-bottom: 10px;
+    margin-bottom: 35px;
     line-height: 180%;
 }
-
-.seminar-contents-detail br {
-    display: none;
+.seminar-contents-detail .text br {
+    display: block;
 }
+/* .seminar-contents-detail br {
+    display: none;
+} */
 
 .seminar-contents-detail .num {
     position: relative;
@@ -981,8 +999,10 @@ seminar-section セミナーリスト
     left: 50%;
     transform: translateX(-50%);
 }
-
-@media screen and (max-width: 998px) {
+@media screen and (max-width: 1480px) {
+    .seminar-index ul {
+        gap: 5px;
+    }
     .seminar-contents {
         width: 45%;
         border: 1px solid #cbcbcb;
