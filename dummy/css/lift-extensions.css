@@ -45,7 +45,8 @@ body {}
     position: absolute;
     top: 80px;
     left: 150px;
-    width: 700px;
+    width: 100%;
+    max-width: 700px;
     object-fit: cover;
     z-index: 2;
 }
@@ -95,7 +96,10 @@ body {}
     margin-right: 10px;
     text-transform: uppercase;
 }
-
+.marquee-area p span{
+    color:#f8f7f3;
+   /*  -webkit-text-stroke: 2px #333; */
+}
 @keyframes marquee {
     0% {
         transform: translateX(0%);
@@ -137,6 +141,7 @@ body {}
 }
 
 .main-visual__btn-ext {
+    display: none;
     position: fixed;
     right: 0;
     bottom: 50px;
@@ -181,6 +186,83 @@ body {}
     }
 }
 
+@media screen and (max-width: 998px) {
+    .main-visual .main-visual__imgarea{
+        top: 100px;
+        left: 35px;
+    }
+    .main-visual .main-visual__imgarea img {
+        max-width: 350px;
+        height: 500px;
+        object-fit: cover;
+    }
+    .main-visual .main-visual__imgarea2 {
+        bottom: 135px;
+        right: 25px;
+    }
+    .main-visual__div-text {
+        left: initial;
+        right: 15px;
+        transform: translateX(0);
+    }
+    .marquee-area {
+        top: 50%;
+    }
+    .main-visual__title-text {
+        bottom: 65px;
+        left: 0%;
+        transform: translateX(0);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-visual .main-visual__imgarea{
+        top: 120px;
+    }
+    .main-visual .main-visual__imgarea img {
+        max-width: 300px;
+    }
+    .main-visual .main-visual__imgarea2 img {
+        max-width: 225px;
+        border-radius: 50px 50px 5px 5px;
+    }
+}
+@media screen and (max-width: 498px) {
+    .cite-logo {
+        display: none;
+        position: fixed;
+        bottom: 0px;
+        left: 45%;
+        transform: rotate(0deg) translate(-50%,-50%);
+    }
+    .main-visual{
+        height: 90vh;
+    }
+    .main-visual .main-visual__imgarea img {
+        max-width: 200px;
+        height: 320px;
+    }
+    .main-visual .main-visual__imgarea2 img {
+        max-width:150px;
+    }
+    .main-visual__title-text h1 {
+        font-size: 5rem;
+    }
+    .marquee-area{
+        -webkit-text-stroke: 1px #f8f7f3;
+    }
+    .marquee-area p {
+        font-size: 6rem;
+        white-space: nowrap;
+        animation: marquee 120s linear infinite;
+        opacity: 0.4;
+        margin-right: 10px;
+        text-transform: uppercase;
+    }
+    .main-visual__div-text span {
+        font-size: 1.6rem;
+    }
+}
 /***************************************************************
 
 section-wrapper
@@ -222,8 +304,15 @@ section-wrapper
     bottom: -35px;
     transform: translateX(-50%);
 }
-
-
+@media screen and (max-width: 768px) {
+.section-wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.section-title-area {
+    padding-top: 20px;
+}
+}
 /***************************************************************
 
 merit-section
@@ -245,8 +334,6 @@ merit-section
 .merit-section ul li {
     width: 39%;
     color: #f8f7f3;
-    padding-left: 25px;
-    padding-right: 25px;
     text-align: center;
     margin-bottom: 55px;
 }
@@ -282,6 +369,33 @@ merit-section
     padding: 0 7px;
 }
 
+@media screen and (max-width: 768px) {
+.merit-section ul {
+    gap: 20px;
+}
+.merit-section ul li img {
+    width: 100%;
+}
+}
+@media screen and (max-width: 498px) {
+    .merit-section ul {
+        justify-content: space-between;
+        gap: 0;
+    }
+    .merit-section ul li {
+        width: 48%;
+    }
+    .merit-section ul li img {
+        margin-bottom: 5px;
+    }
+    .merit-section__index {
+        font-size: 16px;
+    }
+    .merit-section__text {
+        font-size: 14px;
+        padding:0px;
+    }
+}
 /***************************************************************
 
 whatis-section
@@ -306,7 +420,8 @@ whatis-section
     padding: 10px;
     line-height: 200%;
     text-align: start;
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     margin: 0px auto 50px;
     font-size: 18px;
 }
@@ -484,6 +599,44 @@ whatis-section
 .swiper-pagination-bullet-active {
     background: #f8f7f3 !important;
 }
+@media screen and (max-width: 768px) {
+.whatis-section__beaf ul li {
+    width: 100%;
+    border-right: 1px solid #000;
+}
+}
+@media screen and (max-width: 498px) {
+    .whatis-section{
+        line-height: initial;
+    }
+.whatis-section__title {
+    font-size: 32px;
+    margin-bottom: 25px;
+    line-height: 180%;
+}
+.whatis-section__slider p {
+    margin-bottom: 10px;
+}
+.whatis-section .solution p {
+    font-size: 32px;
+    margin-bottom: 35px;
+    line-height: 180%;
+}
+.whatis-section dl {
+    margin-top: 50px;
+    padding: 0px;
+}
+.whatis-section .solution p br{
+    display: none;
+}
+.whatis-section  span {
+    font-size: 18px;
+    line-height: 220%;
+}
+.be-af-Swiper.swiper {
+    padding-bottom: 35px !important;
+}
+}
 
 /***************************************************************
 
@@ -574,8 +727,18 @@ offer-section
     background-size: 100% 100%;
 }
 
+@media screen and (max-width: 768px) {
+    .offer-section__sub-title {
+        width: initial;
+    }
+}
+@media screen and (max-width: 498px) {
+    .offer-section__sub-title {
+        font-size: 21px;
+        border-bottom: 0px solid #f1f1f1;
+    }
 
-
+}
 /***************************************************************
 
 cta-area
