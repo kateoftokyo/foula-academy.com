@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <!-- 
+    <!-- 
     <div class="loading">
         <img class="loading__logo pc-show" src="https://cite-lashlift.com/assets/img/cite_logo.png"
             alt="Foula Esthetics Academy">
@@ -528,11 +528,16 @@
         <!-- Initialize Swiper -->
         <script>
             var swiper = new Swiper(".be-af-Swiper", {
-                slidesPerView: 2,
+                slidesPerView: 1,
                 spaceBetween: 30,
                 pagination: {
                     el: ".swiper-pagination",
                 },
+                breakpoints: {
+                    498: {
+                        slidesPerView: 2,
+                    }
+                }
             });
         </script>
 
