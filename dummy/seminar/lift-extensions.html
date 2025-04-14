@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <!-- 
+    <!-- 
     <div class="loading">
         <img class="loading__logo pc-show" src="https://cite-lashlift.com/assets/img/cite_logo.png"
             alt="Foula Esthetics Academy">
@@ -245,20 +245,15 @@
                             <div class="swiper-slide">
                                 <img src="../img/test01.png" alt="">
                             </div>
-                            <div class="swiper-slide">
-                                <img src="https://foula.itembox.design/product/342/000000034250/000000034250-03.jpg"
-                                    alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="https://foula.itembox.design/product/342/000000034250/000000034250-04.jpg"
-                                    alt="">
-                            </div>
                         </div>
                         <div class="item-detail">
                             <p class="products-detail">施術スピードは薬剤選びが鍵！<br>
                                 軟化・酸化をわずか5分〜！<br>
                                 どんなまつ毛にも対応できる万能薬剤で、スピーディかつ綺麗なカールを実現します。
                             </p>
+                        </div>
+                        <div class="item-link">
+                            <a href="https://www.foula-store.jp/c/lash-lift/lash-lift-set/8001027460">VIEW MORE</a>
                         </div>
                     </div>
                 </li>
@@ -273,19 +268,14 @@
                             <div class="swiper-slide">
                                 <img src="../img/test02.png" alt="">
                             </div>
-                            <div class="swiper-slide">
-                                <img src="https://foula.itembox.design/product/344/000000034436/000000034436-02.jpg?"
-                                    alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="https://foula.itembox.design/product/344/000000034436/000000034436-03.jpg?"
-                                    alt="">
-                            </div>
                         </div>
                     </div>
 
                     <div class="item-detail">
                         <p class="products-detail">LEDグルーなら瞬時に硬化し、<br>パーマの薬剤の影響を受けません。</p>
+                    </div>
+                    <div class="item-link">
+                        <a href="https://www.foula-store.jp/c/glue/led/8001027650">VIEW MORE</a>
                     </div>
                 </li>
                 <li>
@@ -299,22 +289,15 @@
                             <div class="swiper-slide">
                                 <img src="../img/test03.png" alt="">
                             </div>
-                            <div class="swiper-slide">
-                                <img src="https://foula.itembox.design/product/335/000000033520/000000033520-02.jpg"
-                                    alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="https://foula.itembox.design/product/335/000000033520/000000033520-03.jpg"
-                                    alt="">
-
-                            </div>
-                        </div>
+                           </div>
 
                         <div class="item-detail">
                             <p class="products-detail">施術スピードは薬剤選びが鍵！<br>
                                 エクステを付けた後でも施術しやすいバームを採用。過軟化も防ぎ、エクステ装着後でもきれいなパーマを実現します。</p>
                         </div>
-
+                        <div class="item-link">
+                            <a href="https://www.foula-store.jp/c/lash-lift/lash-lift-glue/8001026792">VIEW MORE</a>
+                        </div>
                     </div>
                 </li>
             </ul>
@@ -345,27 +328,6 @@
                     10:00 ～ 17:00<span class="little-text">（授業時間6時間、休憩1時間）</span>
                 </div>
             </div>
-            <div class="course-curriculum-title">
-                <span>対面セミナー</span>Citeリフトエクステ
-                <br><span class="little-text"></span>
-            </div>
-            <div class="course-curriculum-info" style="justify-content: center;">
-                <div>
-                    <span>受講対象者</span>
-                    美容師免許提示
-                </div>
-
-            </div>
-            <div class="course-curriculum-info lift-exten">
-                <div>
-                    <span class="little-text">費用</span>
-                    <p class="course-curriculum-price">¥00,000</p>
-                </div>
-                <div>
-                    <span class="little-text">時間</span>
-                    10:00 ～ 17:00<span class="little-text">（授業時間7時間、休憩1時間）</span>
-                </div>
-            </div>
             <div class="course-curriculum-index">
                 <div class="course-curriculum-index-section">
                     <div class="lectures">
@@ -391,7 +353,30 @@
                         </ul>
                     </div>
                 </div>
+            </div><br><br>
+
+            <div class="course-curriculum-title">
+                <span>オンラインセミナー</span>Citeリフトエクステ
+                <br><span class="little-text"></span>
             </div>
+            <div class="course-curriculum-info" style="justify-content: center;">
+                <div>
+                    <span>受講対象者</span>
+                    美容師免許提示
+                </div>
+
+            </div>
+            <div class="course-curriculum-info lift-exten">
+                <div>
+                    <span class="little-text">費用</span>
+                    <p class="course-curriculum-price">¥00,000</p>
+                </div>
+                <div>
+                    <span class="little-text">時間</span>
+                    10:00 ～ 17:00<span class="little-text">（授業時間7時間、休憩1時間）</span>
+                </div>
+            </div>
+
 
         </div>
 
@@ -528,11 +513,16 @@
         <!-- Initialize Swiper -->
         <script>
             var swiper = new Swiper(".be-af-Swiper", {
-                slidesPerView: 2,
+                slidesPerView: 1,
                 spaceBetween: 30,
                 pagination: {
                     el: ".swiper-pagination",
                 },
+                breakpoints: {
+                    498: {
+                        slidesPerView: 2,
+                    }
+                }
             });
         </script>
 

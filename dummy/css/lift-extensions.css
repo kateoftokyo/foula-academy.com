@@ -216,8 +216,14 @@ body {}
 }
 
 @media screen and (max-width: 768px) {
-    .main-visual .main-visual__imgarea{
-        top: 120px;
+    .main-visual .main-visual__imgarea {
+        top: 60px;
+        left:15px;
+        width: 80%;
+    }
+    .main-visual .main-visual__imgarea2 {
+        bottom: 50px;
+        right: 15px;
     }
     .main-visual .main-visual__imgarea img {
         max-width: 300px;
@@ -308,6 +314,7 @@ section-wrapper
 .section-wrapper {
     padding-left: 15px;
     padding-right: 15px;
+    padding-bottom: 25px;
 }
 .section-title-area {
     padding-top: 20px;
@@ -383,13 +390,14 @@ merit-section
         gap: 0;
     }
     .merit-section ul li {
-        width: 48%;
+        width:100%;
     }
     .merit-section ul li img {
         margin-bottom: 5px;
+        max-width: 225px;
     }
     .merit-section__index {
-        font-size: 16px;
+        font-size: 21px;
     }
     .merit-section__text {
         font-size: 14px;
@@ -589,6 +597,19 @@ whatis-section
     font-size: 14px;
     line-height: 185%;
 }
+.item-link{
+
+}
+.item-link a{
+    display: block;
+  background-color: #333;
+  color: #fff;
+  width: 250px;
+  margin: 25px auto 0;
+  padding: 15px ;
+  text-align: center;
+  border-radius: 15px;
+}
 
 .course-curriculum-inner.lift-exten {
     padding-right: 25px;
@@ -600,10 +621,16 @@ whatis-section
     background: #f8f7f3 !important;
 }
 @media screen and (max-width: 768px) {
-.whatis-section__beaf ul li {
-    width: 100%;
-    border-right: 1px solid #000;
-}
+    .whatis-section__beaf {
+        background: #f5f5f5;
+        padding: 30px 15px 35px;
+        margin-bottom: 10px;
+    }
+    .whatis-section__beaf ul li {
+        width: 100%;
+        border-right: 1px solid #000;
+        margin-bottom: 7px;
+    }
 }
 @media screen and (max-width: 498px) {
     .whatis-section{

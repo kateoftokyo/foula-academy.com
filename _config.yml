@@ -1,13 +1,8 @@
 title: Foula Esthetics Academy
-description: "Foula Esthetics Academyの公式サイト"
-baseurl: ""  # ルートにデプロイされる場合は空のままでOK（サブディレクトリなら "/repo-name" を設定）
-url: "https://www.foula-academy.com/"  # GitHub PagesのURL
-theme: null  # Jekyll のデフォルトテーマを無効化
-permalink: /:title/  # 記事ごとにフォルダURLを作成
-
+description: "Foula Beauty公式サイト"
+baseurl: ""
+url: "https://www.foula-academy.com"
+theme: null
 exclude:
-  - node_modules
-  - vendor
-  - Gemfile
-  - Gemfile.lock
   - README.md
+  - node_modules
