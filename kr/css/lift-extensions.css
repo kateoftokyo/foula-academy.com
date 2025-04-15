@@ -1,7 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+@font-face {
+    font-family: "nanum-square"; 
+    src: url("../font/NanumSquare_acB.ttf") format("truetype"); 
+    font-display: swap; 
+  }
 
 body {
-    font-family: "Nanum Gothic", sans-serif;
+    font-family: "nanum-square","Nanum Gothic", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -88,7 +92,7 @@ body {
     -webkit-text-stroke: 2px #f8f7f3;
     text-stroke: 1px #f8f7f3;
     z-index: 1;
-    font-family: "Shippori Mincho", sans-serif;
+    /* font-family: "Shippori Mincho", sans-serif; */
 }
 
 .marquee-area p {
@@ -117,7 +121,7 @@ body {
     position: absolute;
     /*  text-align: center; */
     top: 150px;
-    left: 55%;
+    right: 15%;
     transform: translateX(-50%);
     z-index: 3;
     -webkit-text-stroke: 1px #75757540;
@@ -126,6 +130,7 @@ body {
 .main-visual__div-text span {
     font-size: 3rem;
     display: block;
+    margin-bottom: 10px;
 }
 
 .main-visual__title-text {
@@ -139,7 +144,7 @@ body {
 .main-visual__title-text h1 {
     font-size: 9rem;
     font-weight: 400;
-    line-height: 90%;
+    line-height: 105%;
     -webkit-text-stroke: 1px #75757540;
 }
 
@@ -279,7 +284,7 @@ section-wrapper
 ***************************************************************/
 .section-wrapper {
     background:#292929;
-    padding-bottom: 250px;
+    padding-bottom: 30px;
 }
 
 .section-title-area {
@@ -287,6 +292,7 @@ section-wrapper
     text-align: center;
     padding-top: 150px;
     margin-bottom: 35px;
+    line-height: 210%;
 }
 
 .section-title-area p {
@@ -310,7 +316,7 @@ section-wrapper
     height: 1px;
     background-color: #f8f7f3;
     left: 50%;
-    bottom: -35px;
+    bottom: -40px;
     transform: translateX(-50%);
 }
 @media screen and (max-width: 768px) {
@@ -357,9 +363,10 @@ merit-section
 
 .merit-section__index {
     position: relative;
-    font-size: 24px;
-    margin-bottom: 5px;
+    font-size: 21px;
+    margin-bottom: 7px;
     padding-bottom: 0px;
+    line-height: 140%;
 }
 
 .merit-section__index::after {
@@ -374,7 +381,8 @@ merit-section
 }
 
 .merit-section__text {
-    font-size: 18px;
+    color: #a7a7a7;
+    font-size: 16px;
     line-height: 175%;
     padding: 0 7px;
 }
@@ -417,13 +425,13 @@ whatis-section
     text-align: center;
     color: #f8f7f3;
     margin: auto;
-    font-size: 18px;
+    font-size: 21px;
     line-height: 450%;
     /* font-weight: bold; */
 }
 
 .whatis-section__title {
-    font-size: 32px;
+    font-size:42px;
     margin-bottom: 10px;
 }
 
@@ -434,7 +442,7 @@ whatis-section
     width: 100%;
     max-width: 600px;
     margin: 0px auto 50px;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .triangle {
@@ -501,7 +509,6 @@ whatis-section
 .whatis-section .solution p {
     margin-top: 35px;
     font-size: 31px;
-    line-height: 200%;
     margin-bottom: 35px;
 }
 
@@ -529,12 +536,13 @@ whatis-section
 .be-af-Swiper.swiper {
     padding-bottom: 50px !important;
 }
-
 .whatis-section__beaf {
     background: #f5f5f5;
     padding: 65px 15px 75px;
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
 }
-
 .whatis-section__beaf .section-title-area {
     color: #333;
     padding-top: 0;
@@ -811,4 +819,47 @@ faq-section
 
 .faq-section-index .answer.show {
     display: block;
+}
+
+
+
+/***************************************************************
+
+追加css
+
+***************************************************************/
+.header {
+    padding: 0;
+    height: 65px;
+    justify-content: center;
+    background-color: #ffffff07;
+}
+.logo {
+    width: initial;
+}
+.logo img {
+    max-width: 175px;
+}
+.course-curriculum-title span {
+    padding: 10px 10px 10px;
+}
+
+.course-curriculum-price {
+    margin-top: 15px;
+}
+.course-curriculum-inner {
+    margin: 75px auto 0px;
+    background: #f5f5f5;
+}
+.copyright{
+    padding-top: 35px;
+    color: #818181;
+}
+.faq-section-inner {
+    max-width: 1280px;
+}
+@media screen and (max-width: 798px){
+    .header {
+        display: flex;
+    }
 }
