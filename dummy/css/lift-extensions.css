@@ -1,784 +1,555 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
-
-body {}
-
-.cite-logo {
-    position: fixed;
-    bottom: 50%;
-    left: -15px;
-    transform: rotate(-90deg) translateY(-50%);
-    filter: invert(1);
-    z-index: 9999;
-}
-
-.cite-logo img {
-    width: 200px;
-    opacity: 0.4;
-}
-
-.banner-wrapper {
-    position: relative;
-    color: #f8f7f3;
-    background:#292929;
-}
-
-.banner-wrapper::after {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    content: "";
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
-
-.main-visual {
-    position: relative;
-    /*  width:calc(100% - 10%); */
-    height: 100vh;
-    margin: auto;
-    font-family: "Shippori Mincho", sans-serif;
-    color: #f8f7f3;
-}
-
-.main-visual .main-visual__imgarea {
-    position: absolute;
-    top: 80px;
-    left: 150px;
-    width: 100%;
-    max-width: 700px;
-    object-fit: cover;
-    z-index: 2;
-}
-
-.main-visual .main-visual__imgarea2 {
-    position: absolute;
-    bottom: 50px;
-    right: 275px;
-    z-index: 1;
-}
-
-.main-visual .main-visual__imgarea img {
-    width: 100%;
-    max-width: 750px;
-    border-radius: 70px 15px 70px 15px;
-    box-shadow: 0px 0px 5px #232222;
-}
-
-.main-visual .main-visual__imgarea2 img {
-    width: 100%;
-    max-width: 325px;
-    border-radius: 100px 100px 5px 5px;
-    box-shadow: 0px 0px 5px #232222;
-}
-
-.marquee-area {
-    position: absolute;
-    top: 60%;
-    transform: translateY(-50%);
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow-x: hidden;
-    color: transparent;
-    -webkit-text-stroke: 2px #f8f7f3;
-    text-stroke: 1px #f8f7f3;
-    z-index: 1;
-    font-family: "Shippori Mincho", sans-serif;
-}
-
-.marquee-area p {
-    font-size: 21rem;
-    white-space: nowrap;
-    animation: marquee 120s linear infinite;
-    opacity: 0.4;
-    margin-right: 10px;
-    text-transform: uppercase;
-}
-.marquee-area p span{
-    color:#f8f7f3;
-   /*  -webkit-text-stroke: 2px #333; */
-}
-@keyframes marquee {
-    0% {
-        transform: translateX(0%);
-    }
-
-    100% {
-        transform: translateX(100%);
-    }
-}
-
-.main-visual__div-text {
-    position: absolute;
-    /*  text-align: center; */
-    top: 150px;
-    left: 55%;
-    transform: translateX(-50%);
-    z-index: 3;
-    -webkit-text-stroke: 1px #75757540;
-}
-
-.main-visual__div-text span {
-    font-size: 2.4rem;
-    display: block;
-}
-
-.main-visual__title-text {
-    position: absolute;
-    bottom: 35px;
-    left: 35%;
-    transform: translateX(-50%);
-    z-index: 3;
-}
-
-.main-visual__title-text h1 {
-    font-size: 9rem;
-    font-weight: 400;
-    line-height: 90%;
-    -webkit-text-stroke: 1px #75757540;
-}
-
-.main-visual__btn-ext {
-    display: none;
-    position: fixed;
-    right: 0;
-    bottom: 50px;
-    width: 250px;
-    padding: 25px 0 25px 20px;
-    border-radius: 55px 0 0 55px;
-    box-shadow: 0 0 1px #000000;
-    background-color: #222222;
-    z-index: 999;
-}
-
-.main-visual__btn-ext a {
-    color: #f8f7f3;
-    text-align: center;
-}
-
-.main-visual__btn-ext .seminar-start {
-    font-size: 31px;
-}
-
-.main-visual__btn-ext span {
-    text-align: center;
-    display: block;
-    font-size: 26px;
-}
-
-
-
-@media screen and (max-width: 1368px) {
-    .main-visual .main-visual__imgarea {
-        left: 90px;
-    }
-
-    .main-visual .main-visual__imgarea img {
-        max-width: 580px;
-    }
-
-    .main-visual .main-visual__imgarea2 {
-        position: absolute;
-        bottom: 30px;
-        right: 150px;
-    }
-}
-
-@media screen and (max-width: 998px) {
-    .main-visual .main-visual__imgarea{
-        top: 100px;
-        left: 35px;
-    }
-    .main-visual .main-visual__imgarea img {
-        max-width: 350px;
-        height: 500px;
-        object-fit: cover;
-    }
-    .main-visual .main-visual__imgarea2 {
-        bottom: 135px;
-        right: 25px;
-    }
-    .main-visual__div-text {
-        left: initial;
-        right: 15px;
-        transform: translateX(0);
-    }
-    .marquee-area {
-        top: 50%;
-    }
-    .main-visual__title-text {
-        bottom: 65px;
-        left: 0%;
-        transform: translateX(0);
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .main-visual .main-visual__imgarea{
-        top: 120px;
-    }
-    .main-visual .main-visual__imgarea img {
-        max-width: 300px;
-    }
-    .main-visual .main-visual__imgarea2 img {
-        max-width: 225px;
-        border-radius: 50px 50px 5px 5px;
-    }
-}
-@media screen and (max-width: 498px) {
-    .cite-logo {
-        display: none;
-        position: fixed;
-        bottom: 0px;
-        left: 45%;
-        transform: rotate(0deg) translate(-50%,-50%);
-    }
-    .main-visual{
-        height: 90vh;
-    }
-    .main-visual .main-visual__imgarea img {
-        max-width: 200px;
-        height: 320px;
-    }
-    .main-visual .main-visual__imgarea2 img {
-        max-width:150px;
-    }
-    .main-visual__title-text h1 {
-        font-size: 5rem;
-    }
-    .marquee-area{
-        -webkit-text-stroke: 1px #f8f7f3;
-    }
-    .marquee-area p {
-        font-size: 6rem;
-        white-space: nowrap;
-        animation: marquee 120s linear infinite;
-        opacity: 0.4;
-        margin-right: 10px;
-        text-transform: uppercase;
-    }
-    .main-visual__div-text span {
-        font-size: 1.6rem;
-    }
-}
-/***************************************************************
-
-section-wrapper
-
-***************************************************************/
-.section-wrapper {
-    background:#292929;
-    padding-bottom: 250px;
-}
-
-.section-title-area {
-    color: #f8f7f3;
-    text-align: center;
-    padding-top: 150px;
-    margin-bottom: 35px;
-}
-
-.section-title-area p {
-    font-family: "Times New Roman", "Times", serif;
-    position: relative;
-    font-size: 32px;
-    letter-spacing: 0.2rem;
-    text-transform: uppercase;
-    /* font-weight: bold; */
-}
-
-.section-title-area span {
-    font-size: 16px;
-    /*  font-weight: bold; */
-}
-
-.section-title-area p::after {
-    position: absolute;
-    content: "";
-    width: 30px;
-    height: 1px;
-    background-color: #f8f7f3;
-    left: 50%;
-    bottom: -35px;
-    transform: translateX(-50%);
-}
-@media screen and (max-width: 768px) {
-.section-wrapper {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-.section-title-area {
-    padding-top: 20px;
-}
-}
-/***************************************************************
-
-merit-section
-
-***************************************************************/
-.merit-section {
-    width: 100%;
-    max-width: 1280px;
-    margin: 75px auto;
-}
-
-.merit-section ul {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
-}
-
-.merit-section ul li {
-    width: 39%;
-    color: #f8f7f3;
-    text-align: center;
-    margin-bottom: 55px;
-}
-
-.merit-section ul li img {
-    width: 175px;
-    /*     border: 1px solid #000000; */
-    border-radius: 50%;
-    margin-bottom: 35px;
-}
-
-.merit-section__index {
-    position: relative;
-    font-size: 24px;
-    margin-bottom: 5px;
-    padding-bottom: 0px;
-}
-
-.merit-section__index::after {
-    /*  position: absolute;
-    content: "";
-    width: 50px;
-    height: 1px;
-    background-color: #f8f7f3;
-    left: 50%;
-    bottom: 55px;
-    transform: translateX(-50%);*/
-}
-
-.merit-section__text {
-    font-size: 18px;
-    line-height: 175%;
-    padding: 0 7px;
-}
-
-@media screen and (max-width: 768px) {
-.merit-section ul {
-    gap: 20px;
-}
-.merit-section ul li img {
-    width: 100%;
-}
-}
-@media screen and (max-width: 498px) {
-    .merit-section ul {
-        justify-content: space-between;
-        gap: 0;
-    }
-    .merit-section ul li {
-        width: 48%;
-    }
-    .merit-section ul li img {
-        margin-bottom: 5px;
-    }
-    .merit-section__index {
-        font-size: 16px;
-    }
-    .merit-section__text {
-        font-size: 14px;
-        padding:0px;
-    }
-}
-/***************************************************************
-
-whatis-section
-
-***************************************************************/
-.whatis-section {
-    padding-top: 35px;
-    text-align: center;
-    color: #f8f7f3;
-    margin: auto;
-    font-size: 18px;
-    line-height: 450%;
-    /* font-weight: bold; */
-}
-
-.whatis-section__title {
-    font-size: 32px;
-    margin-bottom: 10px;
-}
-
-.whatis-section dl {
-    padding: 10px;
-    line-height: 200%;
-    text-align: start;
-    width: 100%;
-    max-width: 600px;
-    margin: 0px auto 50px;
-    font-size: 18px;
-}
-
-.triangle {
-    margin: auto;
-    width: 0;
-    height: 0;
-    left: 0;
-    transform: translateX(-0%) rotate(90deg);
-    border-left: 9px solid #ffffff;
-    border-top: 9px solid transparent;
-    border-bottom: 9px solid transparent;
-    margin-bottom: 20px;
-    animation: blink 3s infinite;
-}
-
-.triangle:nth-child(1) {
-    animation-delay: 0s;
-}
-
-.triangle:nth-child(2) {
-    animation-delay: 0.2s;
-}
-
-.triangle:nth-child(3) {
-    animation-delay: 0.4s;
-}
-
-.triangle:nth-child(4) {
-    animation-delay: 0.6s;
-}
-
-.triangle:nth-child(5) {
-    animation-delay: 0.8s;
-}
-
-.triangle:nth-child(6) {
-    animation-delay: 1s;
-}
-
-.triangle:nth-child(7) {
-    animation-delay: 1.2s;
-}
-
-.triangle:nth-child(8) {
-    animation-delay: 1.4s;
-}
-
-@keyframes blink {
-
-    0%,
-    100% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 1;
-    }
-}
-
-.whatis-section .solution {
-    line-height: 220%;
-}
-
-.whatis-section .solution p {
-    margin-top: 35px;
-    font-size: 31px;
-    line-height: 200%;
-    margin-bottom: 35px;
-}
-
-.whatis-section .solution span {
-    font-size: 18px;
-    color: #f8f7f3;
-}
-
-.whatis-section__slider {
-    width: 100%;
-    max-width: 1280px;
-    margin: auto;
-    padding: 35px 15px;
-}
-
-.whatis-section__slider p {
-    font-size: 21px;
-}
-
-.whatis-section__slider img {
-    width: 100%;
-    border-radius: 25px;
-}
-
-.be-af-Swiper.swiper {
-    padding-bottom: 50px !important;
-}
-
-.whatis-section__beaf {
-    background: #f5f5f5;
-    padding: 65px 15px 75px;
-}
-
-.whatis-section__beaf .section-title-area {
-    color: #333;
-    padding-top: 0;
-}
-
-.whatis-section__beaf ul {
-    width: 100%;
-    max-width: 1280px;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    /*  justify-content: space-between; */
-}
-
-.whatis-section__beaf ul li {
-    width: 33%;
-    background-color: #f5f5f5;
-    color: #000;
-    line-height: initial;
-    border-left: 1px solid #000;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
-    /*  background: #fdfdfd; */
-    padding: 35px;
-}
-
-.whatis-section__beaf ul li:last-child {
-    border-right: 1px solid #000;
-}
-
-.whatis-section__beaf ul li img {
-    width: 100%;
-    max-width: 300px;
-    display: block;
-    margin: auto;
-    padding: 20px;
-    /* border-radius: 50%; */
-}
-
-.item-detail {
-    text-align: center;
-}
-
-.item-detail .products-name {
-    font-size: 1.8rem;
-    letter-spacing: 0.05em;
-    margin: 12px 0 16px;
-    font-family: "Times New Roman", "Times", serif;
-}
-
-.item-detail .products-sub-name {
-    color: #818181;
-    font-size: 1.4rem;
-    letter-spacing: 0.14em;
-    line-height: 1.28571;
-    margin: 0 0 12px;
-    font-family: "Montserrat", sans-serif;
-    ;
-    text-align: center;
-}
-
-.item-detail .products-detail {
-    font-size: 14px;
-    line-height: 185%;
-}
-
-.course-curriculum-inner.lift-exten {
-    padding-right: 25px;
-    padding-left: 25px;
-}
-
-
-.swiper-pagination-bullet-active {
-    background: #f8f7f3 !important;
-}
-@media screen and (max-width: 768px) {
-.whatis-section__beaf ul li {
-    width: 100%;
-    border-right: 1px solid #000;
-}
-}
-@media screen and (max-width: 498px) {
-    .whatis-section{
-        line-height: initial;
-    }
-.whatis-section__title {
-    font-size: 32px;
-    margin-bottom: 25px;
-    line-height: 180%;
-}
-.whatis-section__slider p {
-    margin-bottom: 10px;
-}
-.whatis-section .solution p {
-    font-size: 32px;
-    margin-bottom: 35px;
-    line-height: 180%;
-}
-.whatis-section dl {
-    margin-top: 50px;
-    padding: 0px;
-}
-.whatis-section .solution p br{
-    display: none;
-}
-.whatis-section  span {
-    font-size: 18px;
-    line-height: 220%;
-}
-.be-af-Swiper.swiper {
-    padding-bottom: 35px !important;
-}
-}
-
-/***************************************************************
-
-offer-section
-
-***************************************************************/
-.offer-section {
-    /* max-width: 600px; */
-    width: 100%;
-    margin: 90px auto 0;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    line-height: 270%;
-    text-align: center;
-}
-.offer-section li {
-    margin-bottom: 35px;
-  /*   padding: 20px 25px; */
-    width: 100%;
-    color: #f8f7f3;
-}
-
-.offer-section__title {
-    font-size: 16px;
-    margin-bottom: 5px;
-    padding-left: 15px;
-}
-
-.offer-section__num{
-    position: relative;
-}
-.offer-section__num:after {
-    content: attr(data-text);
-    font-size: 5rem;
-    position: absolute;
-    top: -75px;
-    left: 15px;
-    z-index: 999;
-    -webkit-text-stroke: 1px #000000;
-    color: #ffffff
-}
-
-.offer-section__sub-title {
-    font-size: 28px;
-    margin:0 auto;
-    width: max-content;
-    border-bottom: 1px solid #f1f1f1;
-}
-
-.offer-section__img img {
-    margin: 5px auto;
-    width: 100%;
-    max-width: 350px;
-    display: block;
-    margin:0  auto 15px;
-    border-radius: 20% 20% 0px 0px;
-}
-
-.offer-section__img::before {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    content: "";
-    filter: blur(5px);
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-}
-
-.offer-section__img img {
-    width: 100%;
-    z-index: 2;
-    position: relative;
-}
-
-
-.marker {
-    background: linear-gradient(transparent 80%, #e49ba9 10%);
-    display: inline;
-    background-repeat: no-repeat;
-    background-size: 0% 100%;
-    transition: background-size 1s;
-    padding: 3px;
-}
-
-.marker.on {
-    background-size: 100% 100%;
-}
-
-@media screen and (max-width: 768px) {
-    .offer-section__sub-title {
-        width: initial;
-    }
-}
-@media screen and (max-width: 498px) {
-    .offer-section__sub-title {
-        font-size: 21px;
-        border-bottom: 0px solid #f1f1f1;
-    }
-
-}
-/***************************************************************
-
-cta-area
-
-***************************************************************/
-.cta-area {}
-
-.cta-area a {
-    display: block;
-    margin: 0px auto 50px;
-    width: 350px;
-    background-color: #f8f7f3;
-    border-radius: 45px;
-    color: #e49ba9;
-    font-weight: bold;
-    font-size: 24px;
-    text-align: center;
-    padding: 25px 35px;
-}
-
-
-
-
-/***************************************************************
-
-faq-section
-
-***************************************************************/
-.faq-section {
-    padding-top: 0;
-}
-
-.faq-section-index {
-    background: #f8f7f3;
-}
-
-.faq-section-index .answer {
-    background: #f8f7f3;
-}
-
-.faq-section-index .answer.show {
-    display: block;
-}
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/seminar-style.css">
+    <link rel="stylesheet" href="../css/lift-extensions.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="../js/main.js" defer></script>
+    <title>リフトエクステコース</title>
+</head>
+
+<body>
+    <!-- 
+    <div class="loading">
+        <img class="loading__logo pc-show" src="https://cite-lashlift.com/assets/img/cite_logo.png"
+            alt="Foula Esthetics Academy">
+        <img class="loading__logo sp-show" src="https://cite-lashlift.com/assets/img/cite_logo.png"
+            alt="Foula Esthetics Academy">
+    </div>
+ -->
+    <div class="page-top">
+        <a href="#top"></a>
+    </div>
+    <div class="header">
+        <div class="logo">
+            <a href="https://www.foula-academy.com/dummy/">
+                <img src="img/fea_logo.png" alt="">
+            </a>
+        </div>
+        <div class="nav-item">
+            <ul>
+                <li><a href="https://www.foula-academy.com/dummy/#CONCEPT">CONCEPT</a></li>
+                <li><a href="https://www.foula-academy.com/dummy/#SEMINAR">SEMINAR</a></li>
+                <li><a href="https://www.foula-academy.com/dummy/#INSTRUCTOR">INSTRUCTOR</a></li>
+                <li><a href="https://www.foula-academy.com/dummy/#SCHEDULE">SCHEDULE</a></li>
+                <li><a href="#FORM">FORM(Square)</a></li>
+                <li><a href="https://www.foula-academy.com/dummy/#FAQ">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="contact">
+            <a href="#FORM">
+                <p>MAIL</p>
+                <img src="img/mail.png" alt="">
+            </a>
+            <a href="#FORM">
+                <p>TEL</p>
+                <img src="img/call.png" alt="">
+            </a>
+        </div>
+    </div>
+
+
+
+    <div class="sp-header">
+        <div class="logo">
+            <img src="img/fea_logo.png" alt="">
+        </div>
+        <div class="sp-toggle">
+            <a class="toggle">
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+    </div>
+
+
+
+    <div class="modal-menu__container">
+        <div class="modal-menu__contents">
+            <div class="modal-menu__contents-inner">
+                <ul>
+                    <li><a href="https://www.foula-academy.com/dummy/#CONCEPT">CONCEPT
+                            <span>わたしたちについて</span>
+                        </a></li>
+                    <li><a href="https://www.foula-academy.com/dummy/#SEMINAR">SEMINAR
+                            <span>セミナー</span></a></li>
+                    <li><a href="https://www.foula-academy.com/dummy/#INSTRUCTOR">INSTRUCTOR
+                            <span>講師プロフィール</span></a></li>
+                    <li><a href="https://www.foula-academy.com/dummy/#SCHEDULE">SCHEDULE<span>スケジュール</span></a></li>
+                    <li><a href="https://www.foula-academy.com/dummy/#FAQ">FAQ<span>よくある質問</span></a></li>
+                    <li><a href="#FORM">FORM(Square)<span>申し込みフォーム</span></a></li>
+                </ul>
+
+                <div class="contact">
+
+                </div>
+                <div class="address">
+                    <a href=""><img src="https://www.foula-academy.com/images/new_kotlogo_w.svg" alt=""
+                            class="footer-logo"></a>
+                    株式会社ケイトオブ東京<br>
+                    〒150-0001<br>
+                    東京都渋谷区神宮前6-19-20 第15荒井ビル 7F<br>
+                    営業時間：10:00 - 17:00<br>
+                    休業日：土日祝
+                </div>
+
+                <div class="sns">
+                    <!--<p>OFFICIAL SNS</p> -->
+                    <a href="https://www.instagram.com/foulaeyelashacademy/"><img src="../img/instagram.png" alt=""></a>
+                    <a href="https://twitter.com/academyfoula"><img src="../img/twitter.png" alt=""></a>
+                    <a href="https://www.facebook.com/FoulaEyelashAcademy"><img src="../img/facebook.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="cite-logo"><img src="https://cite-lashlift.com/assets/img/cite_logo.png" alt=""></div>
+
+    <div class="banner-wrapper">
+        <div class="main-visual">
+            <div class="main-visual__imgarea">
+                <img src="../img/le-kv-pc01.jpg" alt="">
+            </div>
+            <div class="main-visual__imgarea2">
+                <img src="../img/le-kv-pc02.jpg" alt="">
+            </div>
+            <div class="marquee-area">
+                <p>Lift extensions </p>
+                <p>Eyelash extensions </p>
+                <p>Lash extensions </p>
+                <p>Lash lift </p>
+                <p>Lift extensions </p>
+                <p>Eyelash extensions </p>
+                <p>Lash extensions </p>
+                <p>Lash lift </p>
+                <p>Lift extensions </p>
+                <p>Eyelash extensions </p>
+                <p>Lash extensions </p>
+                <p>Lash lift </p>
+            </div>
+            <div class="main-visual__div-text">
+                <span>新技術『リフエク』登場！</span>
+                <span>エクステ × パーマで</span>
+                <span>理想のカールを実現</span>
+            </div>
+            <div class="main-visual__title-text">
+                <h1>リフト<br>エクステ</h1>
+            </div>
+
+            <div class="main-visual__btn-ext">
+                <a href="">
+                    <p class="seminar-start">セミナー開始</p>
+                    <span>5月スタート</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-wrapper">
+        <div class="section-title-area">
+            <p>What is lift extension?</p>
+            <span>リフエクの何がすごいの？</span>
+        </div>
+        <div class="merit-section">
+            <ul>
+                <li>
+                    <img src="../img/test01.jpg" alt="">
+                    <p class="merit-section__index">デザインの幅が広がる</p>
+                    <p class="merit-section__text">エクステ＆パーマで自由自在のスタイルに<br>
+                    </p>
+                </li>
+                <li>
+                    <img src="../img/test02.jpg" alt="">
+                    <p class="merit-section__index">理想のカール感</p>
+                    <p class="merit-section__text">エクステだけでは出せないカール感を実現
+                    </p>
+                </li>
+                <li>
+                    <img src="../img/test03.jpg" alt="">
+                    <p class="merit-section__index">長さ＆ボリューム自由自在</p>
+                    <p class="merit-section__text">ラッシュリフトだけでは足りない長さやボリュームも調整可能
+                    </p>
+                </li>
+                <li>
+                    <img src="../img/test04.jpg" alt="">
+                    <p class="merit-section__index">他にはない“持ち”と“魅せ方”を。<br>独自商材で差がつく仕上がりに。</p>
+                    <p class="merit-section__text">選び抜いた商材だからこそ実現する、圧倒的な持続力とデザインの自由度</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section-title-area">
+            <p>The order does not matter</p>
+            <span>リフエクに順番は存在しない？</span>
+        </div>
+        <div class="whatis-section">
+            <p class="whatis-section__title ">「エクステ × パーマ、どちらを先にすべき？」</p>
+            <span>この選択ひとつで、仕上がり・持続力・施術時間 が大きく変わります。</span>
+            <dl>
+                <dd>・仕上がりのバラつきが気になる…</dd>
+                <dd>・パーマの後にエクステをつけると時間がかかる…</dd>
+                <dd>・お客様の希望通りのデザインにならないことがある…</dd>
+            </dl>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="solution">
+                <p>そんな悩みを解決するのが<br>リフトエクステの施術テクニック！</p>
+                <span>セミナーでは、まつ毛の状態・仕上がりの理想・施術時間を考慮した最適な施術方法を、<br>実際の装着を交えて解説します。</span>
+            </div>
+
+
+            <div class="whatis-section__slider">
+                <p>Before / After</p>
+                <div class="swiper be-af-Swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="../img/tec-01.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../img/tec-02.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../img/tec-03.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="whatis-section__beaf">
+            <div class="section-title-area">
+                <p>Product Description</p>
+                <span>商材説明</span>
+            </div>
+            <ul>
+                <li>
+                    <div class="item-detail">
+                        <p class="products-sub-name">Cite</p>
+                        <p class="products-name">Pro Sysytem</p>
+                        <p class="products-detail">プロシステム</p>
+                    </div>
+                    <div class="swiper item-Swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="../img/test01.png" alt="">
+                            </div>
+                        </div>
+                        <div class="item-detail">
+                            <p class="products-detail">施術スピードは薬剤選びが鍵！<br>
+                                軟化・酸化をわずか5分〜！<br>
+                                どんなまつ毛にも対応できる万能薬剤で、スピーディかつ綺麗なカールを実現します。
+                            </p>
+                        </div>
+                        <div class="item-link">
+                            <a href="https://www.foula-store.jp/c/lash-lift/lash-lift-set/8001027460">VIEW MORE</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-detail">
+                        <p class="products-sub-name">Foula</p>
+                        <p class="products-name">ETHYL PRO LED GLUE</p>
+                        <p class="products-detail">国産LEDグルー</p>
+                    </div>
+                    <div class="swiper item-Swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="../img/test02.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item-detail">
+                        <p class="products-detail">LEDグルーなら瞬時に硬化し、<br>パーマの薬剤の影響を受けません。</p>
+                    </div>
+                    <div class="item-link">
+                        <a href="https://www.foula-store.jp/c/glue/led/8001027650">VIEW MORE</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-detail">
+                        <p class="products-sub-name">Cite</p>
+                        <p class="products-name">FIXING BALM</p>
+                        <p class="products-detail">フィクシングバーム</p>
+                    </div>
+                    <div class="swiper item-Swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="../img/test03.png" alt="">
+                            </div>
+                           </div>
+
+                        <div class="item-detail">
+                            <p class="products-detail">施術スピードは薬剤選びが鍵！<br>
+                                エクステを付けた後でも施術しやすいバームを採用。過軟化も防ぎ、エクステ装着後でもきれいなパーマを実現します。</p>
+                        </div>
+                        <div class="item-link">
+                            <a href="https://www.foula-store.jp/c/lash-lift/lash-lift-glue/8001026792">VIEW MORE</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!--course-curriculum -->
+        <div class="course-curriculum-inner lift-exten">
+            <p class="section-title">CURRICULUM<span>コース内容</span></p>
+            <div class="course-curriculum-title">
+                <span>対面セミナー</span>Citeリフトエクステ
+                <br><span class="little-text"></span>
+            </div>
+
+            <div class="course-curriculum-info" style="justify-content: center;">
+                <div>
+                    <span>受講対象者</span>
+                    美容師免許提示
+                </div>
+
+            </div>
+            <div class="course-curriculum-info lift-exten">
+                <div>
+                    <span class="little-text">費用</span>
+                    <p class="course-curriculum-price">¥00,000</p>
+                </div>
+                <div>
+                    <span class="little-text">時間</span>
+                    10:00 ～ 17:00<span class="little-text">（授業時間6時間、休憩1時間）</span>
+                </div>
+            </div>
+            <div class="course-curriculum-title">
+                <span>対面セミナー</span>Citeリフトエクステ
+                <br><span class="little-text"></span>
+            </div>
+            <div class="course-curriculum-info" style="justify-content: center;">
+                <div>
+                    <span>受講対象者</span>
+                    美容師免許提示
+                </div>
+
+            </div>
+            <div class="course-curriculum-info lift-exten">
+                <div>
+                    <span class="little-text">費用</span>
+                    <p class="course-curriculum-price">¥00,000</p>
+                </div>
+                <div>
+                    <span class="little-text">時間</span>
+                    10:00 ～ 17:00<span class="little-text">（授業時間7時間、休憩1時間）</span>
+                </div>
+            </div>
+            <div class="course-curriculum-index">
+                <div class="course-curriculum-index-section">
+                    <div class="lectures">
+                        <div class="course-curriculum-index-title">
+                            座学 / 1時間30分
+                        </div>
+                        <ul>
+                            <li>・エクステパーマとは</li>
+                            <li>・パーマ用エクステとは</li>
+                            <li>・施術工程</li>
+                            <li>・カウンセリング</li>
+                        </ul>
+                    </div>
+                    <div class="practical">
+                        <div class="course-curriculum-index-title">
+                            実技・質疑応答 / 4時間
+                        </div>
+                        <ul>
+                            <li>・後リフト(11時半から13時)</li>
+                            <li>・休憩(1時間)</li>
+                            <li>・前リフト(14時から16時半まで)</li>
+                            <li>・質疑応答(16時半から17時まで)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!--
+        <div class="section-title-area">
+            <p>Special Offers</p>
+            <span>特典・限定オファー</span>
+        </div>
+        <ul class="offer-section">
+            <li>
+                <div class="offer-section__text">
+
+                    <p class="offer-section__sub-title">・FEAで過去、セミナー受講経験がある方限定</p>
+                    <p class="offer-section__title">受講料が◯◯円→◯◯円◯％OFF</p>
+                </div>
+            </li>
+            <li>
+                <div class="offer-section__text">
+                     <p class="offer-section__sub-title">・参加者限定特典</p>
+                    <p class="offer-section__title">大人気Cite Pro Systemを1セットプレゼント</p>
+                </div>
+            </li>
+            <li>
+                <div class="offer-section__text">
+                    <p class="offer-section__sub-title">・LEDエクステ未導入サロン様</p>
+                    <p class="offer-section__title">ライトをプレゼント</p>
+                </div>
+   
+            </li>
+        </ul>
+-->
+
+        <!--faq-section -->
+        <div class="section-title-area">
+            <p>FAQ</p>
+            <span>よくある質問</span>
+        </div>
+        <div class="faq-section">
+            <div class="faq-section-inner">
+                <div class="faq-section-index">
+                    <p class="question">Q.リフトエクステは初心者でもできますか？</p>
+                    <div class="answer">
+                        ラッシュリフトとエクステの施術が可能な方のみ受講いただけます。
+                        ※ 基本的な施術スキルが必要となりますので、未経験の方はまず各技術の習得をおすすめします。
+                    </div>
+                </div>
+
+                <div class="faq-section-index">
+                    <p class="question">Q.オンラインセミナーと対面セミナーの違いは？</p>
+                    <div class="answer">
+                        オンラインセミナーも対面セミナーでも、座学から実技まで学べます。
+                        対面セミナーは実際に技術を見ながら学べ、質疑応答も行っているのでより深く理解できます。
+                    </div>
+                </div>
+
+                <div class="faq-section-index">
+                    <p class="question">Q.セミナーはどのような内容ですか？</p>
+                    <div class="answer">
+                        リフトエクステの基本から、施術の最適な手順、商材の使い方、実際のデモンストレーションまで学べる実践的な内容です。
+                    </div>
+                </div>
+                <div class="faq-section-index">
+                    <p class="question">Q.LEDライトを持っていないのですが、導入は可能ですか？</p>
+                    <div class="answer">
+                        LEDエクステ未導入のサロン様には、特典としてLEDライトをプレゼントしますので、すぐに導入できます。
+                    </div>
+                </div>
+                <div class="faq-section-index">
+                    <p class="question">Q.すでに別のグルーを使ってエクステを付けてからのパーマ施術をおこなっています。<br>　LEDグルーに変更する必要がありますか？</p>
+                    <div class="answer">
+                        リフトエクステの効果を最大限発揮するために、LEDグルーの使用を推奨しています。通常のグルーでは、施術のスピードや持続性に違いが出る場合があります。
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <!--footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="company">
+                <a href=""><img src="https://www.foula-academy.com/images/new_kotlogo_w.svg" alt=""
+                        class="footer-logo"></a>
+                株式会社ケイトオブ東京<br>
+                〒150-0001<br>
+                東京都渋谷区神宮前6-19-20<br>
+                第15荒井ビル 7F
+            </div>
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="#CONCEPT">Foula Esthetics Academyの特徴</a></li>
+                    <li><a href="#SEMINAR">セミナーリスト</a></li>
+                    <li><a href="#INSTRUCTOR">講師プロフィール</a></li>
+                    <li><a href="#SCHEDULE">セミナースケジュール</a></li>
+                    <li><a href="#ACCESS">会場アクセス</a></li>
+                    <li><a href="#FORM">申し込みフォーム</a></li>
+                    <li><a href="#FAQ">FAQ</a></li>
+                </ul>
+                <div class="footer-sns">
+                    <!-- <p>OFFICIAL SNS</p> -->
+                    <a href="https://www.instagram.com/foulaeyelashacademy/"><img src="../img/instagram.png" alt=""></a>
+                    <a href="https://twitter.com/academyfoula"><img src="../img/twitter.png" alt=""></a>
+                    <a href="https://www.facebook.com/FoulaEyelashAcademy"><img src="../img/facebook.png" alt=""></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="copyright">
+            &copy; 2021 Kate of Tokyo. All Rights Reserved.
+        </div>
+        </div>
+
+
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".kvSwiper", {
+                spaceBetween: 30,
+                effect: "fade",
+                autoplay: {
+                    delay: 1000,
+                },
+                speed: 3000,
+            });
+        </script>
+
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".be-af-Swiper", {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+                breakpoints: {
+                    498: {
+                        slidesPerView: 2,
+                    }
+                }
+            });
+        </script>
+
+
+
+        <!-- Initialize Swiper -->
+        <script>
+
+            var swiper = new Swiper(".item-Swiper", {
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+            });
+
+
+        </script>
+
+        <script>
+            const faqIndex = document.querySelectorAll('.faq-section-index');
+            const questions = document.querySelectorAll('.question');
+            const answers = document.querySelectorAll('.answer');
+
+            questions.forEach((index) => {
+                index.addEventListener('click', () => {
+                    index.nextElementSibling.classList.toggle("show")
+                })
+            })
+        </script>
+
+</body>
+
+</html>
