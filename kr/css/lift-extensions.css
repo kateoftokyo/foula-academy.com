@@ -1,6 +1,9 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css'); */
+
 @font-face {
     font-family: "nanum-square"; 
-    src: url("../font/NanumSquare_acB.ttf") format("truetype"); 
+    src: url("../font/NanumSquare_acB.ttf") format("truetype"); /*fontがあるパスを書いて、formatを指定*/
     font-display: swap; 
   }
 
@@ -832,13 +835,13 @@ faq-section
     padding: 0;
     height: 65px;
     justify-content: center;
-    background-color: #ffffff07;
+    /* background-color: #ffffff11; */
 }
 .logo {
     width: initial;
 }
 .logo img {
-    max-width: 175px;
+   filter: none;
 }
 .course-curriculum-title span {
     padding: 10px 10px 10px;
@@ -846,7 +849,9 @@ faq-section
 
 .course-curriculum-price {
     margin-top: 15px;
+    line-height: 130%;
 }
+
 .course-curriculum-inner {
     margin: 75px auto 0px;
     background: #f5f5f5;
@@ -855,6 +860,10 @@ faq-section
     padding-top: 35px;
     color: #818181;
 }
+.copyright img{
+    width: 100%;
+    max-width: 275px;
+}
 .faq-section-inner {
     max-width: 1280px;
 }
@@ -862,4 +871,10 @@ faq-section
     .header {
         display: flex;
     }
+}
+
+@media screen and (max-width: 398px){
+.logo img {
+    max-width: 185px;
+ }
 }
