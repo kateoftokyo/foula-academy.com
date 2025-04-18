@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
 
-body {}
+body {
+
+}
 
 .page-top {
     display: none !important;
@@ -28,6 +30,7 @@ body {}
     position: relative;
     color: #f8f7f3;
     background:#292929;
+    font-family: "Shippori Mincho", sans-serif !important;
 }
 
 .banner-wrapper::after {
@@ -45,7 +48,7 @@ body {}
     /*  width:calc(100% - 10%); */
     height: 100vh;
     margin: auto;
-    font-family: "Shippori Mincho", sans-serif;
+    font-family: "Shippori Mincho", sans-serif !important;
     color: #f8f7f3;
 }
 
@@ -85,10 +88,7 @@ body {}
     top: 60%;
     transform: translateY(-50%);
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow-x: hidden;
+    overflow: hidden;
     color: transparent;
     -webkit-text-stroke: 2px #f8f7f3;
     text-stroke: 1px #f8f7f3;
@@ -96,17 +96,22 @@ body {}
     font-family: "Shippori Mincho", sans-serif;
 }
 
-.marquee-area p {
+.marquee-inner {
+    display: flex;
+    width: max-content;
+    animation: marquee 200s linear infinite;
+}
+
+.marquee-item {
     font-size: 21rem;
     white-space: nowrap;
-    animation: marquee 120s linear infinite;
     opacity: 0.4;
     margin-right: 10px;
     text-transform: uppercase;
 }
-.marquee-area p span{
-    color:#f8f7f3;
-   /*  -webkit-text-stroke: 2px #333; */
+
+.marquee-item span {
+    color: #f8f7f3;
 }
 @keyframes marquee {
     0% {
