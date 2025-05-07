@@ -99,7 +99,7 @@ body {
 .marquee-inner {
     display: flex;
     width: max-content;
-    animation: marquee 200s linear infinite;
+    animation: marquee 500s linear infinite;
 }
 
 .marquee-item {
@@ -115,11 +115,11 @@ body {
 }
 @keyframes marquee {
     0% {
-        transform: translateX(0%);
+        transform: translateX(-50%);
     }
 
     100% {
-        transform: translateX(100%);
+        transform: translateX(50%);
     }
 }
 .main-visual__div-text {
@@ -278,7 +278,7 @@ body {
     .marquee-area p {
         font-size: 15rem;
         white-space: nowrap;
-        animation: marquee 30s linear infinite;
+        animation: marquee 500s linear infinite;
         opacity: 0.4;
         margin-right: 10px;
         text-transform: uppercase;
