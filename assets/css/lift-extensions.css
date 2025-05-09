@@ -798,6 +798,7 @@ whatis-section
 }
 .lift-exten .kit-area-inner{
     justify-content: space-between;
+    padding: 25px 10px;
 }
 .lift-exten .kit-area-inner div{
     width: 35%;
