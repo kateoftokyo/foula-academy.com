@@ -719,6 +719,11 @@ whatis-section
         border-right: 1px solid #000;
         margin-bottom: 7px;
     }
+    .course-curriculum-inner.lift-exten {
+        padding-top: 35px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
 }
 @media screen and (max-width: 498px) {
     .whatis-section{
@@ -789,6 +794,36 @@ whatis-section
 .lift-exten .kit-area-inner img{
     width: 100%;
     border: 1px solid #000 !important;
+}
+
+@media screen and (max-width: 768px) {
+    .lift-exten .kit-area-text {
+        width: 100%;
+    }
+    .lift-exten .kit-area-inner div {
+        width: 100%;
+       padding: 15px;
+    }
+}
+@media screen and (max-width: 498px) {
+.lift-exten .kit-area-inner img {
+    max-width: 275px;
+}
+.lift-exten .kit-area-inner p {
+
+}
+}
+
+.course-curriculum-title.ex-lift{
+    padding: 20px 35px;
+}
+.course-curriculum-title.ex-lift span{
+    padding: 5px 15px 5px;
+}
+.course-curriculum-index {
+    border-bottom: 1px solid #333;
+    padding-bottom: 55px;
+    margin-bottom: 100px;
 }
 
 /***************************************************************
@@ -881,8 +916,14 @@ offer-section
 }
 
 @media screen and (max-width: 768px) {
+    .course-curriculum-index {
+        margin-bottom: 30px;
+    }
     .offer-section__sub-title {
         width: initial;
+    }
+    .course-curriculum-title.ex-lift {
+        padding: 0px;
     }
 }
 @media screen and (max-width: 498px) {
@@ -1000,7 +1041,7 @@ faq-section
     font-size: 24px;
     color: #fff !important;
     width: 300px;
-    margin:75px auto 50px;
+    margin:75px auto 0px;
     text-align: center;
     background: #171242;
     right: 15px;
@@ -1011,3 +1052,7 @@ faq-section
 .course-flow {
     background-color: #fff !important;
 }
+@media screen and (max-width: 798px) {
+.seminer-link {
+    margin: 25px auto 0px;
+}}
