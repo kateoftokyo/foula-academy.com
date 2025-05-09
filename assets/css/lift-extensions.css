@@ -710,7 +710,9 @@ whatis-section
     bottom: -10px;
 }
 
+
 @media screen and (max-width: 768px) {
+    
     .be-af-Swiper.pc-show{
         display: none;
     }
@@ -731,6 +733,25 @@ whatis-section
         padding-top: 35px;
         padding-right: 15px;
         padding-left: 15px;
+    }
+    .finished-image-swiper .swiper.ex-Swiper .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+        content: 'next';
+        background: #ffffff8a;
+        padding: 15px;
+    }
+    .finished-image-swiper  .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+        content: 'prev';
+        background: #ffffff8a;
+        padding: 15px;
+    }
+    :root .finished-image-swiper {
+        --swiper-navigation-size: 14px;
+    }
+    .finished-image-swiper .swiper.ex-Swiper {
+        padding-bottom: 50px;
+    }
+    .finished-image-swiper .swiper.ex-Swiper .swiper-pagination {
+        bottom: 15px;
     }
 }
 @media screen and (max-width: 498px) {
