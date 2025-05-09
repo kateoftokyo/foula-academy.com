@@ -578,7 +578,9 @@ whatis-section
     margin: auto;
     padding: 35px 15px 50px;
 }
-
+.whatis-section__slider .sp-show{
+    display: none;
+}
 .whatis-section__slider p {
     font-size: 21px;
 }
@@ -709,6 +711,12 @@ whatis-section
 }
 
 @media screen and (max-width: 768px) {
+    .be-af-Swiper.pc-show{
+        display: none;
+    }
+    .whatis-section__slider .sp-show{
+        display: block;
+    }
     .whatis-section__beaf {
         background: #f5f5f5;
         padding: 30px 15px 35px;
