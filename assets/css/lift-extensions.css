@@ -796,6 +796,12 @@ whatis-section
     margin-bottom: 20px;
     font-size: 18px;
 }
+.lift-exten .kit-area-text li a{
+    color: #333;
+}
+.lift-exten .kit-area-text li a:hover{
+    text-decoration: underline;
+}
 .lift-exten .kit-area-inner{
     justify-content: space-between;
     padding: 25px 10px;
