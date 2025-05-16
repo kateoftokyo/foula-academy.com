@@ -1,7 +1,7 @@
 title: Foula Esthetics Academy
 description: "Foula Beauty公式サイト"
 url: "https://www.foula-academy.com"
-baseurl: ""
+baseurl: "/foula-academy.com"
 theme: null
 exclude:
   - README.md
