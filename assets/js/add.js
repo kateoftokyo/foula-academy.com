@@ -111,12 +111,11 @@ document.addEventListener("DOMContentLoaded", () => {
 		img.addEventListener("click", () => {
 			const person = img.closest(".person");
 			if (!person || !popup || !popupImg || !popupName || !popupRegion || !popupDescription) return;
-
 			popup.style.display = "flex";
 			popupImg.src = img.src;
 			popupName.innerHTML = `${person.querySelector(".name-en")?.textContent || ""} <br>${person.querySelector(".name-ja")?.textContent || ""}`;
 			popupRegion.textContent = person.querySelector(".region")?.textContent || "";
-			popupDescription.textContent = "ここに自己紹介の内容を追加";
+			popupDescription.textContent = person.querySelector(".per-description")?.textContent || "";
 		});
 	});
 
@@ -135,10 +134,24 @@ document.addEventListener("DOMContentLoaded", () => {
 			q.nextElementSibling?.classList.toggle("show");
 		});
 	});
-
-	document.querySelectorAll(".faq-section-index").forEach((btn) => {
-		btn.addEventListener("click", () => {
-			btn.classList.toggle("open");
+	document.querySelectorAll('.faq-section-index').forEach((item) => {
+		const answer = item.querySelector('.answer');
+	  
+		item.addEventListener('click', () => {
+		  const isOpen = item.classList.contains('open');
+	  
+		  // すべて閉じる
+		  document.querySelectorAll('.faq-section-index').forEach((el) => {
+			el.classList.remove('open');
+			el.querySelector('.answer').style.maxHeight = null;
+		  });
+	  
+		  // 開いていなかったら開く
+		  if (!isOpen) {
+			item.classList.add('open');
+			answer.style.maxHeight = answer.scrollHeight + 'px';
+		  }
 		});
-	});
+	  });
+	  
 });
