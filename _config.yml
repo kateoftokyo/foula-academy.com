@@ -1,3 +1,7 @@
 title: Foula Esthetics Academy
-
-
+description: "Foula Beauty公式サイト"
+baseurl: ""
+theme: null
+exclude:
+  - README.md
+  - node_modules
