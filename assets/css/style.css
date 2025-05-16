@@ -506,13 +506,18 @@ key-visual キービジュアル
     margin: 50px auto 20px;
 }
 
+.section-title span{
+        font-size: 14px;
+        display: block;
+}
+
 .section-title::after {
     position: absolute;
     content: "";
     background-color: #352B24;
     width: 100px;
     height: 1px;
-    bottom: -5px;
+    bottom: -20px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -788,7 +793,7 @@ seminar-section セミナーリスト
 .seminar-list {
     width: 100%;
     max-width: 1000px;
-    margin: 55px auto 35px;
+    margin: 85px auto 35px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1145,20 +1150,27 @@ instructor-section
 .popup-content {
     display: flex;
     justify-content: center;
+    gap: 1%;
     align-items: center;
-    flex-direction: column;
+  /*   flex-direction: column; */
     background: white;
-    padding: 20px 0 25px;
+    padding: 20px 25px 25px;
     border-radius: 10px;
     text-align: center;
-    width: 50%;
+    width:100%;
+    max-width: 1000px;
     position: relative;
 }
-
+.popup-content div{
+    width: 48%;
+/*     padding-left: 10px;
+    padding-right: 10px; */
+}
 .popup-content img {
     width: 100%;
-    max-width: 350px;
-    max-height: 350px;
+    margin: auto;
+    max-width: 300px;
+    max-height: 300px;
     display: block;
     margin-top: 25px;
     margin-bottom: 15px;
@@ -1181,9 +1193,11 @@ instructor-section
 }
 
 #per-region {
-    margin-top: 25px;
+    display: block;
+    margin: 15px auto;
     padding: 3px 25px;
     border: 1px solid #333;
+    width: 125px;
 }
 
 .per-description {
@@ -1191,18 +1205,33 @@ instructor-section
 }
 
 #per-description {
-    width: 85%;
-    max-width: 575px;
-    word-break: break-all;
-    margin-top: 20px;
+    word-break: break-word;
+    line-height: 200%;
     text-align: start;
+    font-size: 14px;
+}
+#per-biography{
+    position: relative;
+        font-weight: bold;
+        font-size: 21px;
+        margin-bottom: 15px;
+        text-align: justify;
+}
+#per-biography::after{
+    position: absolute;
+    content: "";
+    background-color: #000;
+    width:50px;
+    height: 1px;
+    left: 0;
+    bottom: -5px;
 }
 
 .close {
     position: absolute;
     top: 10px;
     right: 20px;
-    font-size: 30px;
+    font-size: 34px;
     cursor: pointer;
 }
 
@@ -1217,11 +1246,17 @@ instructor-section
         width: 35px !important;
         height: 5px !important;
     }
-
     .popup-content {
         width: 90%;
+        max-height: 500px;
+        overflow: scroll;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: relative;
     }
-
+    .popup-content div{
+        width: 100%;
+    }
     .popup-content img {
         max-width: 175px;
         max-height: 175px;
@@ -1229,6 +1264,22 @@ instructor-section
 
     #per-region {
         margin-top: 15px;
+    }
+    .close {
+        position: fixed;
+        top: initial;
+        right: 45px;
+    }
+    #per-biography {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+        margin-top: 15px;
+    }
+    #per-biography::after {
+        left: 50%;
+        width: 30px;
+        transform: translateX(-50%);
     }
 }
 
@@ -1249,7 +1300,7 @@ schedule-section
 
 .schedule-list {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1280px;
     margin: 55px auto 75px;
     display: flex;
     justify-content: center;
@@ -1257,13 +1308,13 @@ schedule-section
 }
 
 .schedule-list li {
-    border-right: 1px solid #333;
+ /*    border-right: 1px solid #333; */
     width: 33%;
     padding: 5px;
 }
 
 .schedule-list li:first-child {
-    border-left: 1px solid #333;
+   /*  border-left: 1px solid #333; */
 }
 
 .schedule-list .btn {
@@ -1478,6 +1529,10 @@ schedule-section
 }
 
 @media screen and (max-width: 798px) {
+    .section-index-title {
+        text-align: center;
+        font-size: 34px;
+    }
     .card {
         padding: 15px;
         background: #efefef;
@@ -1546,12 +1601,10 @@ schedule-section
         font-size: 21px !important;
         line-height: 175%;
     }
-
     .schedule_box .seminar-chi {
-        padding: 15px 10px !important;
-        font-size: 16px !important;
+        padding: 15px 10px 3px !important;
+        font-size: 21px !important;
         line-height: 155%;
-
     }
 
     .time-chi {
@@ -1561,6 +1614,8 @@ schedule-section
 
     .area {
         margin: 15px auto 0;
+        font-size: 16px;
+        padding: 0px 15px;
     }
 
     .schedule_box table tr .kit {
@@ -1581,6 +1636,12 @@ schedule-section
     .schedule_box table tr .price-chi {
         width: 100%;
         padding: 0 !important;
+    }
+
+    .schedule_box table tr .price-chi p {
+        margin-bottom: 10px;
+        font-size: 28px;
+        letter-spacing: 0px;
     }
 
     .schedule_box .flex-link {
@@ -1650,7 +1711,7 @@ course-flow
     color: #fff;
     border: 1px solid #352B24;
     letter-spacing: -0.05rem;
-    padding: 3px 15px;
+    padding: 5px 20px;
     border-radius: 15px;
 }
 
@@ -1796,87 +1857,59 @@ faq-section
 **************************************************************************/
 .faq-section {
     padding-top: 50px;
-
-}
-
-.faq-section-inner {
-    width: 100%;
+  }
+  
+  .faq-section-inner {
     max-width: 1000px;
     margin: auto;
     padding-top: 35px;
-}
-
-.faq-section-index {
-    position: relative;
-    /* background: #f5f5f5; */
+  }
+  
+  .faq-section-index {
     border: 1px solid #333;
     padding: 30px 30px 30px;
     margin-bottom: 20px;
     padding-right: 55px;
     cursor: pointer;
+    position: relative;
     font-size: 16px;
-    display: flex;
-    flex-direction: column;
     line-height: 175%;
-}
-
-.faq-section-index .answer {
-    padding-top: 15px;
-    padding-left: 5px;
-    display: none;
-}
-
-.faq-section-index.open .answer {
-    display: block;
-}
-
-.question.open .answer {
-    display: block;
-}
-
-
-.faq-list-q {
-    font-family: "Montserrat";
-    color: #4b4b4b;
-    font-size: 18px;
-    margin-right: 5px;
-}
-
-.faq-section-index::after {
-    position: absolute;
-    z-index: 999;
-    content: "";
-    right: 25px;
-    width: 15px;
-    /*     top: 50%;
-    transform: translateY(-50%); */
-    height: 15px;
-    background: #4b4b4b;
-    -webkit-clip-path: polygon(0 calc(50% - 1px), calc(50% - 1px) calc(50% - 1px), calc(50% - 1px) 0%, calc(50% + 1px) 0%, calc(50% + 1px) calc(50% - 1px), 100% calc(50% - 1px), 100% calc(50% + 1px), calc(50% + 1px) calc(50% + 1px), calc(50% + 1px) 100%, calc(50% - 1px) 100%, calc(50% - 1px) calc(50% + 1px), 0 calc(50% + 1px));
-    clip-path: polygon(0 calc(50% - 1px), calc(50% - 1px) calc(50% - 1px), calc(50% - 1px) 0%, calc(50% + 1px) 0%, calc(50% + 1px) calc(50% - 1px), 100% calc(50% - 1px), 100% calc(50% + 1px), calc(50% + 1px) calc(50% + 1px), calc(50% + 1px) 100%, calc(50% - 1px) 100%, calc(50% - 1px) calc(50% + 1px), 0 calc(50% + 1px));
-}
-
-.faq-section-index.show::after {
-    right: 25px; /* 右に移動 */
-    clip-path: polygon(0 calc(50% - 1px), calc(50% - 1px) calc(50% - 1px), calc(50% - 1px) 0%, calc(50% + 1px) 0%, calc(50% + 1px) calc(50% - 1px), 100% calc(50% - 1px), 100% calc(50% + 1px), calc(50% + 1px) calc(50% + 1px), calc(50% + 1px) 100%, calc(50% - 1px) 100%, calc(50% - 1px) calc(50% + 1px), 0 calc(50% + 1px)); /* 必要に応じて形を変更する */
+    transition: background 0.3s ease;
   }
-
-.faq-section-index .answer.show {
-    display: block;
-}
-.faq-section-index .answer.show .faq-section-index::after {
-    display: block;
-}
-@media screen and (max-width: 798px) {
-    .faq-section {
-    }
-
+  
+  .faq-section-index .answer {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease;
+    padding-left: 5px;
+  }
+  
+  .faq-section-index::after {
+    content: '+';
+    position: absolute;
+    right: 25px;
+    top: 30px;
+    font-size: 24px;
+    color: #4b4b4b;
+    transition: transform 0.3s ease, content 0.3s ease;
+    transform-origin: center;
+    display: inline-block;
+    transform: rotate(0deg) scale(1);
+  }
+  
+  .faq-section-index.open::after {
+    content: '−';
+    transform: rotate(180deg) scale(1.2);
+  }
+  .faq-section-index.open .answer{
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+  @media screen and (max-width: 798px) {
     .faq-section-inner {
-        padding: 0 15px;
+      padding: 0 15px;
     }
-
-}
-
+  }
 /**************************************************************************
 
 magagine-section
