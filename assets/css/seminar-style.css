@@ -1249,7 +1249,9 @@ CROWN LASH LIFT 束巻きパーマ実践コース
         background-color: initial;
         color: initial;
     }
-
+.course-curriculum.cll-curriculum .course-curriculum-inner .lectures {
+    padding: 0px;
+}
     .course-curriculum.cll-curriculum .course-curriculum-inner .lectures ul {
         padding-left: 0px;
         padding-right: 0px;
