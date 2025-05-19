@@ -201,7 +201,7 @@
 .course-recommended::after {
     position: absolute;
     display: inline-block;
-    content: url('../img/circle_logo.png');
+     content: url(../img/circle_logo.png);
     top: -20%;
     left: -10%;
     filter: opacity(0.2);
