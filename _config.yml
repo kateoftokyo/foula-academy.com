@@ -6,3 +6,5 @@ theme: null
 exclude:
   - README.md
   - node_modules
+include:
+  - assets
