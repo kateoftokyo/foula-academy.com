@@ -5,20 +5,21 @@
     text-align: center;
     font-size: 32px;
     margin: 50px auto 20px;
-}
+    padding-bottom: 10px;
+  }
 
 .section-title span {
     display: block;
     font-size: 16px;
-    padding-top: 5px;
-    padding-bottom: 10px;
+    /* padding-top: 5px; */
+    /* padding-bottom: 10px; */
 }
 
 .section-title::after {
     position: absolute;
     content: "";
     background-color: #000;
-    width: 100px;
+    width:35px;
     height: 1px;
     bottom: -5px;
     left: 50%;
@@ -201,12 +202,14 @@
 .course-recommended::after {
     position: absolute;
     display: inline-block;
-     content: url(../img/circle_logo.png);
+    content: url(/img/circle_logo.png);
     top: -20%;
     left: -10%;
     filter: opacity(0.2);
+    z-index: 999;
     animation: rotation 35s linear infinite;
 }
+
 
 @keyframes rotation {
     0% {
