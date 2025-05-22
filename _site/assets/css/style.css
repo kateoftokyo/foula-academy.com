@@ -2017,7 +2017,6 @@ justify-content: center;
 }
 
 
-background: linear-gradient(132deg, #C1903F 0%, #C99D58 45%, #EBB561 70%, #ca9d55 85%, #B78D4A 90% 100%);
 
 .others-section ul li img {
 width: 100%;
@@ -2092,7 +2091,18 @@ color: #fff;
 line-height: 1.7;
 color: #fff;
 }
-
+.company img{
+   width: 100%;
+  max-width: 175px;
+}
+.footer-logo{
+  width: 100%;
+  max-width: 175px;
+}
+.footer-nav {
+    padding-top: 15px;
+    width: 70%;
+}
 .footer-nav-inner {
     padding-top: 5px;
     display: flex;
