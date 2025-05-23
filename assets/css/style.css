@@ -385,7 +385,7 @@ header ヘッダー
     padding-top: 95px;
     padding-left: 5%;
     padding-right: 5%;
-    padding-bottom: 5%;
+    padding-bottom: 25%;
     height: 100vh;
     overflow: auto;
   }
