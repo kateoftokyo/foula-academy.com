@@ -1478,6 +1478,32 @@ schedule-section
     }
 }
 
+
+
+/**************************************************************************
+
+contact-section
+
+**************************************************************************/
+.contact-section {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top: 1px solid #c4c4c4;
+    /*   background-color: #fff; */
+}
+.contact-section-inner{
+     width: 100%;
+    max-width: 1280px;
+    padding: 0 15px;
+    margin: 55px auto 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
 /**************************************************************************
 
 course-flow

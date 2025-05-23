@@ -110,9 +110,9 @@
     position: relative;
     width: 250px;
     height: 250px;
+    display: none;
     margin-bottom: 20px;
 }
-
 .course-benefits-index-img img {
     position: absolute;
     object-fit: cover;
