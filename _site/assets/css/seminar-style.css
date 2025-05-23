@@ -6,7 +6,7 @@
     font-size: 32px;
     margin: 50px auto 20px;
     padding-bottom: 10px;
-  }
+}
 
 .section-title span {
     display: block;
@@ -19,7 +19,7 @@
     position: absolute;
     content: "";
     background-color: #000;
-    width:35px;
+    width: 35px;
     height: 1px;
     bottom: -5px;
     left: 50%;
@@ -118,6 +118,7 @@
     width: 250px;
     height: 250px;
     margin-bottom: 20px;
+    display: none;
 }
 
 .course-benefits-index-img img {
@@ -129,17 +130,19 @@
     left: 0;
     border-radius: 50%;
 }
-.course-benefits-index-text{
+
+.course-benefits-index-text {
     position: relative;
     /* width: 65%; */
     text-align: center;
 }
+
 .course-benefits-index-text:before {
     position: absolute;
     left: 50%;
     top: 0;
     z-index: 1;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     content: attr(data-num);
     font-family: "Waterfall", cursive;
     color: #dddddd;
@@ -163,7 +166,7 @@
     line-height: 180%;
     padding: 0px 10px 0px;
     font-size: 16px;
-        text-align: center;
+    text-align: center;
 }
 
 @media screen and (max-width: 798px) {
@@ -180,6 +183,19 @@
         padding: 0px;
         width: 100%;
         margin-bottom: 35px;
+    }
+
+    .course-benefits-index-text {
+        margin-bottom: 25px;
+    }
+
+    .course-benefits-index-text:before {
+        font-size: 5rem;
+        filter: blur(1px);
+    }
+
+    .course-benefits-index .benefits-title {
+        font-size: 18px;
     }
 
     .course-benefits-index p {
@@ -224,7 +240,7 @@
 
 .course-recommended-inner {
     width: 100%;
-    max-width:max-content;
+    max-width: max-content;
     margin: 55px auto 0px;
     line-height: 330%;
 }
@@ -248,6 +264,7 @@
 @media screen and (max-width: 798px) {
     .course-recommended {
         padding-top: 20px;
+        padding-left: 15px;
     }
 
     .course-recommended-inner {
@@ -321,12 +338,14 @@
     background-color: #000;
     color: #fff;
 }
-.course-curriculum-title .school{
+
+.course-curriculum-title .school {
     padding: 5px;
     background-color: #8f7e5c;
     color: #Fff;
     font-size: 21px;
 }
+
 .course-curriculum-title span.little-text {
     font-size: 16px;
     padding: 0px;
@@ -403,7 +422,8 @@ span.adv {
     right: -30px;
 }
 
-.lectures.co800::after, .lectures.day3::after{
+.lectures.co800::after,
+.lectures.day3::after {
     display: none;
 }
 
@@ -538,6 +558,23 @@ span.adv {
 
 .bring-today-area-text li {
     display: inline-block;
+}
+
+.application-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 398px;
+    margin: 15px auto;
+    text-align: center;
+    background-color: #068cb4;
+    border-radius: 15px;
+    font-size: 21px;
+    color: #fff;
+    height: 75px;
+    margin-bottom: 55px;
+    border-radius: 50px;
 }
 
 @media screen and (max-width: 798px) {
@@ -1185,11 +1222,13 @@ CROWN LASH LIFT 束巻きパーマ実践コース
     font-family: "Noto Sans JP", sans-serif;
     font-weight: initial;
 }
-.cll-lecturer-detail__row-sec a{
-  font-size: 14px;
-  color: #003cff;
-  padding-left: 3px;
+
+.cll-lecturer-detail__row-sec a {
+    font-size: 14px;
+    color: #003cff;
+    padding-left: 3px;
 }
+
 .cll-lecturer-detail__insta {
     margin-top: 25px;
 }
@@ -1253,9 +1292,11 @@ CROWN LASH LIFT 束巻きパーマ実践コース
         background-color: initial;
         color: initial;
     }
-.course-curriculum.cll-curriculum .course-curriculum-inner .lectures {
-    padding: 0px;
-}
+
+    .course-curriculum.cll-curriculum .course-curriculum-inner .lectures {
+        padding: 0px;
+    }
+
     .course-curriculum.cll-curriculum .course-curriculum-inner .lectures ul {
         padding-left: 0px;
         padding-right: 0px;
@@ -1268,7 +1309,7 @@ CROWN LASH LIFT 束巻きパーマ実践コース
     .cll-lecturer-intro {
         flex-direction: column;
         align-items: center;
-                padding: 35px 0;
+        padding: 35px 0;
     }
 
     .cll-faq-img {
@@ -1371,7 +1412,8 @@ CROWN LASH LIFT 束巻きパーマ実践コース
         padding-left: 5px;
         padding-right: 5px;
     }
-    .cll-lecturer-detail__insta{
+
+    .cll-lecturer-detail__insta {
         display: none;
     }
 }

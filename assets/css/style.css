@@ -578,11 +578,11 @@ key-visual キービジュアル
 
 @media screen and (max-width: 798px) {
   .key-visual {
-    height: 95vh;
+    height: 85vh;
   }
 
   .key-visual img {
-    height: 95vh
+    height: 85vh
   }
 
   .key-visual.sem901-3 img {
@@ -776,7 +776,9 @@ consept-section コンセプト
     padding-left: 15px;
     padding-right: 15px;
   }
-
+.consept-section-inner {
+    margin-bottom: 35px;
+}
   .consept-section h1 {
     font-size: 2em;
   }
@@ -793,9 +795,11 @@ consept-section コンセプト
 }
 
 @media screen and (max-width: 498px) {
-  .consept-section h1 {
+.consept-section h1 {
     font-size: 1.7em;
-  }
+    line-height: 160%;
+    text-align: center;
+}
 }
 
 /**************************************************************************
@@ -1044,20 +1048,30 @@ display: none;
 }
 
 @media screen and (max-width: 498px) {
+  .seminar-section {
+    padding-top: 0px;
+}
+
   .seminar-index_title {
     padding-top: 0px;
+    margin-bottom: 0;
   }
 
-  .seminar-list {
-    flex-direction: column;
+.seminar-list {
     padding: 0 15px;
-  }
-
+    margin-top: 35px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 10px;
+}
   .seminar-list li {
     border: none;
-    width: 85%;
+    width: 48%;
   }
-
+  .seminar-list li:last-child{
+    width: 75%;
+  }
   .seminar-list li:first-child {
     border-left: none;
   }
@@ -1068,24 +1082,43 @@ display: none;
     margin-bottom: 25px;
   }
 
-  .seminar-index ul {
+.seminar-index ul {
     flex-direction: column;
-  }
+    margin-bottom: 0;
+    padding: 0;
+    margin-top: 0;
+}
 
   .seminar-contents {
     width: 100%;
     min-height: initial;
     border: 1px solid #cbcbcb;
     margin-bottom: 10px;
+    border: 0;
+    padding: 15px 0;
   }
 
-  .seminar-contents-detail .text {
-    font-size: 18px;
-    background: linear-gradient(132deg, #C1903F 0%, #C99D58 45%, #EBB561 70%, #ca9d55 85%, #B78D4A 90% 100%);
-    border: 1px solid #C1903F;
-    color: #fff;
-  }
+.seminar-contents-detail .text {
+    font-size: 16px;
+    display: block;
+    text-align: start;
+    padding: 5px 0 5px 7px;
+    border: 0;
+    border-left: 5px #0271a5 solid;
+    height: 100%;
+    background: #fff;
+    color: #333;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-family: 'Shippori Mincho';
+    font-weight: inherit;
+    /* margin-bottom: 8px; */
+}
 
+.seminar-contents-detail .num {
+    display: none;
+}
   .seminar-contents-detail br {
     display: block;
   }
@@ -1095,8 +1128,11 @@ display: none;
     font-size: 16px;
     line-height: 175%;
     margin-bottom: 15px;
+    padding-left: 0;
   }
-
+  .seminar-contents-detail .comment br{
+    display: none;
+  }
   .seminar-contents-detail .price p {
     /* font-size: 21px; */
   }
@@ -1109,6 +1145,7 @@ display: none;
     display: none;
   }
 }
+
 
 /**************************************************************************
 
@@ -1265,8 +1302,11 @@ padding-right: 10px; */
 
 @media screen and (max-width: 798px) {
   .instructor-section {
-    padding: 50px 15px 0;
+    padding: 0px 15px 0;
   }
+  .instructorSwiper {
+    margin: 25px auto;
+}
 
   .swiper-pagination-bullet {
     width: 35px !important;
@@ -1315,8 +1355,11 @@ padding-right: 10px; */
   }
 
   .name-en {
-    font-size: 24px;
+    font-size: 18px;
   }
+  .region {
+   margin-bottom: 25px;
+}
 }
 
 
@@ -1565,6 +1608,9 @@ schedule-section
 }
 
 @media screen and (max-width: 798px) {
+  .schedule-section {
+    padding-top: 0px;
+}
   .section-index-title {
     text-align: center;
     font-size: 34px;
@@ -1583,22 +1629,24 @@ schedule-section
     padding-bottom: 15px;
   }
 
-
-  .schedule-list {
-    flex-direction: column;
-  }
-
-  .schedule-list li {
-    width: 85%;
-    border: none;
-    border-left: 1px solid #333;
-    border-right: 1px solid #333;
+.schedule-list {
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    justify-content: space-around;
     margin-bottom: 15px;
-    padding: 5px 10px;
-  }
+}
 
+.schedule-list li {
+    width: 47%;
+    border: 1px solid #333;
+    margin-bottom: 15px;
+    padding: 0px;
+}
+.schedule-list .btn span {
+    font-size: 14px;
+}
   .section-index-month {
-    padding-top: 15px;
+   /*  padding-top: 15px; */
     width: 90%;
     margin: auto;
     border-bottom: 2px solid rgba(189, 184, 177, 0.3);
@@ -1640,7 +1688,7 @@ schedule-section
   }
 
   .schedule_box .seminar-chi {
-    padding: 15px 10px 3px !important;
+    padding: 10px 10px 3px !important;
     font-size: 21px !important;
     line-height: 155%;
   }
@@ -1651,8 +1699,8 @@ schedule-section
   }
 
   .area {
-    margin: 15px auto 0;
-    font-size: 16px;
+    margin: 3px auto;
+    font-size: 21px;
     padding: 0px 15px;
   }
 
@@ -1692,10 +1740,12 @@ schedule-section
     max-width: 275px;
   }
 
-  .schedule-list .btn {
+.schedule-list .btn {
     font-size: 16px;
-    padding: 5px 15px;
-  }
+    /* padding: 10px; */
+    line-height: 140%;
+    height: 100px;
+}
 }
 
 
