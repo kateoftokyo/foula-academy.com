@@ -1127,11 +1127,10 @@ cursor: pointer;
 }
 
 .name-en {
-font-size: 24px;
-margin-top: 5px;
-margin-bottom: 5px;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 2px;
 }
-
 .name-ja {
 font-size: 16px;
 }
@@ -1291,6 +1290,9 @@ margin-top: 15px;
 left: 50%;
 width: 30px;
 transform: translateX(-50%);
+}
+.name-en {
+    font-size: 24px;
 }
 }
 
@@ -1946,7 +1948,7 @@ magagine-section
 .magagine-section {
 width: 100%;
 max-width: 1000px;
-margin: 55px auto;
+margin:0px auto;
 padding-top: 50px;
 }
 
@@ -1989,13 +1991,13 @@ others-section その他
 
 **************************************************************************/
 .others-section {
-padding: 75px 15px;
+    padding: 0px 15px 75px;
 }
 
 .others-section ul {
 width: 100%;
 max-width: 1000px;
-margin: 55px auto;
+margin:25px auto;
 display: flex;
 justify-content: center;
 gap: 1%;
