@@ -1622,7 +1622,7 @@ schedule-section
 }
   .section-index-title {
     text-align: center;
-    font-size: 34px;
+    font-size: 24px;
   }
 
   .card {
@@ -1657,6 +1657,7 @@ schedule-section
 }
   .section-index-month {
    /*  padding-top: 15px; */
+   font-size: 24px;
     width: 90%;
     margin: auto;
     border-bottom: 2px solid rgba(189, 184, 177, 0.3);
@@ -1665,7 +1666,7 @@ schedule-section
   .schedule_box tbody {
     display: block;
     padding-bottom: 25px;
-    border-bottom: 1px solid rgba(189, 184, 177, 0.3);
+  /*   border-bottom: 1px solid rgba(189, 184, 177, 0.3); */
   }
 
   .schedule_box tbody tr {
@@ -2314,7 +2315,7 @@ footer
   width: 25%;
   color: #fff;
   line-height: 1.7;
-  color: #fff;
+  color: #fff !important;
 }
 
 .company img {
@@ -2425,17 +2426,16 @@ footer
     margin-bottom: 15px;
   }
 
-  .footer-sns {
-    margin: 25px auto;
+.footer-sns {
+    margin: 15px 5px 0 0;
     display: flex;
     justify-content: center;
     gap: 25px;
     width: 100%;
-  }
-
+}
   .footer-sns img {
     width: 100%;
-    max-width: 25px;
+    max-width: 35px;
   }
 
 }
