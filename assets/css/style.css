@@ -1056,10 +1056,10 @@ display: none;
     padding-top: 0px;
 }
 
-  .seminar-index_title {
-    padding-top: 0px;
+.seminar-index_title {
+    padding-top: 65px;
     margin-bottom: 0;
-  }
+}
 
 .seminar-list {
     padding: 0 15px;
