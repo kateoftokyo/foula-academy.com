@@ -408,9 +408,6 @@ section-wrapper
     .section-title-area {
         padding-top: 20px;
     }
-    .course-curriculum-price {
-    display: contents;
-}
 }
 
 /***************************************************************
@@ -440,7 +437,7 @@ merit-section
 
 .merit-section ul li img {
     width: 175px;
-    border-radius: 25px;
+    border-radius: 5px;
     margin-bottom: 15px;
 }
 
@@ -925,7 +922,7 @@ whatis-section
     margin-bottom: 15px;
     font-weight: initial;
     border: 1px solid #000;
-    background: #000;
+    background-color: #000;
     padding: 5px 15px;
     width: 100%;
     text-align: center;
@@ -933,7 +930,7 @@ whatis-section
 }
 
 .lift-exten .kit-area-inner p a {
-    color: #ffff;
+    color: #fff;
 }
 
 .lift-exten .kit-area-inner img {
@@ -971,19 +968,17 @@ whatis-section
 }
 
 .course-curriculum-title.ex-lift span {
-    padding: 5px 5px 5px 15px;
+    padding: 5px 15px 5px;
     color: #fff;
     border: 1px solid;
     display: flex;
     align-items: center;
 }
 
-.kit-inc {
-    font-size: 18px !important;
+.course-curriculum-title .kit-inc {
+    padding:0 !important;
     border: none !important;
-    padding-left: 3px !important;
 }
-
 .course-curriculum-index {
     /* border-bottom: 1px solid #333; */
     /*  padding-bottom: 120px; */
@@ -1149,9 +1144,7 @@ offer-section
         color: #fff;
         border: 1px solid;
     }
-.kit-inc {
-    padding-right: 0px !important;
-}
+
     .course-curriculum-index {
         margin-bottom: 30px;
     }
@@ -1401,12 +1394,8 @@ faq-section
     font-size: 34px;
 }
 .course-flow-list-text span{
-text-decoration: underline; 
-  text-decoration-thickness: 0.3em; 
-  text-decoration-color: rgba(255, 228, 0, 1); 
-  text-underline-offset: -0.2em; 
-  text-decoration-skip-ink: none; 
-
+  color: #ff0000;
+  text-decoration: underline;
 }
 .course-flow .triangle {
     transform: rotate(0deg) translate(25px, 0px);
@@ -1428,15 +1417,15 @@ text-decoration: underline;
     background: #212121;
 }
 .application-form a {
-    background-color: #FF66A6;
+    background-color: #ed0000;
     color: #ffffff;
-    padding: 20px;
+    padding: 25px;
     width: 100%;
     max-width: 325px;
     text-align: center;
     font-size: 18px;
-    border-radius: 15px;
 }
+
 @media screen and (max-width: 798px) {
     .seminer-link {
         margin: 25px auto 0px;
