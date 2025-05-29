@@ -18,7 +18,7 @@ html {
 
 body {
   font-family: "Shippori Mincho", sans-serif;
-  color: #333;
+  color: #352B24;
 }
 
 
@@ -223,7 +223,7 @@ header ヘッダー
 
 .header.active {
   background-color: #ffffffe3;
-  border-bottom: 1px solid #3333333b;
+  border-bottom: 1px solid #352B243333b;
   transition: 0.4s;
 }
 
@@ -654,7 +654,7 @@ key-visual キービジュアル
     font-size: 12px;
     color: #fff;
     text-transform: uppercase;
-    white-space: nowrap;
+  /*   white-space: nowrap; */
     letter-spacing: 2px;
   }
 
@@ -822,26 +822,29 @@ seminar-section セミナーリスト
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 15px;
 }
 
 .seminar-list li {
-  border-right: 1px solid #333;
-  width: 23%;
+  width: 31%;
 }
 
-.seminar-list li:first-child {
-  border-left: 1px solid #333;
-}
+
 
 .seminar-list li a {
-  display: block;
-  font-size: 21px;
-  line-height: 24px;
-  padding: 3px 15px;
-  color: #333;
-  text-align: center;
+    display: block;
+    font-size: 21px;
+    /* line-height: 24px; */
+    padding: 15px 0px;
+    color: #352B24;
+    text-align: center;
+    border: 1px solid #352B24;
+    transition: 0.4s;
 }
-
+.seminar-list li a:hover {
+   background-color: #352B24;
+   color: #fff;
+}
 .seminar-list li a span {
   display: block;
   font-size: 16px;
@@ -865,24 +868,24 @@ gap: 15px; */
 
 
 .seminar-index ul {
-  width: calc(100% - 5%);
-  padding: 0 3%;
-  /*    max-width: 1440px; */
-  margin: 15px auto 75px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 15px;
+    width:100%;
+    max-width: 1280px;
+    padding: 0 15px;
+    margin: 15px auto 75px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .seminar-contents {
-  width: 32%;
-  padding: 15px 15px;
-  min-height: 670px;
-  border: 1px solid #cbcbcb;
-  /*  border-right: 0; */
-  transition: 0.4s;
+    width: 49%;
+    padding: 0px;
+    margin-bottom: 30px;
+    /* padding-bottom: 20px; */
+    /* min-height: 670px; */
+    border: 1px solid #cbcbcb;
+    /* border-right: 0; */
+    transition: 0.4s;
 }
 
 .seminar-contents.coming {
@@ -908,10 +911,10 @@ gap: 15px; */
 }
 
 .seminar-contents-detail {
-  text-align: center;
-  color: #333;
-  font-size: 16px;
-
+    text-align: center;
+    color: #352B24;
+    font-size: 16px;
+    padding: 10px 25px 35px;
 }
 
 .seminar-contents-detail .num {
@@ -923,81 +926,48 @@ gap: 15px; */
 
 
 .seminar-contents-detail .text {
-  position: relative;
-  font-size: 21px;
-  /* background: linear-gradient(132deg, #C1903F 0%, #C99D58 45%, #EBB561 70%, #ca9d55 85%, #B78D4A 90% 100%); */
-  background-color: #000;
-  border: 1px solid #000;
-  color: #fff;
-  /* border: 1px solid #C1903F; */
-  padding: 5px 10px;
-  width: 95%;
-  margin: 5px auto 10px;
-  transition: 0.4s;
-  z-index: 3;
-  font-family: serif;
-  height: 90px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "Noto Sans JP", sans-serif;
-  font-weight: bold;
+    position: relative;
+    font-size: 21px;
+    padding-bottom: 5px;
+    margin: 10px auto 0px;
 }
 
-/* 
-.seminar-contents .text::after {
-position: absolute;
-content: "";
-width: 0;
-height: 100%;
-background-color: #f7f7f7;
-left: 0;
-top: 0;
-transition: 0.4s;
-transition-delay: 0.2s;
-z-index: 1;
-} */
-
-/* 
-.seminar-contents .text::after {
-position: absolute;
-content: "";
-width: 0;
-height: 100%;
-background-color: #352B24;
-left: 0;
-top: 0;
-transition: 0.4s;
-transition-delay: 0.2s;
-z-index: 1;
+.seminar-contents-detail .text span {
+    display: block;
+    font-size: 14px;
+    margin-top: 5px;
+    letter-spacing: 0.09rem;
 }
-*/
-.seminar-contents a:hover .text {
-  opacity: 0.8;
+.bottom-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-
-.seminar-contents a:hover .text::after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  transition: 0.4s;
-  transition-delay: 0.2s;
-  z-index: -1;
+.bottom-area .link-btn {
+  width: 35%;
 }
-
+.bottom-area .link-btn a {
+       background-color: #068cb4;
+    color: #fff;
+    padding: 10px 35px;
+    border-radius: 25px;
+    font-size: 18px;
+}
 
 .seminar-contents-detail .price {
-  text-align: end;
-  margin: 5px 15px;
-  font-size: 16px;
+    width: 63%;
 }
-
 .seminar-contents-detail .price p {
-  margin-bottom: 2px;
+    margin-bottom: 0px;
+    text-align: end;
+    font-size: 30px;
 }
-
+.seminar-contents-detail .price p span{
+  font-size: 12px;
+  padding-left: 7px;
+}
 .seminar-contents-detail .kit {
-  background-color: #333;
+  background-color: #352B24;
   color: #fff;
   text-align: center;
   width: 70%;
@@ -1007,12 +977,11 @@ z-index: 1;
 }
 
 .seminar-contents-detail .comment {
-  font-size: 16px;
-  /* padding: 7px; */
-  padding-left: 7px;
-  text-align: start;
-  margin-bottom: 35px;
-  line-height: 180%;
+    font-size: 16px;
+    margin-top: 15px;
+    text-align: start;
+    margin-bottom: 40px;
+    line-height: 180%;
 }
 
 .seminar-contents-detail .text br {
@@ -1040,27 +1009,23 @@ display: none;
   transform: translateX(-50%);
 }
 
-@media screen and (max-width: 1480px) {
-  .seminar-index ul {
-    gap: 5px;
-  }
 
-  .seminar-contents {
-    width: 45%;
-    border: 1px solid #cbcbcb;
-  }
-}
 
-@media screen and (max-width: 498px) {
+@media screen and (max-width: 798px) {
   .seminar-section {
     padding-top: 0px;
 }
-
+.even{
+background-color: #f8f8f8;
+}
 .seminar-index_title {
     padding-top: 65px;
     margin-bottom: 0;
 }
-
+.seminar-index_title.even {
+    padding-top: 25px;
+    margin-top: 35px;
+}
 .seminar-list {
     padding: 0 15px;
     margin-top: 35px;
@@ -1068,6 +1033,9 @@ display: none;
     display: flex;
     flex-wrap: wrap;
     gap: 0 10px;
+}
+.seminar-index ul {
+   padding:  0 15px;
 }
   .seminar-list li {
     border: none;
@@ -1084,7 +1052,11 @@ display: none;
     margin-bottom: 15px;
     padding: 10px 0;
     font-size: 18px;
-    border: 1px solid #333;
+    border: 1px solid #352B24;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .seminar-list li a span {
     display: block;
@@ -1093,7 +1065,7 @@ display: none;
 .seminar-index ul {
     flex-direction: column;
     margin-bottom: 0;
-    padding: 0;
+    padding: 0 10px;
     margin-top: 0;
 }
 
@@ -1105,7 +1077,9 @@ display: none;
     border: 0;
     padding: 15px 0;
   }
-
+.seminar-contents-detail {
+    padding: 0px;
+}
 .seminar-contents-detail .text {
     font-size: 18px;
     display: block;
@@ -1115,7 +1089,7 @@ display: none;
     border-left: 5px #0271a5 solid;
     height: 100%;
     background: #fff;
-    color: #333;
+    color: #352B24;
     width: 100%;
     margin-top: 15px;
     margin-bottom: 5px;
@@ -1124,7 +1098,9 @@ display: none;
     font-weight: inherit;
     /* margin-bottom: 8px; */
 }
-
+.seminar-index.even .seminar-contents-detail .text {
+    background-color: #f8f8f8;
+}
 .seminar-contents-detail .num {
     display: none;
 }
@@ -1142,8 +1118,11 @@ display: none;
   .seminar-contents-detail .comment br{
     display: none;
   }
+  .seminar-contents-detail .price {
+    width: 100%;
+}
   .seminar-contents-detail .price p {
-    /* font-size: 21px; */
+    font-size: 21px;
   }
 
   .seminar-contents-detail .price p {
@@ -1153,6 +1132,20 @@ display: none;
   .seminar-contents .text::after {
     display: none;
   }
+  .bottom-area {
+    flex-direction: column-reverse;
+}
+.bottom-area .link-btn {
+    margin-top: 35px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.bottom-area .link-btn a {
+    background-color: #352B24;
+}
+.br-pc-none{
+  display: block;
+}
 }
 
 
@@ -1266,7 +1259,7 @@ padding-right: 10px; */
   display: block;
   margin: 15px auto;
   padding: 3px 25px;
-  border: 1px solid #333;
+  border: 1px solid #352B24;
   width: 125px;
 }
 
@@ -1396,24 +1389,24 @@ schedule-section
 }
 
 .schedule-list li {
-  /*    border-right: 1px solid #333; */
+  /*    border-right: 1px solid #352B24; */
   width: 33%;
   padding: 5px;
 }
 
 .schedule-list li:first-child {
-  /*  border-left: 1px solid #333; */
+  /*  border-left: 1px solid #352B24; */
 }
 
 .schedule-list .btn {
   font-family: "Shippori Mincho", serif;
-  color: #333;
+  color: #352B24;
   background-color: #fff;
   display: block;
   font-size: 21px;
   line-height: 24px;
   padding: 15px 15px;
-  color: #333;
+  color: #352B24;
   width: 100%;
   text-align: center;
   border-style: none;
@@ -1648,7 +1641,7 @@ schedule-section
 
 .schedule-list li {
     width: 47%;
-    border: 1px solid #333;
+    border: 1px solid #352B24;
     margin-bottom: 15px;
     padding: 0px;
 }
@@ -1841,7 +1834,7 @@ contact-section
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #333;
+  border: 1px solid #352B24;
   line-height: 150%;
 }
 
@@ -1923,7 +1916,7 @@ course-flow
   /* justify-content: center; */
   flex-direction: column;
   border: 1px solid #949494;
-  color: #333;
+  color: #352B24;
   padding: 25px 10px 35px;
 }
 
@@ -2112,7 +2105,7 @@ faq-section
 }
 
 .faq-section-index {
-  border: 1px solid #333;
+  border: 1px solid #352B24;
   padding: 30px 30px 30px;
   margin-bottom: 20px;
   padding-right: 55px;
