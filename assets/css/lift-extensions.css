@@ -1138,13 +1138,15 @@ offer-section
         height: initial;
         margin-bottom: 0;
     }
+.course-curriculum-title.ex-lift span {
+   width: 90%;
+    display: flex;
+    flex-direction: column;
+}
 
-    .course-curriculum-title.ex-lift span {
-        padding: 5px 25px 5px;
-        color: #fff;
-        border: 1px solid;
+    .kit-inc{
+        font-size: 16px !important;
     }
-
     .course-curriculum-index {
         margin-bottom: 30px;
     }
