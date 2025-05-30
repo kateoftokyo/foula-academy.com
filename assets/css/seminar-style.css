@@ -118,7 +118,7 @@
     width: 250px;
     height: 250px;
     margin-bottom: 20px;
-    display: none;
+   /*  display: none; */
 }
 
 .course-benefits-index-img img {
@@ -128,7 +128,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    border-radius: 50%;
+    /* border-radius: 50%; */
 }
 
 .course-benefits-index-text {

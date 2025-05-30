@@ -1372,7 +1372,7 @@ faq-section
 
 .section_application_form_iframe{
     width: 100%;
-    height: 220rem;
+    height: 272rem;
     background-color: #292929;
 }
 .course-flow {
@@ -1413,11 +1413,12 @@ faq-section
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 35px;
+    padding-bottom: 50px;
     background: #212121;
 }
 .application-form a {
-    background-color: #ed0000;
+    background: #FF66A6;
+    border: 1px solid #FF66A6;
     color: #ffffff;
     padding: 25px;
     width: 100%;
