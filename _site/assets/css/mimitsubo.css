@@ -1,0 +1,429 @@
+/* 共通設定 */
+.mimitsubo-back-graound {
+  background-color: #d7ccc9;
+}
+
+.mimitsubo-inner {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  color: #464646;
+}
+
+.main-visual,
+.introduction,
+.lec-person,
+.befits {
+  width: 100%;
+}
+
+.main-visual__img img,
+.block .icon img,
+.lec-person__img img,
+.befits__block img {
+  width: 100%;
+}
+
+.main-visual__intro,
+.introduction__title,
+.lec-person__title,
+.befits__title {
+  text-align: center;
+}
+
+.introduction__title,
+.lec-person__title,
+.befits__title {
+  background-color: #988885;
+  padding: 7px 0;
+  color: #fff;
+  font-size: 28px;
+  letter-spacing: 0.2rem;
+  text-shadow: 0 0 2px #1f1f1f;
+}
+
+.introduction__text-main,
+.lec-person__text-main {
+  font-size: 28px;
+  border-bottom: 1px dotted #000;
+  padding-bottom: 3px;
+  margin-bottom: 5px;
+  letter-spacing: 5px;
+}
+
+.introduction__text-sub,
+.lec-person__text-sub {
+  font-size: 18px;
+  letter-spacing: 0;
+}
+
+.training {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+}
+
+.training p {
+  position: relative;
+  font-size: 28px;
+  width: max-content;
+  letter-spacing: 0.5rem;
+  padding-left: 35px;
+}
+
+.training p::before {
+  position: absolute;
+  content: "□";
+  left: 0;
+  top: 3px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.training.in-per p {
+  letter-spacing: 1.5rem;
+}
+
+.training.in-per span {
+  color: #7a86bb;
+}
+
+.training.online span {
+  color: #dd7daf;
+}
+
+.training.in-per p::before {
+  color: #7a86bb;
+}
+
+.training.online p::before {
+  color: #dd7daf;
+}
+
+/* main-visual */
+.main-visual {
+  padding-top: 65px;
+  margin-bottom: 35px;
+}
+
+.main-visual__img {
+  max-width: 750px;
+  margin: 0 auto 3px;
+}
+
+.sub-title {
+  font-size: 21px;
+  padding: 7px 0;
+}
+
+.main-title {
+  font-size: 4em;
+  margin-bottom: 20px;
+}
+
+.check-area {
+  display: flex;
+  justify-content: center;
+}
+
+/* introduction */
+.introduction {
+  background-color: #c6b8b3;
+}
+
+.introduction__contents {
+  padding: 30px 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.introduction__contents .block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48%;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.block .icon {
+  width: 25%;
+}
+
+.block .in-text {
+  width: 60%;
+  color: #464646;
+}
+
+/* lec-person */
+.lec-person__contents {
+  padding: 30px 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.lec-person__img {
+  width: 35%;
+}
+
+.lec-person__intro {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.lec-person__text-sub {
+  line-height: 185%;
+}
+
+/* befits */
+.befits__list {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  padding: 30px 10px;
+  font-size: 21px;
+}
+
+.befits__images {
+  padding: 0 15px 35px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.befits__block {
+  width: 24%;
+}
+
+
+
+
+
+.course {
+  width: 100%;
+  max-width: 1480px;
+  margin: auto;
+  padding-bottom: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.swiper-slide {
+}
+
+.course-container {
+    border: 1px solid #988885;
+    background-color: #ecdad3;
+    height: 1000px;
+}
+
+.course-inner {
+  padding: 5px 15px 30px;
+}
+
+.crs__name {
+    padding: 10px;
+    font-size:21px;
+    text-align: center;
+    background-color: #988885;
+    color: #fff;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.crs__price {
+  padding: 5px 0px 7px;
+     border-bottom: 1px dotted #988885;
+     margin-bottom: 10px;
+}
+
+.crs__price div {
+  display: flex;
+  align-items: baseline;
+  padding: 2px;
+  justify-content: center;
+
+}
+.crs__price span{
+  font-size: 21px;
+}
+.crs__price span {
+  font-size: 14px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.crs__price p {
+  font-size: 32px;
+}
+.crs__price-title{
+  font-size: 18px !important;
+  text-align: center !important;
+  display: block  !important;
+}
+.crs__sec-subject {
+  text-align: center;
+  padding-bottom: 10px;
+  margin-bottom: 1.5rem;
+  width: 90%;
+  border-bottom: 1px dotted #988885;
+  margin: auto;
+  font-size: 21px;
+}
+
+.crs__time {
+  font-size: 21px;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px dotted #988885;
+  margin: 0 auto 0.5rem;
+  width: 90%;
+}
+
+.crs__time span {
+  font-size: 18px;
+  display: block;
+}
+
+.crs__contents,.crs__kits {
+  border-bottom: 1px dotted #988885;
+  margin: 0 auto 0.5rem;
+  width: 90%;
+  padding-bottom: 10px;
+}
+
+.crs__contents span,
+.crs__kits span {
+  font-size: 18px;
+  text-align: center;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.crs__contents p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.crs__kits {}
+
+.crs__kits p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+@media screen and (max-width: 798px) {
+  .main-title {
+    font-size: 28px;
+    padding: 0 15px;
+  }
+
+  .sub-title {
+    font-size: 18px;
+    padding: 10px 15px;
+  }
+
+  .check-area {
+    flex-direction: column;
+    padding: 0 15px;
+  }
+
+  .training {
+    width: 70%;
+    margin: 0 auto 7px;
+    align-items: baseline;
+  }
+
+  .training p {
+    font-size: 21px;
+  }
+
+  .training.in-per span {
+    font-size: 16px;
+  }
+
+  .introduction__title,
+  .lec-person__title,
+  .befits__title {
+    letter-spacing: 0.05rem;
+    padding: 15px;
+  }
+
+  .introduction__contents {
+    padding: 15px;
+  }
+
+  .introduction__contents .block {
+    width: 100%;
+  }
+
+  .introduction__text-main,
+  .lec-person__text-main {
+    font-size: 21px;
+    text-align: center;
+    letter-spacing: 0.05rem;
+  }
+
+  .introduction__text-sub,
+  .lec-person__text-sub {
+    font-size: 16px;
+  }
+
+  .block .in-text {
+    width: 70%;
+  }
+
+  .lec-person__contents {
+    flex-direction: column;
+    padding: 15px 15px 30px;
+  }
+
+  .lec-person__img,
+  .lec-person__intro {
+    width: 100%;
+  }
+
+  .befits__list {
+    flex-direction: column;
+    font-size: 16px;
+    padding: 15px;
+    gap: 0;
+  }
+
+  .befits__images {
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+  }
+
+  .befits__block {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 498px) {
+  .lec-person__img img {
+    max-width: 275px;
+    display: block;
+    margin: auto;
+  }
+}
