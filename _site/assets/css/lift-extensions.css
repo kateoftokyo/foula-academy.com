@@ -1429,11 +1429,49 @@ faq-section
     font-size: 18px;
 }
 
+.advance-preparation{
+
+}
+.model-area, .recording-area {
+    padding: 0 15px;
+    margin-bottom: 35px;
+}
+.model-area p,
+.recording-area p{
+ text-align: center;
+ font-size: 21px;
+ padding: 25px 15px;
+}
+.model-area span{
+    display: block;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.recording-area span{
+       display: block;
+      line-height: 240%;
+    font-size: 18px;
+}
 @media screen and (max-width: 798px) {
     .seminer-link {
         margin: 25px auto 0px;
     }
     .course-flow .triangle {
     transform: rotate(90deg) translate(25px, 0px);
+}
+.recording-area,.recording-area span{
+ line-height: 220%;
+}
+
+.model-area, .recording-area {
+    padding: 0;
+    margin-bottom: 0;
+}
+.model-area p, .recording-area p {
+    padding-bottom: 10px;
+}
+.model-area span{
+      line-height: 195%;
 }
 }

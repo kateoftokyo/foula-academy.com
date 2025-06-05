@@ -149,7 +149,7 @@
 
 .main-visual__img {
   max-width: 750px;
-  margin: 0 auto 3px;
+  margin: 0 auto 10px;
 }
 
 .sub-title {
@@ -688,7 +688,7 @@
   }
 
   .check-area {
-    flex-direction: column;
+    /* flex-direction: column; */
     padding: 0 15px;
   }
 .training {
@@ -699,18 +699,32 @@
     gap: 7px;
 }
 
-  .training p {
-    font-size: 21px;
-    letter-spacing: 0;
-  }
+.training p {
+    font-size: 16px;
+    letter-spacing: 0 !important;
+    padding-left: 22px;
+}
 
   .training.in-per span {
     font-size: 16px;
   }
 .training.in-per p::before {
- top: 1px;
-    font-size: 21px;
+    top: -1px;
+    font-size: 18px;
 }
+.training.online p::before {
+    top: -1px;
+    font-size: 18px;
+}
+.training.in-per span {
+    text-align: left;
+   
+}
+.training.online span {
+    text-align: left;
+   
+}
+
   .ws-mimitsubo__title,
   .introduction__title,
   .lec-person__title,
@@ -928,7 +942,7 @@
   }
 
   .comments__inner {
-    padding: 15px 0px 15px;
+    padding: 25px 0px 0px;
     display: flex;
     flex-direction: column;
     gap: 20px;
