@@ -1,7 +1,11 @@
 title: Foula Esthetics Academy
-description: "Foula Beauty公式サイト"
+description: Foulaのまつげセミナー公式ページ。プロの技術を基礎から学べます。
 baseurl: ""
 url: "https://www.foula-academy.com"
+keywords: "まつげエクステ 講習, ラッシュリフト セミナー, アイラッシュスクール,
+  アイリスト 初心者, まつげ スクール おすすめ, ボリュームラッシュ 技術講習,
+  渋谷 まつげ スクール, eyelash academy Tokyo, lash lift seminar Japan"
+lang: "ja"
 theme: null
 exclude:
   - README.md

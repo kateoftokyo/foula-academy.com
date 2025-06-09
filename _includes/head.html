@@ -1,27 +1,39 @@
 <!-- Meta -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="{{ page.description | default: site.description }}">
+<meta name="keywords" content="{{ page.keywords | default: 'まつげ, セミナー, foula' }}">
+
+<!-- OGP -->
+<meta property="og:title" content="{{ page.title }}">
+<meta property="og:description" content="{{ page.description | default: site.description }}">
+<meta property="og:image" content="{{ page.image | default: site.default_image }}">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:type" content="website">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ page.title }}">
+<meta name="twitter:description" content="{{ page.description | default: site.description }}">
+<meta name="twitter:image" content="{{ page.image | default: site.default_image }}">
 
 <!-- Title -->
-<title>{{ page.title }}</title>
+<title>{{ page.title }} | {{ site.title }}</title>
 
 <!-- Favicon -->
 <link rel="shortcut icon" href="https://www.foula-academy.com/images/favicon.ico">
 
-<!-- Google Fonts: Preconnect -->
+<!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
 
-<!-- CSS-->
-<link rel="stylesheet" href="https://www.foula-academy.com/assets/css/style.css">
+<!-- CSS -->
 <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+<link rel="stylesheet" href="https://www.foula-academy.com/assets/css/style.css">
 <link rel="stylesheet" href="https://www.foula-academy.com/assets/css/seminar-style.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
-<!-- JavaScript-->
-
+<!-- JavaScript -->
 <script src="https://www.foula-academy.com/assets/js/add.js" defer></script>
 
 <!-- Google Analytics -->
@@ -31,4 +43,15 @@
   function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
   gtag('config', 'UA-108823127-16');
+</script>
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Foula Academy",
+  "url": "https://www.foula-academy.com",
+  "logo": "https://www.foula-academy.com/images/fea_logo.png"
+}
 </script>
