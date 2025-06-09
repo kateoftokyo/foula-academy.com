@@ -88,16 +88,28 @@
     padding-top: 30px;
     padding-bottom: 50px;
     overflow-x: hidden;
-    background: #fdfdfd;
+  /*   background: #fdfdfd; */
 }
 
 .course-benefits-inner {
+    position: relative;
     width: 100%;
     max-width: 1480px;
     margin: 55px auto 0px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+}
+.course-benefits-inner::after {
+    position: absolute;
+    display: block;
+    content: url(https://www.foula-academy.com/img/circle_logo.png);
+    top: -20%;
+    left: -25%;
+    filter: opacity(0.2);
+    /* z-index: 999; */
+    animation: rotation 35s linear infinite;
 }
 
 .course-benefits-index {
@@ -120,7 +132,6 @@
     margin-bottom: 20px;
    /*  display: none; */
 }
-
 .course-benefits-index-img img {
     position: absolute;
     object-fit: cover;
@@ -128,7 +139,9 @@
     height: 100%;
     top: 0;
     left: 0;
-    /* border-radius: 50%; */
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px #404040;
+    z-index: 1;
 }
 
 .course-benefits-index-text {
@@ -140,16 +153,17 @@
 .course-benefits-index-text:before {
     position: absolute;
     left: 50%;
-    top: 0;
+    top: 15px;
     z-index: 1;
-    transform: translate(-50%, -50%);
+    transform:rotate(-5deg) translate(-50%, -50%);
     content: attr(data-num);
     font-family: "Waterfall", cursive;
     color: #dddddd;
-    font-size: 8rem;
+    font-size: 7rem;
     font-style: bold;
     opacity: 0.6;
-    filter: blur(2px);
+    transform-origin: center center;
+    /* filter: blur(2px); */
     /* -webkit-text-stroke: 1px #696969; */
 }
 
@@ -173,8 +187,24 @@
     .course-benefits-inner {
         flex-direction: column;
         margin-top: 35px;
+            overflow: hidden;
     }
-
+.course-benefits-inner::after {
+    top:15%;
+    left: -55%;
+            width: 55%;
+}
+.course-benefits-inner::before {
+    position: absolute;
+    display: block;
+    content: url(https://www.foula-academy.com/img/circle_logo.png);
+    bottom: 0%;
+    right: -45%;
+    filter: opacity(0.2);
+    /* z-index: 999; */
+    animation: rotation 35s linear infinite;
+    transform-origin: center center;
+}
     .course-benefits {
         padding-top: 0px;
     }
@@ -215,7 +245,7 @@
     padding-top: 30px;
     padding-bottom: 30px;
 }
-
+/* 
 .course-recommended::after {
     position: absolute;
     display: inline-block;
@@ -226,7 +256,7 @@
     z-index: 999;
     animation: rotation 35s linear infinite;
 }
-
+ */
 
 @keyframes rotation {
     0% {
