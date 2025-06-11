@@ -4,12 +4,12 @@
 <meta charset="UTF-8">
 <!-- Meta -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Foula Beauty公式サイト">
+<meta name="description" content="Foulaのまつげセミナー公式ページ。プロの技術を基礎から学べます。">
 <meta name="keywords" content="まつげエクステ, まつげ講習, アイラッシュスクール, 初心者向けセミナー, Foulaアカデミー, フーラエステティックアカデミー">
 
 <!-- OGP -->
 <meta property="og:title" content="Lash Lift 上まつ毛BASICコース">
-<meta property="og:description" content="Foula Beauty公式サイト">
+<meta property="og:description" content="Foulaのまつげセミナー公式ページ。プロの技術を基礎から学べます。">
 <meta property="og:image" content="../img/seminar/kv-901_1.jpg">
 <meta property="og:url" content="http://localhost:4000/seminar-new/seminar_901-1.html">
 <meta property="og:type" content="website">
@@ -17,7 +17,7 @@
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Lash Lift 上まつ毛BASICコース">
-<meta name="twitter:description" content="Foula Beauty公式サイト">
+<meta name="twitter:description" content="Foulaのまつげセミナー公式ページ。プロの技術を基礎から学べます。">
 <meta name="twitter:image" content="../img/seminar/kv-901_1.jpg">
 
 <!-- Title -->
@@ -40,6 +40,11 @@
 
 <!-- JavaScript -->
 <script src="https://www.foula-academy.com/assets/js/add.js" defer></script>
+<script src="https://www.foula-academy.com/assets/js/gsap.js" defer></script>
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<!-- ScrollTrigger -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108823127-16"></script>
@@ -60,6 +65,7 @@
   "logo": "https://www.foula-academy.com/images/fea_logo.png"
 }
 </script>
+
 
 </head>
 <body>
@@ -189,56 +195,67 @@
 <li class="course-benefits-index">
 
 <div class="course-benefits-index-img">
+<div class="point-img">
+<img src="../img/seminar/po_01.png" alt="">
+</div>
 <img src="../img/seminar/901-1/cb01.jpg" alt="初心者が基礎から学べるまつげエクステ講習の様子">
 </div>
-
-<div class="course-benefits-index-text" data-num="point.01">
+<div class="course-benefits-index-text">
 <p class="benefits-title">基礎から学べる</p>
 <p>初心者でも安心。<br>すぐに実践できる技術を習得できます</p>
 </div>
 </li>
 
 <li class="course-benefits-index">
-
 <div class="course-benefits-index-img">
+<div class="point-img">
+<img src="../img/seminar/po_02.png" alt="">
+</div>
 <img src="../img/seminar/901-1/cb02.jpg" alt="リピート率向上を目指す施術トレーニング風景">
 </div>
 
-<div class="course-benefits-index-text" data-num="point.02">
+<div class="course-benefits-index-text">
 <p class="benefits-title">リピート率アップ</p>
 <p>サロンで求められる技術を身につけ、<br>お客様のリピートを増やしたい方に最適です</p>
 </div>
 </li>
 
 <li class="course-benefits-index">
-
 <div class="course-benefits-index-img">
+<div class="point-img">
+<img src="../img/seminar/po_03.png" alt="">
+</div>
 <img src="../img/seminar/901-1/cb03.jpg" alt="スキルアップを目指すアイリストのための実技練習">
 </div>
 
-<div class="course-benefits-index-text" data-num="point.03">
+<div class="course-benefits-index-text">
 <p class="benefits-title">スキルアップで差がつく</p>
 <p>美容業界でのスキルをさらに深め、<br>自信を持って活躍できるようになります</p>
 </div>
 </li>
 
 <li class="course-benefits-index">
-
 <div class="course-benefits-index-img">
+<div class="point-img">
+<img src="../img/seminar/po_04.png" alt="">
+</div>
 <img src="../img/seminar/901-1/cb04.jpg" alt="新メニュー追加でサロンの魅力を高める提案風景">
 </div>
 
-<div class="course-benefits-index-text" data-num="point.04">
+<div class="course-benefits-index-text">
 <p class="benefits-title">新メニューを追加</p>
-<p>新たなメニュー追加で、サロンの魅力をアップ！<br>売上アップにもつながります</p>
+<p>新たなメニュー追加で、サロンの魅力をアップ！売上アップにもつながります</p>
 </div>
 </li>
 
 <li class="course-benefits-index">
 <div class="course-benefits-index-img">
+<div class="point-img">
+<img src="../img/seminar/po_05.png" alt="">
+</div>
 <img src="../img/seminar/901-1/cb05.jpg" alt="ブランクのある方をサポートする再スタート向け講習風景">
 </div>
-<div class="course-benefits-index-text" data-num="point.05">
+<div class="course-benefits-index-text">
 <p class="benefits-title">ブランクOK！<br>再スタートを不安なくサポート</p>
 <p>以前に技術を学んだものの、<br>しばらく施術から離れていたため、<br>再び施術に入るのが不安に感じている方</p>
 </div>
@@ -258,11 +275,11 @@
 <div class="course-curriculum-title">
 <!-- <span>901-1</span> -->LASH LIFT上まつ毛 BASICコース
 </div>
-<div class="course-curriculum-info">
-<div>
-<span>受講対象者</span>
-美容師免許提示
-</div>
+            <div class="course-curriculum-info" style="justify-content: center;">
+                <div>
+                    <span>受講対象者</span>
+                    美容師資格をお持ちの方
+                </div>
 <div>
 <span>キットあり</span>
 <p class="course-curriculum-price">¥65,780</p><br>

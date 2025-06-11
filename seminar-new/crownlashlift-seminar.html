@@ -76,7 +76,7 @@ title: CROWN LASH LIFT 束巻きパーマ実践コース
 
 
     <!--course-recommended -->
-    <div class="course-recommended">
+    <div class="course-recommended" style="background-color: #fadcea;">
         <p class="section-title">RECOMMENDED<span>こんな方にオススメ</span></p>
         <div class="course-recommended-inner">
             <li>・サロン仕上げの束感を自分で簡単に作りたい。</li>
@@ -100,7 +100,7 @@ title: CROWN LASH LIFT 束巻きパーマ実践コース
             <div class="course-curriculum-info">
                 <div>
                     <span>受講対象者</span>
-                    美容師免許提示
+                    美容師資格をお持ちの方
                 </div>
                 <div>
                     <span>キットあり</span>
@@ -346,6 +346,22 @@ title: CROWN LASH LIFT 束巻きパーマ実践コース
     </div>
 
         <script>
+
+              gsap.utils.toArray(".cll-benefits-contents").forEach((item, i) => {
+    gsap.to(item, {
+      opacity: 1,
+      y: 0,
+      duration: 2,
+      delay: i * 0.2, // 順番に表示
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: ".cll-benefits-contents",
+        start: "top 90%",
+        toggleActions: "play none none none"
+      }
+    });
+  });
+
             let expantion = document.getElementsByClassName('underline-before');
             let expantionswitch = ["off", "off"];
             window.onscroll = function () {

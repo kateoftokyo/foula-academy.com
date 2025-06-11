@@ -551,6 +551,8 @@ key-visual キービジュアル
   object-fit: contain;
 }
 
+
+
 /* ここからスライド画像の拡大アニメーション */
 @keyframes zoom {
   0% {
@@ -613,6 +615,7 @@ key-visual キービジュアル
     font-size: 32px;
     margin-bottom: 15px;
   }
+  
 
   .sub-slogan {
     font-size: 16px;
@@ -1760,8 +1763,9 @@ contact-section
 **************************************************************************/
 .contact-section {
   padding-top: 15px;
- /*  border-top: 1px solid #c4c4c4; */
-  /*   background-color: #fff; */
+ opacity: 0;
+  transform: translateY(50px);
+  transition: background-color 0.5s ease;
 }
 
 .contact-section-inner {
@@ -1776,12 +1780,9 @@ contact-section
   display: flex;
   align-items: center;
   justify-content: center;
-  /* flex-direction: column; */
   width: 100%;
-  /* max-width: 398px; */
   margin:15px auto;
   text-align: center;
-  /* background-color: #068cb4; */
   background-color:#352B24;
   border-radius: 15px;
   font-size: 21px;
@@ -1789,6 +1790,7 @@ contact-section
   height: 75px;
   margin-bottom: 55px;
   border-radius: 50px;
+
 }
 
 .contact-notice {
