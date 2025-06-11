@@ -606,7 +606,7 @@ background-color: #fafafa;
 
 .kit-area-text li {
     margin-bottom: 15px;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .kit-area-img {
@@ -663,7 +663,7 @@ background-color: #fafafa;
         padding: 15px 5px;
         width: 100%;
         gap: 8px;
-        color: #001e29;
+      /*   color: #001e29; */
         border: none;
     }
 
@@ -1512,12 +1512,15 @@ WAX STYLINGコース
 .wax-lecturer-inner {
     padding: 25px 15px;
     display: flex;
-    justify-content: space-between;
-    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
 }
-
+.wax-lecturer-person{
+    position: relative;
+}
 .wax-lecturer-detail {
-    width: 70%;
+    
 }
 
 .wax-lecturer-subname {
@@ -1551,14 +1554,14 @@ WAX STYLINGコース
 
 .img-insta-figure {
     position: absolute;
-    top: 85px;
-    right: 35px;
+    bottom: 5px;
+    left: 5px;
 }
 
 .img-insta-figure img {
-    width: 200px;
+    width: 90px;
+    border: 1px solid #393939;
 }
-
 
 @media screen and (max-width: 798px) {
     .wax-lecturer-inner {
