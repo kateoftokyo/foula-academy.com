@@ -139,10 +139,10 @@
 
 .course-benefits-index-img {
     position: relative;
-    width: 320px;
-    height: 250px;
-    /* margin-bottom: 7px; */
-   /*  display: none; */
+    width: 325px;
+    height: 290px;
+    margin-bottom: 10px;
+    /* display: none; */
 }
 .course-benefits-index-img .point-img {
     position: absolute;
@@ -195,9 +195,9 @@
     /* padding: 7px 22px; */
     text-align: center;
     color: #001f2d;
-    font-family: system-ui;
+    /* font-family: system-ui; */
     line-height: 32px;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 .course-benefits-index p {
@@ -945,7 +945,7 @@ CROWN LASH LIFT 束巻きパーマ実践コース
 .crownlashlift-seminar {
     background-color: #fadcea !important;
     color: #331b1b;
-    font-family: "Noto Sans JP", sans-serif;
+   /*  font-family: "Noto Sans JP", sans-serif; */
 }
 
 .cll.key-visual {
@@ -1007,13 +1007,14 @@ CROWN LASH LIFT 束巻きパーマ実践コース
     height: 275px;
     border-radius: 50%;
     /*   border: 1px solid #a8a8a8; */
+font-family: "Noto Sans JP", sans-serif;
     background-color: #331b1b;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 20px;
+    padding: 5px 20px 20px;
     box-shadow: 0 1px 5px;
     opacity: 0;
     transform: translateY(50px);
@@ -1026,11 +1027,12 @@ CROWN LASH LIFT 束巻きパーマ実践コース
 }
 
 .cll-benefits-contents img {
-    width: 30px;
+    width: 55px;
     margin-bottom: 0px;
 }
 
 .cll-benefits-point {
+    display: none;
     font-size: 18px;
     font-style: italic;
     font-weight: bold;
@@ -1041,7 +1043,7 @@ CROWN LASH LIFT 束巻きパーマ実践コース
 .cll-benefits-title {
     position: relative;
     font-size: 31px;
-    /*   color: #333; */
+    padding-bottom: 5px;
     margin-bottom: 15px;
     font-weight: bold;
     color: #fadcea;
@@ -1085,16 +1087,16 @@ CROWN LASH LIFT 束巻きパーマ実践コース
     width: 100%;
     max-width: 1280px;
     margin: 0 auto 75px;
-    border: 1px solid #11100e;
+    border: 1px solid #331b1b;
     background: #fff;
 }
 
 .cll-privilege-title {
     padding: 10px;
     text-align: center;
-    background-color: #11100e;
+       background-color: #331b1b;
     color: #fff;
-    font-weight: bold;
+  /*   font-weight: bold; */
     font-size: 28px;
     letter-spacing: 0.09rem;
 }
@@ -1120,7 +1122,7 @@ CROWN LASH LIFT 束巻きパーマ実践コース
     background-color: #fbfbfb;
     color: #11100e;
     box-shadow: none;
-    border: 1px solid #11100e;
+    border: 1px solid #331b1b;
 }
 
 .course-curriculum.cll-curriculum .course-curriculum-inner .course-curriculum-info {
@@ -1146,10 +1148,10 @@ CROWN LASH LIFT 束巻きパーマ実践コース
 }
 
 .course-curriculum.cll-curriculum .course-curriculum-inner .course-curriculum-title {
-    background-color: #11100e;
+       background-color: #331b1b;
     color: #fff;
     font-size: 24px;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 .cll-curriculum .course-curriculum-index-section {
@@ -1159,10 +1161,10 @@ CROWN LASH LIFT 束巻きパーマ実践コース
 }
 
 .course-curriculum.cll-curriculum .course-curriculum-inner .course-curriculum-index-title {
-    background-color: #11100e;
+       background-color: #331b1b;
     color: #fff;
     font-size: 28px;
-    font-weight: bold;
+   /*  font-weight: bold; */
 }
 
 .course-curriculum.cll-curriculum .course-curriculum-inner .course-curriculum-index-title span {
@@ -1234,9 +1236,9 @@ CROWN LASH LIFT 束巻きパーマ実践コース
 .cll-lecturer-title {
     padding: 10px;
     text-align: center;
-    background-color: #11100e;
+        background-color: #331b1b;
     color: #fff;
-    font-weight: bold;
+   /*  font-weight: bold; */
     font-size: 28px;
     letter-spacing: 0.09rem;
 }
@@ -1412,7 +1414,12 @@ CROWN LASH LIFT 束巻きパーマ実践コース
         font-size: 18px;
         text-align: start;
     }
-
+.cll-intro span {
+    display: block;
+    width: max-content;
+    font-weight: initial;
+    font-size: 28px;
+}
     .cll-benefits-inner {
         flex-direction: column;
         justify-content: initial;
