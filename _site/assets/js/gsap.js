@@ -39,13 +39,22 @@
     start: "top 90%"
   });
 
+// コースのメリット
+  animateWithScroll(".application-section", {
+    duration: 2,
+    stagger: 0.2,
+    ease: "power4.out",
+    start: "top 90%"
+  });
+
   // その他セクション（カリキュラム・ディプロマ・キットなど）
   animateWithScroll([
     ".course-curriculum-title",
     ".course-curriculum-info",
     ".course-curriculum-index",
     ".diploma-area",
-    ".kit-area"
+    ".kit-area",
+     ".certificate-area"
   ], {
     duration: 0.8,
     ease: "power2.out",

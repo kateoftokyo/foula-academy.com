@@ -552,7 +552,7 @@ background-color: #fafafa;
 .certificate-area {
     margin: 35px auto 50px;
     height: 160px;
-    border: 1px solid #000;
+  /*   border: 1px solid #000; */
 }
 
 .certificate-area.co800 {
@@ -625,6 +625,10 @@ background-color: #fafafa;
     display: inline-block;
 }
 
+.application-section{
+    opacity: 0;
+    transform: translateY(50px);
+}
 .application-link {
     display: flex;
     align-items: center;
