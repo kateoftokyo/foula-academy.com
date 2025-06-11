@@ -494,18 +494,18 @@ span.adv {
 }
 
 .course-curriculum-index-title {
-background-color: #fafafa;
+    background-color: #fafafa;
     color: #333;
     border: 1px solid #333;
     padding: 15px;
     font-size: 21px;
-    text-align: center;
+    /* text-align: center; */
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5px;
+    width: 95%;
+    margin: auto;
 }
-
 .course-curriculum-index-title span {
     font-size: 16px;
 }
@@ -629,7 +629,10 @@ background-color: #fafafa;
     opacity: 0;
     transform: translateY(50px);
 }
+
 .application-link {
+    position: relative;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -646,7 +649,21 @@ background-color: #fafafa;
     border-radius: 50px;
 }
 
-
+.application-link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+    transform: skewX(-25deg);
+}
 
 @media screen and (max-width: 798px) {
     .course-curriculum-inner .section-title {
@@ -818,7 +835,9 @@ background-color: #fafafa;
         height: initial;
     }
 
-
+.application-section {
+   padding:0 15px;
+}
 }
 
 
