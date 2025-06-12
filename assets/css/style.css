@@ -965,9 +965,10 @@ gap: 15px; */
     text-align: end;
     font-size: 30px;
 }
-.seminar-contents-detail .price p span{
-  font-size: 12px;
-  padding-left: 7px;
+.seminar-contents-detail .price p span {
+    font-size: 12px;
+    padding-left: 7px;
+    padding-right: 5px;
 }
 .seminar-contents-detail .kit {
   background-color: #352B24;
