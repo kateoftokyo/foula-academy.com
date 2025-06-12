@@ -1201,12 +1201,11 @@ font-family: "Noto Sans JP", sans-serif;
 }
 
 .course-curriculum.cll-curriculum .diploma-area .diploma {
-    width: 100%;
+    width: 95%;
     max-width: initial;
-    margin: 0;
+    margin: 0 auto;
     border: none;
 }
-
 .cll-curriculum .kit-area-inner {
     background-color: initial;
 }
@@ -1346,18 +1345,19 @@ font-family: "Noto Sans JP", sans-serif;
     max-width: 1100px;
     width: 100%;
     margin: 0px auto;
-    padding: 0 15px;
+    padding: 0 15px 0 35px;
 }
 
 .career {
     width: max-content;
     padding: 5px 25px;
-    background-color: violet;
+    background-color: #331b1b;
     color: #fff;
     font-size: 24px;
     letter-spacing: 5px;
     text-align: center;
-    border-radius: 10px;
+    margin-left: 20px;
+    /* border-radius: 10px; */
 }
 
 .cll-lecturer-career-list {
@@ -1369,6 +1369,9 @@ font-family: "Noto Sans JP", sans-serif;
     margin-top: 15px;
     padding-left: 15px;
     padding-right: 15px;
+    line-height: 220%;
+    font-size: 16px;
+    margin-bottom: 25px;
 }
 
 .career-index_date {
@@ -1500,7 +1503,7 @@ font-family: "Noto Sans JP", sans-serif;
         margin-top: 10px;
         margin-right: 0px;
         border-radius: 10px;
-        font-size: 16px;
+        font-size: 18px;
         line-height: 175%;
     }
 

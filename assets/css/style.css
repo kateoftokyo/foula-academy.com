@@ -819,13 +819,13 @@ seminar-section セミナーリスト
 }
 
 .seminar-list {
-  width: 100%;
-  max-width: 1000px;
-  margin: 85px auto 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
+    width: 100%;
+    max-width: 1280px;
+    margin: 85px auto 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
 }
 
 .seminar-list li {
