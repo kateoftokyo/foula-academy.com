@@ -115,7 +115,7 @@ TOPへ戻る
 
   60% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(10px);
   }
 
   100% {
@@ -1036,6 +1036,9 @@ display: none;
 .even{
 background-color: #f8f8f8;
 }
+#EYELASH .seminar-index.even{
+  padding-top: 25px;
+}
 .seminar-index_title {
     padding-top: 65px;
     margin-bottom: 0;
@@ -1091,7 +1094,7 @@ background-color: #f8f8f8;
     width: 100%;
     min-height: initial;
     border: 1px solid #cbcbcb;
-    margin-bottom: 10px;
+    margin-bottom:20px;
     border: 0;
     padding: 15px 0;
   }
@@ -1127,12 +1130,13 @@ background-color: #f8f8f8;
   }
 
 
-  .seminar-contents-detail .comment {
+.seminar-contents-detail .comment {
     font-size: 16px;
     line-height: 175%;
     margin-bottom: 15px;
-    padding-left: 0;
-  }
+    padding: 0 5px;
+}
+
   .seminar-contents-detail .comment br{
     display: none;
   }
@@ -1140,12 +1144,15 @@ background-color: #f8f8f8;
     width: 100%;
 }
   .seminar-contents-detail .price p {
-    font-size: 21px;
+    font-size: 32px;
   }
-
-  .seminar-contents-detail .price p {
+.seminar-contents-detail .price p span {
+    font-size: 16px;
+}
+.seminar-contents-detail .price p {
     margin-bottom: 5px;
-  }
+    padding-right: 5px;
+}
 
   .seminar-contents .text::after {
     display: none;
@@ -1160,6 +1167,7 @@ background-color: #f8f8f8;
 }
 .bottom-area .link-btn a {
     background-color: #352B24;
+    font-size: 21px;
 }
 .br-pc-none{
   display: block;
@@ -1910,9 +1918,15 @@ contact-section
   margin: 35px auto 0;
 }
 .app-form a {
-  margin-top: 0;
+    margin-top: 0;
     margin-bottom: 25px;
-     height: 80px;
+    height: 80px;
+    flex-direction: row-reverse;
+    gap: 15px;
+    /* justify-content: initial; */
+}
+.app-form .c_icon img {
+    width: 30px;
 }
 .contact-form {
     padding: 15px 0 0;
