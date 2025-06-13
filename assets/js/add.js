@@ -1,12 +1,11 @@
-
 document.addEventListener("DOMContentLoaded", () => {
   const loader = document.querySelector(".loading");
 
   if (!loader) return;
 
-// const isFirstVisit = !sessionStorage.getItem("visit");
-// sessionStorage.setItem("visit", "true");
-const isFirstVisit = true; // ← 毎回ローディング表示（テスト用）
+const isFirstVisit = !sessionStorage.getItem("visit");
+sessionStorage.setItem("visit", "true");
+/* const isFirstVisit = true; // ← 毎回ローディング表示（テスト用） */
 
   if (isFirstVisit) {
     sessionStorage.setItem("visit", "true");
@@ -24,9 +23,6 @@ const isFirstVisit = true; // ← 毎回ローディング表示（テスト用�
   } else {
     loader.style.display = "none";
   }
-
-  
-
 
 });
 

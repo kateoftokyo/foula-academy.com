@@ -1129,7 +1129,6 @@ offer-section
         padding-top: 35px;
         padding-right: 15px;
         padding-left: 15px;
-        padding-bottom: 0px;
         border-bottom: 0;
     }
 
@@ -1474,4 +1473,22 @@ faq-section
 .model-area span{
       line-height: 195%;
 }
+}
+
+
+/************************************************
+
+追加css
+
+*************************************************/
+.contact-form{
+    background-color: #fff !important;
+}
+#schedule-exlift{
+    width: 100%;
+    max-width: 1000px;
+    padding: 25px;background-color: #fff !important;
+}
+.course-curriculum-inner.lift-exten {
+    padding-bottom: 35px;   
 }
