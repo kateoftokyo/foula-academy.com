@@ -971,3 +971,7 @@
   }
 
 }
+
+.app-form a::before{
+  display: none !important;
+}
