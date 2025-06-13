@@ -594,7 +594,7 @@ key-visual キービジュアル
 
 @media screen and (max-width: 798px) {
   .key-visual {
-    height: 85vh;
+    height: 75vh;
   }
 
   .key-visual img {
@@ -630,7 +630,9 @@ key-visual キービジュアル
     margin-bottom: 15px;
   }
   
-
+.key-visual .slogan {
+    top: 55%;
+}
   .sub-slogan {
     font-size: 16px;
     line-height: 200%;
@@ -1664,9 +1666,10 @@ schedule-section
 .schedule-list {
     flex-wrap: wrap;
     /* flex-direction: column; */
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom: 15px;
     margin-top: 25px;
+    padding: 0 15px;
 }
 
 .schedule-list li {

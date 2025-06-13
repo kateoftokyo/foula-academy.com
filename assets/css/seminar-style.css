@@ -330,7 +330,8 @@
 
     .course-recommended-inner {
         max-width: initial;
-        padding: 0 15px;
+        /* padding: 0 15px; */
+        padding: 0;
         margin-bottom: 35px;
     }
 
@@ -1433,6 +1434,7 @@ font-family: "Noto Sans JP", sans-serif;
 
     .section-title {
         font-size: 26px;
+            margin: 25px auto 10px;
     }
 
     .cll-intro {
