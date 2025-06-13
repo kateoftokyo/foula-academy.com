@@ -779,6 +779,7 @@ span.adv {
 
     .course-curriculum-index-title {
         flex-direction: column;
+        width: 100%;
     }
 
     .for-model {
