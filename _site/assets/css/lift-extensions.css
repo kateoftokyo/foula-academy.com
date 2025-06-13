@@ -1485,8 +1485,10 @@ faq-section
     background-color: #fff !important;
 }
 #schedule-exlift{
+    display: none;
     width: 100%;
     max-width: 1000px;
+    margin: auto;
     padding: 25px;background-color: #fff !important;
 }
 .course-curriculum-inner.lift-exten {
