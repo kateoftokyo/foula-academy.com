@@ -110,12 +110,12 @@ TOPへ戻る
   @keyframes logo_fade {
   0% {
     opacity: 0;
-    transform: translateY(0px);
+    transform: translateY(-10px);
   }
 
   60% {
     opacity: 1;
-    transform: translateY(10px);
+    transform: translateY(0px);
   }
 
   100% {
@@ -2446,14 +2446,13 @@ footer
   .footer {
     padding: 10% 15px 5%;
   }
-
-  .footer-inner {
+.footer-inner {
     flex-direction: column;
-  }
-
+    margin-bottom: 25px;
+}
   .company {
     width: 100%;
-    margin-bottom: 15px;
+  /*   margin-bottom: 15px; */
   }
 
   .footer-nav {
@@ -2466,10 +2465,10 @@ footer
     gap: 10px;
   }
 
-
-  .footer-nav ul li a {
+.footer-nav ul li a {
     padding-left: 3px;
-  }
+    font-size: 18px;
+}
 
   .footer-nav ul li a span {
     font-size: 14px;
@@ -2486,7 +2485,7 @@ footer
   max-width: initial;
 }
 .footer-sns {
-    margin: 15px 5px 0 0;
+    margin: 25px 5px 0 0;
     display: flex;
     justify-content: center;
     gap: 25px;
@@ -2496,5 +2495,7 @@ footer
     width: 100%;
     max-width: 35px;
   }
-
+.copyright {
+color: #b0b0b0;
+}
 }
