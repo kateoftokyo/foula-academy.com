@@ -270,7 +270,7 @@ header ヘッダー
   }
 
   .logo {
-    width: 60%;
+    width: 70%;
   }
 
   .logo img {
@@ -419,7 +419,6 @@ header ヘッダー
   .modal-menu__contents-inner .address img {
     width: 245px;
     display: block;
-    margin-bottom: 5px;
   }
 
   .modal-menu__contents-inner .sns {
@@ -1905,13 +1904,13 @@ contact-section
     height: 80px;
 }
 .app-form p{
-  font-size: 18px;
+  font-size: 21px;
 }
 .c_des {
     line-height: 150%;
 }
 .contact-form li a p {
-    font-size: 18px;
+    /* font-size: 18px; */
 }
 }
 
@@ -2446,7 +2445,10 @@ footer
     display: block;
     margin-bottom: 15px;
   }
-
+.footer-logo {
+  width: 100%;
+  max-width: initial;
+}
 .footer-sns {
     margin: 15px 5px 0 0;
     display: flex;
