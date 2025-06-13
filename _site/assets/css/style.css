@@ -107,6 +107,21 @@ TOPへ戻る
   .loading img {
     width: 250px;
   }
+  @keyframes logo_fade {
+  0% {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
 }
 
 @media screen and (max-width: 498px) {
@@ -1649,8 +1664,11 @@ schedule-section
 .schedule-list li {
     width: 47%;
     border: 1px solid #352B24;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     padding: 0px;
+}
+.schedule-list li:last-child{
+    width: 100%;
 }
 .schedule-list .btn span {
     font-size: 14px;
@@ -1753,9 +1771,9 @@ schedule-section
 
 .schedule-list .btn {
     font-size: 16px;
-    /* padding: 10px; */
+    padding: 0px;
     line-height: 140%;
-    height: 100px;
+    height: 80px;
 }
 }
 
