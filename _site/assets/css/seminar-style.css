@@ -323,10 +323,10 @@
 }
 
 @media screen and (max-width: 798px) {
-    .course-recommended {
-        padding-top: 20px;
-        padding-left: 15px;
-    }
+.course-recommended {
+    padding-top: 20px;
+    padding: 20px 15px;
+}
 
     .course-recommended-inner {
         max-width: initial;

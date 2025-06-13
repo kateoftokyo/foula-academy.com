@@ -1778,22 +1778,37 @@ contact-section
 }
 
 .app-form a {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   margin:15px auto;
   text-align: center;
-  background-color:#352B24;
+ background-color: #012f44;
   border-radius: 15px;
   font-size: 21px;
   color: #fff;
   height: 75px;
   margin-bottom: 55px;
   border-radius: 50px;
-
+ transition: background-color 0.3s;
 }
-
+.app-form a ::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+    transform: skewX(-25deg);
+}
 .contact-notice {
   font-size: 16px;
   text-align: center;
