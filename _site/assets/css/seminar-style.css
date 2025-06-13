@@ -836,7 +836,9 @@ span.adv {
         font-size: 1.8rem;
         height: initial;
     }
-
+    .course-curriculum-info div:last-child span {
+        width: initial;
+    }
 .application-section {
    padding:0 15px;
 }
