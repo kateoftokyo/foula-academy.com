@@ -1508,7 +1508,10 @@ schedule-section
 .online {
   background-color: #9c0034;
 }
-
+.full{
+  background-color: #ff0000;
+  font-weight: bold;
+}
 .schedule_box table tr {
   padding: 15px 0;
 }
