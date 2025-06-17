@@ -975,3 +975,20 @@
 .app-form a::before{
   display: none !important;
 }
+
+
+/*******************************************
+
+  追加css
+
+*******************************************/
+.mimi-schedule{
+  background-color: #fff;
+}
+.schedule-list .btn {
+    font-size: 18px;
+}
+.schedule-list .btn span {
+    display: block;
+    font-size: 14px;
+}
