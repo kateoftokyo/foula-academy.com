@@ -478,9 +478,10 @@
 }
 
 .crs__time span {
-  font-size: 21px;
-  display: block;
-  margin-bottom: -5px;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: -8px;
 }
 
 .crs__contents {

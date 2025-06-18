@@ -478,9 +478,10 @@
 }
 
 .crs__time span {
-  font-size: 21px;
-  display: block;
-  margin-bottom: -5px;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: -8px;
 }
 
 .crs__contents {
@@ -974,4 +975,21 @@
 
 .app-form a::before{
   display: none !important;
+}
+
+
+/*******************************************
+
+  追加css
+
+*******************************************/
+.mimi-schedule{
+  background-color: #fff;
+}
+.schedule-list .btn {
+    font-size: 18px;
+}
+.schedule-list .btn span {
+    display: block;
+    font-size: 14px;
 }
