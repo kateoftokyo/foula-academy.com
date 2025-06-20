@@ -430,7 +430,7 @@
 
 
 .crs__price {
-  padding: 10px 0px 20px;
+  padding: 10px 0px 10px;
   width: 90%;
   /* border-bottom: 1px dotted #988885; */
   margin: auto;
@@ -511,7 +511,7 @@
     border-bottom: 1px dotted #988885;
     margin: 0 auto 0;
     width: 90%;
-    height: 410px;
+    height: 575px;
     padding: 15px 10px 15px;
 }
 
@@ -521,7 +521,10 @@
     padding: 15px 10px 15px;
     height: 360px;
 }
-
+.crs__contents div{
+  margin-top: 35px;
+  line-height: 175%;
+}
 .crs__contents span,
 .crs__kits span {
   font-size: 21px;
