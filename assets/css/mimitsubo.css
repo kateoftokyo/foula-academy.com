@@ -476,20 +476,23 @@
 .crs__time {
   font-size: 21px;
   text-align: center;
-  padding: 5px 10px 10px;
+  padding: 15px;
   border-bottom: 1px dotted #988885;
   margin: 0 auto;
   width: 90%;
 }
 
-.crs__time-inner{
-  display: flex;
+.crs__time-inner {
+    display: flex;
+    justify-content: space-around;
+}
+.crs__time-cate{
+ font-size: 24px;
 }
 .crs__time span {
     font-size: 14px;
     display: block;
     margin-top: 5px;
-    margin-bottom: -8px;
 }
 
 .crs__contents {
