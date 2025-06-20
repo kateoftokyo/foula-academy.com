@@ -468,14 +468,16 @@
 }
 
 .crs__sec-subject {
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 1.5rem;
-  width: 90%;
-  border-bottom: 1px dotted #988885;
-  margin: auto;
-  font-size: 21px;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 1.5rem;
+    width: 90%;
+    border-bottom: 1px dotted #988885;
+    margin: auto;
+    font-size: 21px;
+    color: #fff;
 }
+
 .crs__sec-subject span{
     margin-top: 10px;
     display: block;
@@ -502,7 +504,9 @@
     display: block;
     margin-top: 5px;
 }
-
+.crs__time-model{
+    font-size: 21px;
+}
 .crs__contents {
     border-bottom: 1px dotted #988885;
     margin: 0 auto 0;
