@@ -448,8 +448,9 @@
 }
 
 .crs__price p {
-  font-size: 32px;
-  margin-top: -7px;
+    font-size: 32px;
+    margin-top: -7px;
+    border-bottom: 1px solid #464646;
 }
 
 .crs__price-title {
@@ -473,7 +474,7 @@
     font-size: 16px;
 }
 .crs__time {
-  font-size: 36px;
+  font-size: 21px;
   text-align: center;
   padding: 5px 10px 10px;
   border-bottom: 1px dotted #988885;
@@ -481,6 +482,9 @@
   width: 90%;
 }
 
+.crs__time-inner{
+  display: flex;
+}
 .crs__time span {
     font-size: 14px;
     display: block;
