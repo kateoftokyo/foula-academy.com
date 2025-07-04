@@ -2354,6 +2354,39 @@ form-content
   }
 }
 
+
+
+/**************************************************************************
+
+Cancel policy　キャンセルポリシー
+
+**************************************************************************/
+.cancel-policy-section{
+    padding-top: 75px;
+    width: 100%;
+    padding-left: 15px;
+    max-width: 850px;
+    padding-right: 15px;
+    margin: 55px auto 75px;
+      line-height: 175%;
+}
+.cp-announce{
+  margin:55px auto 55px;
+  font-family: 18px;
+}
+.cp-index{
+  margin-bottom: 35px;
+}
+.cp-index p{
+/*  border-left: 3px #333 solid;
+ padding-left: 10px; */
+ font-size: 18px;
+ margin-bottom:10px;
+}
+.cp-index span{
+  font-size: 16px;
+}
+
 /**************************************************************************
 
 footer
