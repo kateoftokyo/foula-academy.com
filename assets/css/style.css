@@ -2361,14 +2361,14 @@ form-content
 Cancel policy　キャンセルポリシー
 
 **************************************************************************/
-.cancel-policy-section{
-    padding-top: 75px;
+.cancel-policy-section {
+    padding-top: 100px;
     width: 100%;
     padding-left: 15px;
     max-width: 850px;
     padding-right: 15px;
-    margin: 55px auto 75px;
-      line-height: 175%;
+    margin: 0px auto 75px;
+
 }
 .cp-announce{
   margin:55px auto 55px;
@@ -2387,9 +2387,7 @@ Cancel policy　キャンセルポリシー
   font-size: 16px;
 }
 @media screen and (max-width: 798px) {
-.cancel-policy-section{
-    padding-top:0px;
-}
+
 }
 /**************************************************************************
 
