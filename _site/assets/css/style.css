@@ -2386,7 +2386,11 @@ Cancel policy　キャンセルポリシー
 .cp-index span{
   font-size: 16px;
 }
-
+@media screen and (max-width: 798px) {
+.cancel-policy-section{
+    padding-top:0px;
+}
+}
 /**************************************************************************
 
 footer
