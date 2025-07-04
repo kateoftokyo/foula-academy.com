@@ -2401,12 +2401,12 @@ footer
 }
 
 .footer-inner {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 1000px;
-  margin: auto;
-  margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1210px;
+    margin: auto;
+    margin-bottom: 50px;
 }
 
 .company {
