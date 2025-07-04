@@ -1850,8 +1850,10 @@ contact-section
 }
 .contact-form {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    justify-content: center;
     align-items: center;
+    gap: 20px;
     padding: 5px 0px 15px;
 }
 
