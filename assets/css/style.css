@@ -139,7 +139,7 @@ TOPへ戻る
 .page-top {
   position: fixed;
   right: 10px;
-  bottom: 100px;
+  bottom: 10px;
   width: 42px;
   height: 42px;
   z-index: 99;
