@@ -1,5 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Waterfall&display=swap');
 
+/**************************************************************************
+
+.cta-section
+
+**************************************************************************/
+.cta-section {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    background-color: #00000069;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999999999999;
+}
+.cta-section a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    width: 100%;
+    max-width: 398px;
+    text-align: center;
+    border-radius: 25px;
+    background-color: #012f44;
+    animation: fadeInUp 1s ease-out;
+}
+
+@media screen and (max-width: 498px) {
+    .cta-section a {
+        max-width: 300px;
+    }
+}
+
+
 .section-title {
     position: relative;
     text-align: center;
