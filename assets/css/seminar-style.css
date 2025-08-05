@@ -22,12 +22,13 @@
     text-align: center;
     padding: 15px;
     font-size: 24px;
-    font-weight: bold;
+    /* font-weight: bold; */
     width: 100%;
     max-width: 398px;
     text-align: center;
     border-radius: 25px;
-    background-color: #012f44;
+    background-color: #fb3581;
+    letter-spacing: -0.5px;
     animation: fadeInUp 1s ease-out;
 }
 
@@ -37,7 +38,19 @@
     }
 }
 
+   @keyframes fadeInUp {
+        from {
+            transform: translateY(30px);
+            opacity: 0;
+        }
 
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    
 .section-title {
     position: relative;
     text-align: center;
