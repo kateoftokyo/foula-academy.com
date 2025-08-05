@@ -47,7 +47,7 @@ p {
 
 /**************************************************************************
 
-TOPへ戻る
+loadingAnimation
 
 **************************************************************************/
 .loading {
@@ -107,21 +107,22 @@ TOPへ戻る
   .loading img {
     width: 250px;
   }
+
   @keyframes logo_fade {
-  0% {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
 
-  60% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
+    60% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
 
-  100% {
-    opacity: 0;
+    100% {
+      opacity: 0;
+    }
   }
-}
 }
 
 @media screen and (max-width: 498px) {
@@ -629,10 +630,11 @@ key-visual キービジュアル
     font-size: 32px;
     margin-bottom: 15px;
   }
-  
-.key-visual .slogan {
+
+  .key-visual .slogan {
     top: 55%;
-}
+  }
+
   .sub-slogan {
     font-size: 16px;
     line-height: 200%;
@@ -673,7 +675,7 @@ key-visual キービジュアル
     font-size: 12px;
     color: #fff;
     text-transform: uppercase;
-  /*   white-space: nowrap; */
+    /*   white-space: nowrap; */
     letter-spacing: 2px;
   }
 
@@ -795,9 +797,11 @@ consept-section コンセプト
     padding-left: 15px;
     padding-right: 15px;
   }
-.consept-section-inner {
+
+  .consept-section-inner {
     margin-bottom: 35px;
-}
+  }
+
   .consept-section h1 {
     font-size: 2em;
   }
@@ -814,15 +818,16 @@ consept-section コンセプト
 }
 
 @media screen and (max-width: 498px) {
-.consept-section h1 {
+  .consept-section h1 {
     font-size: 1.7em;
     line-height: 160%;
     text-align: start;
     padding-left: 15px;
-}
-.consept-section div {
+  }
+
+  .consept-section div {
     text-align: start;
-}
+  }
 }
 
 /**************************************************************************
@@ -835,13 +840,13 @@ seminar-section セミナーリスト
 }
 
 .seminar-list {
-    width: 100%;
-    max-width: 1280px;
-    margin: 85px auto 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
+  width: 100%;
+  max-width: 1280px;
+  margin: 85px auto 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 }
 
 .seminar-list li {
@@ -851,19 +856,21 @@ seminar-section セミナーリスト
 
 
 .seminar-list li a {
-    display: block;
-    font-size: 21px;
-    /* line-height: 24px; */
-    padding: 15px 0px;
-    color: #352B24;
-    text-align: center;
-    border: 1px solid #352B24;
-    transition: 0.4s;
+  display: block;
+  font-size: 21px;
+  /* line-height: 24px; */
+  padding: 15px 0px;
+  color: #352B24;
+  text-align: center;
+  border: 1px solid #352B24;
+  transition: 0.4s;
 }
+
 .seminar-list li a:hover {
-   background-color: #352B24;
-   color: #fff;
+  background-color: #352B24;
+  color: #fff;
 }
+
 .seminar-list li a span {
   display: block;
   font-size: 16px;
@@ -887,24 +894,24 @@ gap: 15px; */
 
 
 .seminar-index ul {
-    width:100%;
-    max-width: 1280px;
-    padding: 0 15px;
-    margin: 15px auto 75px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  width: 100%;
+  max-width: 1280px;
+  padding: 0 15px;
+  margin: 15px auto 75px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .seminar-contents {
-    width: 49%;
-    padding: 0px;
-    margin-bottom: 30px;
-    /* padding-bottom: 20px; */
-    /* min-height: 670px; */
-    border: 1px solid #cbcbcb;
-    /* border-right: 0; */
-    transition: 0.4s;
+  width: 49%;
+  padding: 0px;
+  margin-bottom: 30px;
+  /* padding-bottom: 20px; */
+  /* min-height: 670px; */
+  border: 1px solid #cbcbcb;
+  /* border-right: 0; */
+  transition: 0.4s;
 }
 
 .seminar-contents.coming {
@@ -930,10 +937,10 @@ gap: 15px; */
 }
 
 .seminar-contents-detail {
-    text-align: center;
-    color: #352B24;
-    font-size: 16px;
-    padding: 10px 25px 35px;
+  text-align: center;
+  color: #352B24;
+  font-size: 16px;
+  padding: 10px 25px 35px;
 }
 
 .seminar-contents-detail .num {
@@ -945,47 +952,53 @@ gap: 15px; */
 
 
 .seminar-contents-detail .text {
-    position: relative;
-    font-size: 21px;
-    padding-bottom: 5px;
-    margin: 10px auto 0px;
+  position: relative;
+  font-size: 21px;
+  padding-bottom: 5px;
+  margin: 10px auto 0px;
 }
 
 .seminar-contents-detail .text span {
-    display: block;
-    font-size: 18px;
-    margin-top: 5px;
-    letter-spacing: 0.09rem;
+  display: block;
+  font-size: 18px;
+  margin-top: 5px;
+  letter-spacing: 0.09rem;
 }
-.bottom-area{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+.bottom-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
 .bottom-area .link-btn {
   width: 35%;
 }
+
 .bottom-area .link-btn a {
-       background-color: #068cb4;
-    color: #fff;
-    padding: 10px 35px;
-    border-radius: 25px;
-    font-size: 18px;
+  background-color: #068cb4;
+  color: #fff;
+  padding: 10px 35px;
+  border-radius: 25px;
+  font-size: 18px;
 }
 
 .seminar-contents-detail .price {
-    width: 63%;
+  width: 63%;
 }
+
 .seminar-contents-detail .price p {
-    margin-bottom: 0px;
-    text-align: end;
-    font-size: 30px;
+  margin-bottom: 0px;
+  text-align: end;
+  font-size: 30px;
 }
+
 .seminar-contents-detail .price p span {
-    font-size: 12px;
-    padding-left: 7px;
-    padding-right: 5px;
+  font-size: 12px;
+  padding-left: 7px;
+  padding-right: 5px;
 }
+
 .seminar-contents-detail .kit {
   background-color: #352B24;
   color: #fff;
@@ -997,11 +1010,11 @@ gap: 15px; */
 }
 
 .seminar-contents-detail .comment {
-    font-size: 16px;
-    margin-top: 15px;
-    text-align: start;
-    margin-bottom: 40px;
-    line-height: 180%;
+  font-size: 16px;
+  margin-top: 15px;
+  text-align: start;
+  margin-bottom: 40px;
+  line-height: 180%;
 }
 
 .seminar-contents-detail .text br {
@@ -1034,44 +1047,52 @@ display: none;
 @media screen and (max-width: 798px) {
   .seminar-section {
     padding-top: 0px;
-}
-.even{
-background-color: #f8f8f8;
-}
-#EYELASH .seminar-index.even{
-  padding-top: 25px;
-}
-.seminar-index_title {
+  }
+
+  .even {
+    background-color: #f8f8f8;
+  }
+
+  #EYELASH .seminar-index.even {
+    padding-top: 25px;
+  }
+
+  .seminar-index_title {
     padding-top: 65px;
     margin-bottom: 0;
-}
-.seminar-index_title.even {
+  }
+
+  .seminar-index_title.even {
     /* padding-top: 25px; */
     margin-top: 35px;
-}
-.seminar-list {
+  }
+
+  .seminar-list {
     padding: 0 15px;
     margin-top: 35px;
     margin-bottom: 15px;
     display: flex;
     flex-wrap: wrap;
     gap: 0 10px;
-}
-.seminar-index ul {
-   padding:  0 15px;
-}
+  }
+
+  .seminar-index ul {
+    padding: 0 15px;
+  }
+
   .seminar-list li {
     border: none;
     width: 48%;
   }
-/*   .seminar-list li:last-child{
+
+  /*   .seminar-list li:last-child{
     width: 75%;
   } */
   .seminar-list li:first-child {
     border-left: none;
   }
 
-.seminar-list li a {
+  .seminar-list li a {
     margin-bottom: 15px;
     padding: 10px 0;
     font-size: 18px;
@@ -1080,30 +1101,34 @@ background-color: #f8f8f8;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-.seminar-list li a span {
+  }
+
+  .seminar-list li a span {
     display: block;
     font-size: 14px;
-}
-.seminar-index ul {
+  }
+
+  .seminar-index ul {
     flex-direction: column;
     margin-bottom: 0;
     padding: 0 10px;
     margin-top: 0;
-}
+  }
 
   .seminar-contents {
     width: 100%;
     min-height: initial;
     border: 1px solid #cbcbcb;
-    margin-bottom:20px;
+    margin-bottom: 20px;
     border: 0;
     padding: 15px 0;
   }
-.seminar-contents-detail {
+
+  .seminar-contents-detail {
     padding: 0px;
-}
-.seminar-contents-detail .text {
+  }
+
+  .seminar-contents-detail .text {
     font-size: 21px;
     display: block;
     text-align: start;
@@ -1120,60 +1145,71 @@ background-color: #f8f8f8;
     font-family: 'Shippori Mincho';
     font-weight: inherit;
     /* margin-bottom: 8px; */
-}
-.seminar-index.even .seminar-contents-detail .text {
+  }
+
+  .seminar-index.even .seminar-contents-detail .text {
     background-color: #f8f8f8;
-}
-.seminar-contents-detail .num {
+  }
+
+  .seminar-contents-detail .num {
     display: none;
-}
+  }
+
   .seminar-contents-detail br {
     display: block;
   }
 
 
-.seminar-contents-detail .comment {
+  .seminar-contents-detail .comment {
     font-size: 16px;
     line-height: 175%;
     margin-bottom: 15px;
     padding: 0 5px;
-}
+  }
 
-  .seminar-contents-detail .comment br{
+  .seminar-contents-detail .comment br {
     display: none;
   }
+
   .seminar-contents-detail .price {
     width: 100%;
-}
+  }
+
   .seminar-contents-detail .price p {
     font-size: 32px;
   }
-.seminar-contents-detail .price p span {
+
+  .seminar-contents-detail .price p span {
     font-size: 16px;
-}
-.seminar-contents-detail .price p {
+  }
+
+  .seminar-contents-detail .price p {
     margin-bottom: 5px;
     padding-right: 5px;
-}
+  }
 
   .seminar-contents .text::after {
     display: none;
   }
+
   .bottom-area {
     flex-direction: column-reverse;
-}
-.bottom-area .link-btn {
+  }
+
+  .bottom-area .link-btn {
     margin-top: 35px;
     margin-bottom: 20px;
     width: 100%;
-}
-.bottom-area .link-btn a {
+  }
+
+  .bottom-area .link-btn a {
     background-color: #352B24;
     font-size: 21px;
-}
-.br-pc-none{
-  display: block;
-}
+  }
+
+  .br-pc-none {
+    display: block;
+  }
 }
 
 
@@ -1334,9 +1370,10 @@ padding-right: 10px; */
   .instructor-section {
     padding: 0px 15px 0;
   }
+
   .instructorSwiper {
     margin: 25px auto;
-}
+  }
 
   .swiper-pagination-bullet {
     width: 35px !important;
@@ -1387,9 +1424,10 @@ padding-right: 10px; */
   .name-en {
     font-size: 16px;
   }
+
   .region {
-   margin-bottom:50px;
-}
+    margin-bottom: 50px;
+  }
 }
 
 
@@ -1506,11 +1544,13 @@ schedule-section
 }
 
 .online {
-    background-color: #ad5000;
+  background-color: #ad5000;
 }
+
 .full {
-    background-color: #dc1d0e;
+  background-color: #dc1d0e;
 }
+
 .schedule_box table tr {
   padding: 15px 0;
 }
@@ -1646,7 +1686,8 @@ schedule-section
 @media screen and (max-width: 798px) {
   .schedule-section {
     padding-top: 0px;
-}
+  }
+
   .section-index-title {
     text-align: center;
     font-size: 24px;
@@ -1665,30 +1706,33 @@ schedule-section
     padding-bottom: 15px;
   }
 
-.schedule-list {
+  .schedule-list {
     flex-wrap: wrap;
     /* flex-direction: column; */
     justify-content: space-between;
     margin-bottom: 15px;
     margin-top: 25px;
     padding: 0 15px;
-}
+  }
 
-.schedule-list li {
+  .schedule-list li {
     width: 47%;
     border: 1px solid #352B24;
     margin-bottom: 10px;
     padding: 0px;
-}
-.schedule-list li:last-child{
+  }
+
+  .schedule-list li:last-child {
     width: 100%;
-}
-.schedule-list .btn span {
+  }
+
+  .schedule-list .btn span {
     font-size: 14px;
-}
+  }
+
   .section-index-month {
-   /*  padding-top: 15px; */
-   font-size: 24px;
+    /*  padding-top: 15px; */
+    font-size: 24px;
     width: 90%;
     margin: auto;
     border-bottom: 2px solid rgba(189, 184, 177, 0.3);
@@ -1697,7 +1741,7 @@ schedule-section
   .schedule_box tbody {
     display: block;
     padding-bottom: 25px;
-  /*   border-bottom: 1px solid rgba(189, 184, 177, 0.3); */
+    /*   border-bottom: 1px solid rgba(189, 184, 177, 0.3); */
   }
 
   .schedule_box tbody tr {
@@ -1782,12 +1826,12 @@ schedule-section
     max-width: 275px;
   }
 
-.schedule-list .btn {
+  .schedule-list .btn {
     font-size: 16px;
     padding: 0px;
     line-height: 140%;
     height: 80px;
-}
+  }
 }
 
 
@@ -1798,7 +1842,7 @@ contact-section
 **************************************************************************/
 .contact-section {
   padding-top: 15px;
- opacity: 0;
+  opacity: 0;
   transform: translateY(50px);
   transition: background-color 0.5s ease;
 }
@@ -1817,67 +1861,74 @@ contact-section
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin:15px auto;
+  margin: 15px auto;
   text-align: center;
- background-color: #012f44;
+  background-color: #012f44;
   border-radius: 15px;
   font-size: 21px;
   color: #fff;
   height: 75px;
   margin-bottom: 55px;
   border-radius: 50px;
- transition: background-color 0.3s;
+  transition: background-color 0.3s;
 }
+
 .app-form a::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -75%;
-    width: 50%;
-    height: 100%;
-    background: linear-gradient(
-    120deg,
-    rgba(255, 255, 255, 0.1) 0%,
-    rgba(255, 255, 255, 0.4) 50%,
-    rgba(255, 255, 255, 0.1) 100%
-  );
-    transform: skewX(-25deg);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.4) 50%,
+      rgba(255, 255, 255, 0.1) 100%);
+  transform: skewX(-25deg);
 }
+
 .contact-notice {
   font-size: 16px;
   text-align: center;
   margin-bottom: 15px;
 }
+
 .contact-form {
-    display: flex;
-    /* justify-content: space-between; */
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding: 5px 0px 15px;
+  display: flex;
+  /* justify-content: space-between; */
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 5px 0px 15px;
 }
 
 .contact-form li {
   width: 32%;
   display: flex;
 }
-.app-form{
+
+.app-form {
   display: flex;
 }
-.app-form .c_icon img{
-  width:100%;
-  max-width: 35px;
-}
-.c_icon{
-  width: 15%;
-}
-.c_des{
-  width: 50%;
-}
-.contact-form li img{
+
+.app-form .c_icon img {
   width: 100%;
   max-width: 35px;
 }
+
+.c_icon {
+  width: 15%;
+}
+
+.c_des {
+  width: 50%;
+}
+
+.contact-form li img {
+  width: 100%;
+  max-width: 35px;
+}
+
 .contact-form li a {
   background-color: #ffffff;
   width: 100%;
@@ -1897,64 +1948,75 @@ contact-section
 }
 
 .contact-form li a span {
-    letter-spacing: 1px;
-    font-size: 14px;
+  letter-spacing: 1px;
+  font-size: 14px;
 }
 
 .contact-form li a.c_line {
-    background-color: #05a849;
-    color: #fff;
-    border: 1px solid #fff;
+  background-color: #05a849;
+  color: #fff;
+  border: 1px solid #fff;
 }
 
 .app-form .c_icon,
-.app-form .c_des{
+.app-form .c_des {
   width: initial
 }
-.app-form .c_icon{
+
+.app-form .c_icon {
   margin-left: 15px;
 }
-.app-form .c_icon img{
+
+.app-form .c_icon img {
   width: 25px;
 }
+
 @media screen and (max-width: 798px) {
-.contact-form {
-   flex-direction: column;
-}
-.contact-section-inner {
-  margin: 35px auto 0;
-}
-.app-form a {
+  .contact-form {
+    flex-direction: column;
+  }
+
+  .contact-section-inner {
+    margin: 35px auto 0;
+  }
+
+  .app-form a {
     margin-top: 0;
     margin-bottom: 25px;
     height: 80px;
     flex-direction: row-reverse;
     gap: 15px;
     /* justify-content: initial; */
-}
-.app-form .c_icon img {
-    width: 30px;
-}
-.contact-form {
-    padding: 15px 0 0;
-}
+  }
 
-.contact-form li {
-    width:100%;
+  .app-form .c_icon img {
+    width: 30px;
+  }
+
+  .contact-form {
+    padding: 15px 0 0;
+  }
+
+  .contact-form li {
+    width: 100%;
     margin-bottom: 15px;
-}
-.contact-form li a {
+  }
+
+  .contact-form li a {
     height: 80px;
-}
-.app-form p{
-  font-size: 21px;
-}
-.c_des {
+  }
+
+  .app-form p {
+    font-size: 21px;
+  }
+
+  .c_des {
     line-height: 150%;
-}
-.contact-form li a p {
+  }
+
+  .contact-form li a p {
     /* font-size: 18px; */
-}
+  }
 }
 
 /**************************************************************************
@@ -2362,33 +2424,37 @@ Cancel policy　キャンセルポリシー
 
 **************************************************************************/
 .cancel-policy-section {
-    padding-top: 100px;
-    width: 100%;
-    padding-left: 15px;
-    max-width: 850px;
-    padding-right: 15px;
-    margin: 0px auto 75px;
+  padding-top: 100px;
+  width: 100%;
+  padding-left: 15px;
+  max-width: 850px;
+  padding-right: 15px;
+  margin: 0px auto 75px;
 
 }
-.cp-announce{
-  margin:55px auto 55px;
+
+.cp-announce {
+  margin: 55px auto 55px;
   font-family: 18px;
 }
-.cp-index{
+
+.cp-index {
   margin-bottom: 35px;
 }
-.cp-index p{
-/*  border-left: 3px #333 solid;
+
+.cp-index p {
+  /*  border-left: 3px #333 solid;
  padding-left: 10px; */
- font-size: 18px;
- margin-bottom:10px;
+  font-size: 18px;
+  margin-bottom: 10px;
 }
-.cp-index span{
+
+.cp-index span {
   font-size: 16px;
 }
-@media screen and (max-width: 798px) {
 
-}
+@media screen and (max-width: 798px) {}
+
 /**************************************************************************
 
 footer
@@ -2401,12 +2467,12 @@ footer
 }
 
 .footer-inner {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    max-width: 1210px;
-    margin: auto;
-    margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1210px;
+  margin: auto;
+  margin-bottom: 50px;
 }
 
 .company {
@@ -2486,15 +2552,17 @@ footer
 
 @media screen and (max-width: 798px) {
   .footer {
-    padding: 10% 15px 5%;
+    padding: 10% 15px 25%;
   }
-.footer-inner {
+
+  .footer-inner {
     flex-direction: column;
     margin-bottom: 25px;
-}
+  }
+
   .company {
     width: 100%;
-  /*   margin-bottom: 15px; */
+    /*   margin-bottom: 15px; */
   }
 
   .footer-nav {
@@ -2507,10 +2575,10 @@ footer
     gap: 10px;
   }
 
-.footer-nav ul li a {
+  .footer-nav ul li a {
     padding-left: 3px;
     font-size: 18px;
-}
+  }
 
   .footer-nav ul li a span {
     font-size: 14px;
@@ -2522,22 +2590,26 @@ footer
     display: block;
     margin-bottom: 15px;
   }
-.footer-logo {
-  width: 100%;
-  max-width: initial;
-}
-.footer-sns {
+
+  .footer-logo {
+    width: 100%;
+    max-width: initial;
+  }
+
+  .footer-sns {
     margin: 25px 5px 0 0;
     display: flex;
     justify-content: center;
     gap: 25px;
     width: 100%;
-}
+  }
+
   .footer-sns img {
     width: 100%;
     max-width: 35px;
   }
-.copyright {
-color: #b0b0b0;
-}
+
+  .copyright {
+    color: #b0b0b0;
+  }
 }

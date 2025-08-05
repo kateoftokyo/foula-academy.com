@@ -82,6 +82,10 @@
 }
 
 @media screen and (max-width: 498px) {
+    .cta-section {
+        bottom: 10px;
+    }
+
     .cta-section a {
         max-width: 375px;
         font-size: 18px;
