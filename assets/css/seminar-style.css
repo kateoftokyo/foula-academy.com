@@ -58,13 +58,10 @@
   position: relative;
   z-index: 2;
 }
-
-@media screen and (max-width: 498px) {
-    .cta-section a {
-        max-width: 300px;
-    }
+.cta-section a:hover {
+  background: linear-gradient(90deg, #A0004B, #C0395E);
+  transform: scale(1.03);
 }
-
 @keyframes shimmer {
   0% {
     left: -75%;
@@ -85,6 +82,15 @@
             opacity: 1;
         }
     }
+
+@media screen and (max-width: 498px) {
+    .cta-section a {
+        max-width: 300px;
+          font-size: 18px;
+    }
+}
+
+
 
     
 .section-title {
