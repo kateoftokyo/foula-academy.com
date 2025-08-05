@@ -20,9 +20,10 @@
 .cta-section a {
     position: relative;
     overflow: hidden;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #fff;
-    text-align: center;
     padding: 15px;
     font-size: 21px;
     box-shadow: 0 4px 12px rgba(255, 105, 135, 0.3);
@@ -32,9 +33,7 @@
     text-align: center;
     border-radius: 25px;
     background: linear-gradient(90deg, #742339 0%, #A0004B 100%);
-    /* background-color: #D94B74; */
     animation: fadeInUp 1s ease-out;
-    transition: 0.4s;
 }
 
 .cta-section a::before {
@@ -59,10 +58,6 @@
     z-index: 2;
 }
 
-.cta-section a:hover {
-    background: linear-gradient(90deg, #A0004B, #C0395E);
-    transform: scale(1.03);
-}
 
 @keyframes shimmer {
     0% {
