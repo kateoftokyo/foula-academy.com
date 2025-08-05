@@ -17,25 +17,61 @@
     z-index: 9999999999999;
 }
 .cta-section a {
+    position: relative;
+  overflow: hidden;
     display: block;
     color: #fff;
     text-align: center;
     padding: 15px;
-    font-size: 24px;
-    /* font-weight: bold; */
+    font-size: 21px;
+    box-shadow: 0 4px 12px rgba(255, 105, 135, 0.3);
+    border: 2px solid #661129;
     width: 100%;
-    max-width: 398px;
+    max-width: 435px;
     text-align: center;
     border-radius: 25px;
-    background-color: #fb3581;
-    letter-spacing: -0.5px;
+    background: linear-gradient(90deg, #742339 0%, #A0004B 100%);
+    /* background-color: #D94B74; */
     animation: fadeInUp 1s ease-out;
+}
+
+.cta-section a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.6) 50%,
+    rgba(255, 255, 255, 0.2) 100%
+  );
+  transform: skewX(-25deg);
+  animation: shimmer 2.5s infinite;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.cta-section a span {
+  position: relative;
+  z-index: 2;
 }
 
 @media screen and (max-width: 498px) {
     .cta-section a {
         max-width: 300px;
     }
+}
+
+@keyframes shimmer {
+  0% {
+    left: -75%;
+  }
+  100% {
+    left: 125%;
+  }
 }
 
    @keyframes fadeInUp {
