@@ -156,6 +156,11 @@ TOPへ戻る
   transform: rotate(-90deg);
 }
 
+@media screen and (max-width: 498px) {
+.page-top {
+  bottom: 100px;
+}
+}
 /**************************************************************************
 
 header ヘッダー
