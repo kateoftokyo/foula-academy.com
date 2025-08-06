@@ -33,20 +33,26 @@ prevEl: ".swiper-button-prev",
 });
 
 
-var swiper = new Swiper(".instructorSwiper", {
-spaceBetween: 15,
-/*   centeredSlides: true, */
-pagination: {
-el: ".swiper-pagination",
-clickable: true,
-},
-slidesPerView: 2,
-breakpoints: {
-798: {
-slidesPerView: 5,
-spaceBetween: 15,
-}
-}
+const swiper = new Swiper(".instructorSwiper", {
+  loop: true, // スライドをループさせる
+  speed: 1500, // スライドの切り替え速度（ミリ秒）
+  autoplay: {
+    delay: 1500, // 自動再生の間隔（ミリ秒）
+    disableOnInteraction: false, // ユーザー操作後も自動再生を継続
+  },
+  spaceBetween: 15,
+  slidesPerView: 2,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true, // ページネーションのクリック有効
+  },
+  breakpoints: {
+    798: {
+      slidesPerView: 4,
+      spaceBetween: 15,
+    },
+  },
+  // centeredSlides: true, // 必要な場合はコメントアウト解除
 });
 
 </script>
