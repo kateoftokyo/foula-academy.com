@@ -46,7 +46,13 @@ breakpoints: {
 slidesPerView: 4,
 spaceBetween: 15,
 }
-}
+},
+  loop: true, // ループさせる
+  speed: 1500, // 少しゆっくり(デフォルトは300)
+  autoplay: { // 自動再生
+    delay: 1500, // 1.5秒後に次のスライド
+    disableOnInteraction: false, // 矢印をクリックしても自動再生を止めない
+  },
 });
 
 </script>
