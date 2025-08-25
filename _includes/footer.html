@@ -44,3 +44,23 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N8ZMMKKL"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+
+<script>
+    document.addEventListener('click', function(e){
+      const a = e.target.closest('a.cta-click');
+      if (!a) return;
+
+      const name =
+        a.getAttribute('data-seminar') ||
+        a.getAttribute('data-title') ||
+        a.textContent.trim() ||
+        '(unknown)';
+
+      window.dataLayer = window.dataLayer || [];
+      dataLayer.push({
+        event: 'seminar_cta_click',
+        cta_seminar_name: name,
+        click_url: a.href
+      });
+    });
+  </script>
