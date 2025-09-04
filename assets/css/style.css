@@ -142,7 +142,7 @@ TOPへ戻る
   bottom: 10px;
   width: 42px;
   height: 42px;
-  z-index: 99;
+  z-index: 999999;
 }
 
 .page-top a {
