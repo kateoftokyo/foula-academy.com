@@ -1547,6 +1547,9 @@ schedule-section
 .osaka {
   background-color: #499c00;
 }
+.closed {
+    background-color: #969696;
+}
 
 .online {
   background-color: #ad5000;
