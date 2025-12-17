@@ -746,12 +746,11 @@ background-color: #fafafa;
     margin: auto;
 }
 
-.request-sentence-dis{
-    padding: 0 25px;
+.request-sentence-dis {
+    padding: 25px;
     line-height: 200%;
-    text-align: center;
+    color: red;
 }
-
 .application-section {
     opacity: 0;
     transform: translateY(50px);
@@ -902,7 +901,8 @@ background-color: #fafafa;
         display: none;
     }
 
-    .course-curriculum-index-title {
+    .course-curriculum-index-title,
+    .request-sentence .rs-title  {
         flex-direction: column;
         width: 100%;
     }
