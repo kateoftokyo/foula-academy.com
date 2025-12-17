@@ -732,6 +732,25 @@ span.adv {
 .bring-today-area-text li {
     display: inline-block;
 }
+.request-sentence .rs-title{
+background-color: #fafafa;
+    color: #333;
+    border: 1px solid #333;
+    padding: 15px;
+    font-size: 21px;
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    margin: auto;
+}
+
+.request-sentence-dis{
+    padding: 0 25px;
+    line-height: 200%;
+    text-align: center;
+}
 
 .application-section {
     opacity: 0;
