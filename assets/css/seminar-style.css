@@ -748,6 +748,7 @@ background-color: #fafafa;
 
 .request-sentence-dis {
     padding: 25px;
+    padding-left: 35px;
     line-height: 200%;
     color: red;
 }
@@ -906,7 +907,9 @@ background-color: #fafafa;
         flex-direction: column;
         width: 100%;
     }
-
+.request-sentence-dis {
+    padding-left: 25px;
+}
     .for-model {
         padding: 0px;
         text-align: center;
