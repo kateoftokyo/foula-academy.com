@@ -81,6 +81,23 @@ sessionStorage.setItem("visit", "true");
         toggle.addEventListener("click", toggleMenu);
         menuItems.forEach((item) => item.addEventListener("click", toggleMenu));
 
+
+          // スケジュールタブ
+   const filterButtons = document.querySelectorAll("#filter-buttons button");
+  const filterCards = document.querySelectorAll("#filterable-cards .card");
+
+  filterButtons.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      filterButtons.forEach((b) => b.classList.remove("active"));
+      e.currentTarget.classList.add("active");
+      const selectedFilter = e.currentTarget.dataset.filter;
+      filterCards.forEach((card) => {
+        card.classList.toggle("hide", card.dataset.name !== selectedFilter);
+      });
+    });
+  });
+
+  
         // FAQセクションの開閉処理
         const questions = document.querySelectorAll('.question');
         questions.forEach((q) => {
@@ -132,6 +149,7 @@ sessionStorage.setItem("visit", "true");
             }
         });
     </script>
+
 
 <!-- Initialize Swiper -->
     <script>
