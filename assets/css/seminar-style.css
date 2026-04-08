@@ -1805,7 +1805,7 @@ Gsap用
 
 .co-dis-section h1 {
     display: block;
-    font-size: 3em;
+   /*  font-size: 3em; */
     margin-top: 50px;
     margin-bottom: 50px;
     line-height: 220%;
