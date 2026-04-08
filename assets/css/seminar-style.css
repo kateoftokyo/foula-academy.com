@@ -1781,3 +1781,26 @@ Gsap用
     transform: translateY(50px);
     transition: all 0.5s ease-out;
 }
+
+
+
+/**************************************************************************
+
+新コース用追加css
+
+**************************************************************************/
+.co-dis-section{
+    width: 100%;
+    max-width: 750px;
+    margin: 25px auto;
+    text-align: center;
+        line-height: 220%;
+}
+
+.consept-section h1 {
+    display: block;
+    font-size: 3em;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    line-height: 220%;
+}
