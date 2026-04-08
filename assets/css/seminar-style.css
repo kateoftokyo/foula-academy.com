@@ -10,7 +10,7 @@
     bottom: 0;
     width: 100%;
     padding: 15px;
-  /*   background-color: #00000069; */
+    /*   background-color: #00000069; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -732,8 +732,9 @@ span.adv {
 .bring-today-area-text li {
     display: inline-block;
 }
-.request-sentence .rs-title{
-background-color: #fafafa;
+
+.request-sentence .rs-title {
+    background-color: #fafafa;
     color: #333;
     border: 1px solid #333;
     padding: 15px;
@@ -752,6 +753,7 @@ background-color: #fafafa;
     line-height: 200%;
     color: red;
 }
+
 .application-section {
     opacity: 0;
     transform: translateY(50px);
@@ -903,13 +905,15 @@ background-color: #fafafa;
     }
 
     .course-curriculum-index-title,
-    .request-sentence .rs-title  {
+    .request-sentence .rs-title {
         flex-direction: column;
         width: 100%;
     }
-.request-sentence-dis {
-    padding-left: 25px;
-}
+
+    .request-sentence-dis {
+        padding-left: 25px;
+    }
+
     .for-model {
         padding: 0px;
         text-align: center;
@@ -1789,15 +1793,17 @@ Gsap用
 新コース用追加css
 
 **************************************************************************/
-.co-dis-section{
+.co-dis-section {
     width: 100%;
     max-width: 750px;
     margin: 25px auto;
     text-align: center;
-        line-height: 220%;
+    line-height: 220%;
+    font-size: 21px;
+    font-size: 18px;
 }
 
-.consept-section h1 {
+.co-dis-section h1 {
     display: block;
     font-size: 3em;
     margin-top: 50px;
