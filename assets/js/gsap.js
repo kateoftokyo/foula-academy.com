@@ -49,6 +49,7 @@
 
   // その他セクション（カリキュラム・ディプロマ・キットなど）
   animateWithScroll([
+    ".co-dis-section",
     ".course-curriculum-title",
     ".course-curriculum-info",
     ".course-curriculum-index",
