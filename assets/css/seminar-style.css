@@ -234,13 +234,12 @@
 
 .course-benefits-index-img {
     position: relative;
-    /* width: 325px; */
-    /* height: 290px; */
+    width: 325px;
+    height: 235px;
     margin-bottom: 10px;
     /* display: none; */
     width: 45%;
 }
-
 .course-benefits-index-img .point-img {
     position: absolute;
     top: 5px;
