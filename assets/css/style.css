@@ -1735,10 +1735,10 @@ schedule-section
     margin-bottom: 10px;
     padding: 0px;
   }
-
+/* 
   .schedule-list li:last-child {
     width: 100%;
-  }
+  } */
 
   .schedule-list .btn span {
     font-size: 14px;
