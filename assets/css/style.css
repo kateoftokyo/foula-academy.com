@@ -603,10 +603,10 @@ key-visual キービジュアル
     height: 75vh;
   }
 
-  .key-visual img {
-    height: 85vh
-  }
-
+.key-visual img {
+    height: 85vh;
+    object-position: right;
+}
   .key-visual.sem901-3 img {
     object-position: center;
   }
