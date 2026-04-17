@@ -240,6 +240,7 @@
     /* display: none; */
     width: 45%;
 }
+
 .course-benefits-index-img .point-img {
     position: absolute;
     top: 5px;
@@ -530,9 +531,11 @@
 
 .course-curriculum-title span.little-text {
     font-size: 16px;
-    padding: 0px;
+    padding: 10px;
+    /* font-weight: bold; */
+    color: #352b24;
     display: block;
-    background-color: initial !important;
+    background-color: #ffffff;
 }
 
 .course-curriculum-info {
