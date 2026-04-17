@@ -768,6 +768,7 @@ span.adv {
     padding-left: 35px;
     line-height: 200%;
     color: red;
+    overflow-wrap: anywhere;
 }
 
 .application-section {
