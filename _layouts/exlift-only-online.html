@@ -2,6 +2,9 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
+{% if page.noindex %}
+<meta name="robots" content="noindex, nofollow">
+{% endif %}
 <link rel="stylesheet" href="https://www.foula-academy.com/assets/css/lift-extensions.css">
 {% include head.html %}
 </head>
