@@ -21,11 +21,7 @@
     <link rel="stylesheet" href="../assets/css/lift-extensions.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="../assets/js/add.js" defer></script>
-        <script src="../assets/js/gsap.js" defer></script>
-    <!-- GSAP -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<!-- ScrollTrigger -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script> 
+        <script src="../assets/js/scroll-fade.js" defer></script>
     <title>ExLift Seminar</title>
 </head>
 
@@ -160,7 +156,7 @@
                 </li>
             </ul>
         </div>
-        <!-- 
+        <!--
         <div class="section-title-area">
             <p>Is there an order<br>to how an Exlift is done</p>
         </div>
@@ -311,12 +307,12 @@
         <!--course-curriculum -->
         <div class="course-curriculum-inner lift-exten">
             <p class="section-title">CURRICULUM</p>
-            <div class="course-curriculum-title ex-lift">
+            <div class="course-curriculum-title js-scroll-fade ex-lift">
                 <span>In-Person<span class="kit-inc"></span></span>ExLift Seminar
                 <br><span class="little-text">please arrange for 2 models.</span>
             </div>
 
-            <div class="course-curriculum-info" style="justify-content: center;">
+            <div class="course-curriculum-info js-scroll-fade" style="justify-content: center;">
                 <div>
                     <span>Target Audience</span>
                     Cosmetology license<span class="terms" style="line-height: 165%; margin-top: 15px;">※Not recommended
@@ -324,7 +320,7 @@
                 </div>
 
             </div>
-            <div class="course-curriculum-info lift-exten">
+            <div class="course-curriculum-info js-scroll-fade lift-exten">
                 <div>
                     <span class="little-text">Fee</span>
                     <p class="course-curriculum-price">$1250<br><span class="little-text"> (excluding kit)</span></p>
@@ -334,7 +330,7 @@
                     10:00 ～ 17:00<span class="little-text"></span>
                 </div>
             </div>
-            <div class="course-curriculum-index">
+            <div class="course-curriculum-index js-scroll-fade">
                 <div class="course-curriculum-index-section">
                     <div class="lectures">
                         <div class="course-curriculum-index-title">
@@ -361,7 +357,7 @@
                     </div>
                 </div>
 
-                <div class="kit-area lift-exten">
+                <div class="kit-area js-scroll-fade lift-exten">
                     <div class="course-curriculum-index-title">
                         Kit Contents
                     </div>
@@ -392,11 +388,11 @@
 
         <div class="course-curriculum-inner lift-exten">
             <p class="section-title">CURRICULUM</p>
-            <div class="course-curriculum-title ex-lift">
+            <div class="course-curriculum-title js-scroll-fade ex-lift">
                 <span>Online</span>ExLift Seminar
                 <br><span class="little-text">please arrange for 1 model.</span>
             </div>
-            <div class="course-curriculum-info" style="justify-content: center;">
+            <div class="course-curriculum-info js-scroll-fade" style="justify-content: center;">
                 <div>
                     <span>Target Audience</span>
                     Cosmetology license<span class="terms" style="line-height: 165%; margin-top: 15px;">※Not recommended
@@ -404,7 +400,7 @@
                 </div>
 
             </div>
-            <div class="course-curriculum-info lift-exten">
+            <div class="course-curriculum-info js-scroll-fade lift-exten">
                 <div>
                     <span class="little-text">Fee</span>
                     <p class="course-curriculum-price">$950<br><span class="little-text">(Kit Not Included)</span></p>
@@ -414,7 +410,7 @@
                     10:00～13:00<span class="little-text"></span>
                 </div>
             </div>
-            <div class="course-curriculum-index">
+            <div class="course-curriculum-index js-scroll-fade">
                 <div class="course-curriculum-index-section">
                     <div class="lectures" style=" width: 100%;">
                         <div class="course-curriculum-index-title">
@@ -436,7 +432,7 @@
                     </div>
                 </div>
 
-                <div class="kit-area lift-exten">
+                <div class="kit-area js-scroll-fade lift-exten">
                     <div class="course-curriculum-index-title">
                         Items to Prepare Before the Seminar<span></span>
                     </div>
@@ -526,7 +522,6 @@
                         120 W 25th Street<br>
                         New York, United States NY 10001<br>
                         Tel.: 917-409-5951
-                        </p>
                     </div>
                 </div>
             </div>
@@ -673,7 +668,7 @@
         /*     const faqIndex = document.querySelectorAll('.faq-section-index');
         const questions = document.querySelectorAll('.question');
         const answers = document.querySelectorAll('.answer');
-    
+
         questions.forEach((index) => {
         index.addEventListener('click', () => {
         index.nextElementSibling.classList.toggle("show")

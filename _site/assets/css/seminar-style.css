@@ -126,8 +126,6 @@
     border: 1px solid #e8e8e8;
     box-shadow: 3px 3px 4px #e7e7e7;
    /*  transition: 0.3s; */
-    opacity: 0;
-    transform: translateY(50px);
 }
 
 .course-benefits-index:hover{
@@ -310,8 +308,6 @@
     align-items: center;
     gap: 15px;
     font-size: 21px;
-        opacity: 0;
-    transform: translateY(50px);
 }
 
 .course-recommended-attention {
@@ -627,8 +623,6 @@ span.adv {
 }
 
 .application-section{
-    opacity: 0;
-    transform: translateY(50px);
 }
 
 .application-link {
@@ -1635,17 +1629,24 @@ WAX STYLINGコース
 
 
 
-/**************************************************************************
-
-Gsap用
-
-**************************************************************************/
-.course-curriculum-title,
-.course-curriculum-info,
-.course-curriculum-index,
-.diploma-area,
-.kit-area {
+/* Seminar scroll fade */
+.has-scroll-fade .js-scroll-fade {
   opacity: 0;
-  transform: translateY(50px);
-  transition: all 0.5s ease-out;
+  transform: translate3d(0, 40px, 0);
+  transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+.has-scroll-fade .js-scroll-fade.is-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  will-change: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .has-scroll-fade .js-scroll-fade {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }

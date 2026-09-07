@@ -1856,8 +1856,6 @@ contact-section
 **************************************************************************/
 .contact-section {
   padding-top: 15px;
-  opacity: 0;
-  transform: translateY(50px);
   transition: background-color 0.5s ease;
 }
 
