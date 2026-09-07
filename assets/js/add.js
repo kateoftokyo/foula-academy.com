@@ -227,5 +227,24 @@ document.querySelectorAll('.faq-section-index').forEach((item) => {
 		}
 	});
 });
-	  
+
+// セミナーCTAのクリック計測
+document.addEventListener("click", (event) => {
+	const link = event.target.closest("a.cta-click");
+	if (!link) return;
+
+	const seminarName =
+		link.dataset.seminar ||
+		link.dataset.title ||
+		link.textContent.trim() ||
+		"(unknown)";
+
+	window.dataLayer = window.dataLayer || [];
+	window.dataLayer.push({
+		event: "seminar_cta_click",
+		cta_seminar_name: seminarName,
+		click_url: link.href,
+	});
+});
+
 

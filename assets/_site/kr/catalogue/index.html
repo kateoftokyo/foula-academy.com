@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<!--[if lte IE 6]><meta http-equiv="imagetoolbar" content="no"><![endif]-->
+<meta name="viewport" content="width=device-width,maximum-scale=1.0, minimum-scale=1.0,user-scalable=no">
+<title>catalogue | ebook5</title>
+<meta name="description" content="catalogue - ebook5はプラグイン不要、HTML5の電子カタログです">
+<link rel="apple-touch-icon" href="contents/ebook_ico.png">
+<link rel="shortcut icon" href="contents/ebook_ico.png">
+<link rel="stylesheet" href="contents/css/ebook5-4.min.css">
+<script type="text/javascript" src="jstools/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="ebook5js/ebook5-4.1.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="ebook5data/ebook_data.js" charset="utf-8"></script>
+<style type="text/css">
+.theme_bgcolor {background-color: #000b00;}
+.theme_hcolor {background: #4d4d4d;}
+.theme_bcolor {background: #222;}
+.linkmapclass{background-color: #373373;}
+._clickhover{background-color: #373373;}
+</style>
+</head>
+<body class="theme_bgcolor">
+<div id="base_block">
+<div id="stage">
+<div id="canvas">
+<div id="canvas_base" class="cf">
+<canvas id="canvas1"></canvas>
+<canvas id="canvas2"></canvas>
+<div id="row_page">
+<div class="page_left"><img src="contents/image/cmn/spacer.gif"><em class="bookmark">Bookmark</em><div class="hit_area"></div></div>
+<div class="page_right"><img src="contents/image/cmn/spacer.gif"><em class="bookmark">Bookmark</em><div class="hit_area"></div></div></div></div>
+<div class="linkwrap"></div></div>
+<div id="l_canvas">
+<div id="l_canvasbase">
+<div id="l_canvasimg">
+<img id="l_img"></div></div></div></div></div>
+<div id="pageslider">
+<div class="ps-wrap">
+<div class="ps-bar"><span class="ps-range"></span><span class="ps-handle"><span class="ps-handle-view"></span></span></div>
+<div class="ps-info"></div></div>
+<div class="ps-thumb">
+<div class="ps-thumb-wrap">
+<span class="thumbImg cf"><img><img></span><span class="frameBtm"></span>
+<div class="ps-thumb-num"></div></div></div></div>
+<div id="ctrl_panel" class="theme_bcolor cf">
+<div id="ctrl_nav">
+<a id="icon_panel" class="theme_hcolor" href="#"><img src="contents/image/cmn/sp_icon.png" width="50"></a>
+<div class="icon_wrap">
+<ul id="icon_set_wide" class="icon_set_wrap">
+<li><a href="#" class="icon_plus zoomout_icon"><img src="contents/image/cmn/sp_icon.png" width="50"></a></li>
+<li class="icon_minus op50" ><img src="contents/image/cmn/sp_icon.png" width="50" alt="" ></li>
+<li class="icon_item bookmark_menuset">
+<a href="#" class="icon_bookmark"><img src="contents/image/cmn/sp_icon.png" width="50"></a>
+<ol class="sec_nav">
+<li class="leftpage"><a class="theme_hcolor" href="#">左ページにブックマーク</a></li>
+<li class="rightpage"><a class="theme_hcolor" href="#">右ページにブックマーク</a></li>
+</ol></li></ul>
+<ul id="icon_set_zoom" class="icon_set_wrap">
+<li><a href="#" class="icon_plus zoomout_icon"><img src="contents/image/cmn/sp_icon.png" width="50"></a></li>
+<li class="zoom_gage"></li>
+<li><a href="#" class="icon_minus zoomin_icon"><img src="contents/image/cmn/sp_icon.png" width="50"></a></li>
+<li><a href="#" class="icon_close"><img src="contents/image/cmn/sp_icon.png" width="50"></a></li></ul>
+<ul id="icon_set_submenu" class="icon_set_wrap">
+<li class="icon_item print_menuset">
+<a class="icon_print" href="#"><img src="contents/image/cmn/sp_icon.png" width="50"></a>
+<ol class="sec_nav">
+<li class="widepage"><a class="theme_hcolor" href="#">両ページを印刷する</a></li>
+<li class="leftpage"><a class="theme_hcolor" href="#">左ページを印刷する</a></li>
+<li class="rightpage"><a class="theme_hcolor" href="#">右ページを印刷する</a></li>
+</ol></li>
+<li class="icon_item download_menuset">
+<a  class="icon_download" href="#"><img src="contents/image/cmn/sp_icon.png" width="50"></a>
+<ol class="sec_nav">
+<li class="allpage"><a class="theme_hcolor" href="#">全てをダウンロードする</a></li>
+<li class="leftpage"><a class="theme_hcolor" href="#">左ページをダウンロードする</a></li>
+<li class="rightpage"><a class="theme_hcolor" href="#">右ページをダウンロードする</a></li>
+</ol></li>
+<li class="icon_item"><a class="icon_faq" href="http://www.ebook5.net/howto/" target="_blank"><img src="contents/image/cmn/sp_icon.png" width="50"></a></li>
+</ul></div>
+<div id="sig5">
+<a id="icon_ebook5" href="http://www.ebook5.net/" target="_blank"><img src="contents/image/cmn/sp_icon.png" width="50" alt="デジタルカタログのeBook5" ></a>
+</div></div>
+<div id="ctrl_cont">
+<div id="ctrl_tabs">
+<ul>
+<li><a id="icon_list" href="#"><img src="contents/image/cmn/sp_icon_tab.png" width="230" height="50"></a></li>
+<li><a id="icon_thumb" class="not_selected" href="#"><img src="contents/image/cmn/sp_icon_tab.png" width="230" height="50"></a></li></ul></div>
+<div class="search_text_wrap">
+<div class="search_box">
+<a class="search_btn"><img src="contents/image/cmn/sp_icon.png" width="40" alt="search"></a>
+<input type="text" class="search_text">
+<a class="search_cancel_btn"><img src="contents/image/cmn/btn_clear.gif" width="24" alt="cancel"></a></div></div>
+<div id="list_and_thumb">
+<div class="listwrap">
+<div class="nodata">Not found</div>
+<div class="lists">
+<ul></ul></div>
+<div class="thumbs">
+<ul></ul></div></div></div></div></div>
+<div id="sub_scrwindow">
+<div class="mask_layer"></div></div>
+<div id="print_page">
+<div class="page_left"></div>
+<div class="page_right"></div></div>
+<script type="text/javascript">
+$(document).ready(function(){startebook(ebook_data);});
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W55CQN60BC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W55CQN60BC');
+</script></body>
+</html>

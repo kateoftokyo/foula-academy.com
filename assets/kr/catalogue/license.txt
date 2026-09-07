@@ -1,0 +1,37 @@
+本Web Applicationは、現状有姿の状態で提供され、明示的にも黙示的にも、何
+らの担保及び保証するものではありません。弊社は、その商品性、特定目的への
+適合性及び第三者の権利を侵害していないことを黙示的に担保・保証することを
+含み、明示的又は黙示的であるかを問わず、如何なる種類の担保・保証をも行う
+ものではありません。
+
+本Web Applicationの品質、性能、インストール、使用に伴うプログラムエラー、
+装置の損傷、データやソフトウェアプログラムの消失、不稼動及び中断等一切の
+リスクは、あなたの負担とします。本Web Applicationの使用に関する適切性の
+判断は、あなた自身の責任で行うものとし、その使用による一切のリスクは、あ
+なたの負担とします。
+
+
+利用規約詳細については下記URLを参照してください。
+
+http://www.ebook5.net/outline/
+
+
+-----------------------------------------------------
+
+The Web Application is being delivered to you "as is" and Our Company
+makes no warranties, expressly or implied. Our Company makes no
+warranties as to its merchantability and fitness for any particular
+purpose, including implied warranty for non infringement of third party
+rights.
+
+You shall assume all risk associated with the Web Application for its
+quality, performance, installation and use including, but not limited to,
+the risks of program errors, damage to equipment, loss of data or
+software programs, or unavailability or interruption of operations. You
+are solely responsible for determining the appropriateness of using the
+Web Application and assume all risks associated with its use.
+
+Please refer to following URL for a detailed agreement for use.
+
+http://www.ebook5.net/outline/
+

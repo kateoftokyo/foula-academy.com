@@ -1735,7 +1735,7 @@ schedule-section
     margin-bottom: 10px;
     padding: 0px;
   }
-/* 
+/*
   .schedule-list li:last-child {
     width: 100%;
   } */
@@ -2140,7 +2140,7 @@ course-flow
 
 /**************************************************************************
 
-access-section 
+access-section
 
 **************************************************************************/
 .access-section {
@@ -2625,5 +2625,32 @@ footer
 
   .copyright {
     color: #b0b0b0;
+  }
+}
+
+/* Page-specific layout adjustments */
+.page-concept .header,
+.page-schedule .header,
+.page-seminar .header {
+  background-color: #352B24;
+  margin-bottom: 50px;
+}
+
+.page-concept .consept-section {
+  padding-top: 70px;
+}
+
+.page-concept .consept-section-inner {
+  margin-bottom: 0;
+}
+
+.page-schedule .schedule-section,
+.page-seminar .seminar-section {
+  padding-top: 100px;
+}
+
+@media screen and (max-width: 798px) {
+  .page-concept .consept-section {
+    padding-top: 0;
   }
 }

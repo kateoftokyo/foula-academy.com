@@ -11,7 +11,7 @@
 <meta property="og:title" content="セミナー">
 <meta property="og:description" content="低コストでありながら質の高い教育を提供するグローバルアカデミーです。 商材製造会社としての専門的な知識や、世界中のトレンドをいち早く取り入れた最先端のカリキュラムで、次世代のアイリスト育成をサポートします。">
 <meta property="og:image" content="">
-<meta property="og:url" content="http://localhost:4000/seminar.html">
+<meta property="og:url" content="https://www.foula-academy.com/seminar.html">
 <meta property="og:type" content="website">
 
 <!-- Twitter -->
@@ -25,6 +25,9 @@
 
 <!-- Favicon -->
 <link rel="shortcut icon" href="https://www.foula-academy.com/images/favicon.ico">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,14 +49,25 @@
 <!-- ScrollTrigger -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108823127-16"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-S6PV23W2BK"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
+  function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'UA-108823127-16');
+
+  gtag('config', 'G-S6PV23W2BK');
 </script>
+
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N8ZMMKKL');</script>
+<!-- End Google Tag Manager -->
+
 
 <!-- Structured Data -->
 <script type="application/ld+json">
@@ -68,9 +82,9 @@
 
 
 </head>
-<body>
+<body class="{{ page.body_class }}">
 <header>
-    
+
     <div class="loading">
         <img class="loading__logo pc-show" src="https://www.foula-academy.com/img/op-logo-fea-pc.png" alt="Foula Esthetics Academy">
         <img class="loading__logo sp-show" src="https://www.foula-academy.com/img/op-logo-fea-sp.png" alt="Foula Esthetics Academy">
@@ -81,10 +95,10 @@
     </div>
     <div class="header">
         <div class="header-inner">
- 
+
         <div class="logo">
             <a href="/">
-                <img src="https://www.foula-academy.com/img/fea_logo.png" alt="">
+                <img src="https://www.foula-academy.com/img/fea_logo.png" alt="Foula Esthetics Academy ロゴ">
             </a>
         </div>
         <div class="nav-item">
@@ -98,14 +112,14 @@
                 <li><a href="https://book.squareup.com/classes/2xiian6x1y2hf4/location/LQ1P1NDZ9HJ6J/classes">FORM</a></li>
             </ul>
         </div>
-      <!--   
+      <!--
         <div class="contact">
             <a href="#FORM">
                 <p>MAIL</p>
-                <img src="https://www.foula-academy.com/img/icon/mail.png" alt="">
+                <img src="https://www.foula-academy.com/img/icon/mail.png" alt="メールアイコン">
             </a>
         </div>
-        -->     
+        -->
 
         </div>
     </div>
@@ -115,7 +129,7 @@
     <div class="sp-header">
         <div class="logo">
             <a href="/">
-            <img src="https://www.foula-academy.com/img/fea_logo.png" alt="">
+            <img src="https://www.foula-academy.com/img/fea_logo.png" alt="Foula Esthetics Academy ロゴ">
             </a>
         </div>
         <div class="sp-toggle">
@@ -148,7 +162,7 @@
 
                 </div>
                 <div class="address">
-                     <a href="/"><img src="https://www.foula-academy.com/img/fea_logo.png" alt=""
+                     <a href="/"><img src="https://www.foula-academy.com/img/fea_logo.png" alt="Foula Esthetics Academy ロゴ"
                             class="footer-logo"></a>
                     フーラエステティックアカデミー<br>
                     〒150-0001<br>
@@ -159,25 +173,16 @@
 
                 <div class="sns">
                     <!--<p>OFFICIAL SNS</p> -->
-                    <a href="https://www.instagram.com/foulaestheticsacademy/"><img src="https://www.foula-academy.com/img/icon/instagram.png" alt=""></a>
-                    <a href="tel:0120-428-355"><img src="../img/icon/phone-call.png" alt=""></a> 
-                     <!-- <a href="https://lin.ee/pPz0x6b" class="c_line"  target="_blank" rel="noopener"><img src="../img/icon/line.png" alt="" style="filter: initial;"></a> -->
+                    <a href="https://www.instagram.com/foulaestheticsacademy/"><img src="https://www.foula-academy.com/img/icon/instagram.png" alt="Instagramアイコン"></a>
+                    <a href="tel:0120-428-355"><img src="../img/icon/phone-call.png" alt="電話アイコン"></a>
+                     <!-- <a href="https://lin.ee/pPz0x6b" class="c_line"  target="_blank" rel="noopener"><img src="../img/icon/line.png" alt="LINEアイコン" style="filter: initial;"></a> -->
                 </div>
             </div>
         </div>
     </div>
 </header>
-
 <main>
-<style>
-    .header {
-        background-color: #352B24;
-        margin-bottom: 50px;
-    }
-    .seminar-section{
-        padding-top: 100px;
-    }
-</style>
+
 <!--seminar-section-->
 <div class="seminar-section">
     <p class="section-title">SEMINAR<span>セミナー</span></p>
@@ -185,7 +190,7 @@
         <li><a href="#LASHLIFT">LASH LIFT<span>ラッシュリフト</span></a></li>
         <li><a href="#EYELASH">EYELASH EXTENSIONS<span>エクステ</span></a></li>
         <li><a href="#MIMITSUBO">MIMITSUBO<span>ミミツボ</span></a></li>
-        <li><a href="#WAXSTYLING">WAX STYLING<span>ワックススタイリング</span></a></li>
+        <!-- <li><a href="#WAXSTYLING">WAX STYLING<span>ワックススタイリング</span></a></li> -->
     </ul>
 
     <!--seminar-section セミナーリスト-->
@@ -196,7 +201,7 @@
             <li class="seminar-contents">
                 <div class="seminar-contents-img">
                     <a href="seminar/exlift.html">
-                        <img src="../img/top/seminar/contents_seminar_exlift_inperson.jpg" alt="">
+                        <img src="../img/top/seminar/contents_seminar_exlift_inperson.jpg" alt="ExLiftセミナー（対面）の講座イメージ">
                     </a>
                 </div>
                 <div class="seminar-contents-detail">
@@ -205,7 +210,8 @@
                         『エクステ×パーマ』2つの技術を融合した" 即売上アップ" の実践力を1day完結で効率よくマスターできます。</p>
                     <div class="bottom-area">
                         <div class="link-btn">
-                            <a href="seminar/exlift.html">View More</a>
+                            <a href="seminar/exlift.html" class="view-more-btn" data-seminar="ExLiftセミナー（対面）">View
+                                More</a>
                         </div>
                         <div class="price">
                             <p><span>(キット有り)</span>¥88,000</p>
@@ -216,8 +222,8 @@
 
             <li class="seminar-contents">
                 <div class="seminar-contents-img">
-                    <a href="seminar/exlift.html">
-                        <img src="../img/top/seminar/contents_seminar_exlift_online.jpg" alt="">
+                    <a href="seminar/exlift-only-online.html">
+                        <img src="../img/top/seminar/contents_seminar_exlift_online.jpg" alt="ExLiftセミナー（オンライン）の講座イメージ">
                     </a>
                 </div>
                 <div class="seminar-contents-detail">
@@ -225,7 +231,8 @@
                     <p class="comment">新技法『エクスリフト』をオンラインで習得。<br>エクステとパーマを融合した最新技術を、<br>1日で効率よく学び、即売上アップへ。</p>
                     <div class="bottom-area">
                         <div class="link-btn">
-                            <a href="seminar/exlift.html">View More</a>
+                            <a href="seminar/exlift-only-online.html" class="view-more-btn" data-seminar="ExLiftセミナー（オンライン）">View
+                                More</a>
                         </div>
                         <div class="price">
                             <p><span>(キット無し)</span>¥55,000</p>
@@ -236,31 +243,81 @@
 
             <li class="seminar-contents">
                 <div class="seminar-contents-img">
-                    <a href="seminar/seminar_901-1.html">
-                    <img src="../img/top/seminar/contents_seminar_list_basic.jpg" alt="">
+                    <a href="seminar/lashlift-basic.html">
+                        <img src="../img/top/seminar/contents_seminar_lashlift-basic.jpg" alt="ゼロから最短でプロになるLash Lift基礎コースの講座イメージ">
                     </a>
                 </div>
                 <div class="seminar-contents-detail">
-                    <p class="text">Lash Lift 上まつ毛 BASICコース</p>
-                    <p class="comment">業界トップクラスの講師陣による、初心者からブランクがある方、
-他社セミナーご受講済みで悩みがある方などにもおすすめのコース
+                    <p class="text">ゼロから最短でプロになる<br>Lash Lift基礎コース</p>
+                    <p class="comment">当セミナーは、一度他社で学んだ現役アイリストが
+                        『もっと早く知りたかった』と学び直しに来るほど、理論と実践に特化しています。初心者の方こそ、遠回りせずに本物の基礎を身につけてください。
                     </p>
                     <div class="bottom-area">
                         <div class="link-btn">
-                            <a href="seminar/seminar_901-1.html">View More</a>
+                            <a href="seminar/lashlift-basic.html" class="view-more-btn"
+                                data-seminar="ゼロから最短でプロになる Lash Lift基礎コース">View More</a>
                         </div>
                         <div class="price">
                             <p><span>(キット有り)</span>¥65,780</p>
                             <p><span>(キット無し)</span>¥54,780</p>
                         </div>
-                   </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="seminar-contents">
+                <div class="seminar-contents-img">
+                    <a href="seminar/rod-design-seminar.html">
+                        <img src="../img/top/seminar/contents_seminar_rod-design-seminar.jpg" alt="ロッド不安ゼロ ロッド攻略デザインセミナーの講座イメージ">
+                    </a>
+                </div>
+                <div class="seminar-contents-detail">
+                    <p class="text">ロッド不安ゼロ<br>ロッド攻略デザインセミナー</p>
+                    <p class="comment">独自のカウンセリング術とまぶたを見極めるデザインロジックにより、
+                        多くのアイリストが陥る「なんとなくのロッド選定」を卒業し、
+                        最短1日で迷いのない「正解」を導き出せるようになります。</p>
+                    <div class="bottom-area">
+                        <div class="link-btn">
+                            <a href="seminar/rod-design-seminar.html" class="view-more-btn"
+                                data-seminar="ロッド不安ゼロ ロッド攻略デザインセミナー">View More</a>
+                        </div>
+                        <div class="price">
+                            <p><span>(キット無し)</span>¥35,200</p>
+                            <p><span>(上まつげ BASICコース受講者 キット無し)</span>¥28,600</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+
+            <li class="seminar-contents">
+                <div class="seminar-contents-img">
+                    <a href="seminar/lashlift-liftup-master.html">
+                        <img src="../img/top/seminar/contents_seminar_lashlift-liftup-master.jpg" alt="Lash Lift 巻き上げ完全攻略セミナーの講座イメージ">
+                    </a>
+                </div>
+                <div class="seminar-contents-detail">
+                    <p class="text">Lash Lift<br>巻き上げ完全攻略セミナー</p>
+                    <p class="comment">もうロッドを外す瞬間、不安にならない、
+                        ロッド通りの形を実現する『極（きわみ）』の巻き上げ術
+                    </p>
+                    <div class="bottom-area">
+                        <div class="link-btn">
+                            <a href="seminar/lashlift-liftup-master.html" class="view-more-btn"
+                                data-seminar="Lash Lift 巻き上げ完全攻略セミナー">View More</a>
+                        </div>
+                        <div class="price">
+                            <p><span>(キット無し)</span>¥35,200</p>
+                            <p><span>(上まつげ BASICコース受講者 キット無し)</span>¥28,600</p>
+                        </div>
+                    </div>
                 </div>
             </li>
 
             <li class="seminar-contents">
                 <div class="seminar-contents-img">
                     <a href="seminar/seminar_901-2.html">
-                    <img src="../img/top/seminar/contents_seminar_list_under.jpg" alt="">
+                        <img src="../img/top/seminar/contents_seminar_list_under.jpg" alt="Lash Lift 下まつ毛コースの講座イメージ">
                     </a>
                 </div>
                 <div class="seminar-contents-detail">
@@ -271,43 +328,22 @@
                     </p>
                     <div class="bottom-area">
                         <div class="link-btn">
-                            <a href="seminar/seminar_901-2.html">View More</a>
+                            <a href="seminar/seminar_901-2.html" class="view-more-btn"
+                                data-seminar="Lash Lift 下まつ毛コース">View More</a>
                         </div>
                         <div class="price">
                             <p><span>(キット有り)</span>¥60,280</p>
                             <p><span>(キット無し)</span>¥54,780</p>
                         </div>
-                   </div>
-                </div>
-            </li>
-
-            <li class="seminar-contents">
-                <div class="seminar-contents-img">
-                    <a href="seminar/seminar_901-3.html">
-                        <img src="../img/top/seminar/contents_seminar_list_advance.jpg" alt="">
-                    </a>
-                </div>
-                <div class="seminar-contents-detail">
-                    <p class="text">LASH LIFT 上まつ毛<br>ロッドデザインマスターコース</p>
-                    <p class="comment">Lash Liftアドバンスが実技付きにリニューアル！
-                        疑問や不安を解消できる、基礎知識をお持ちの方限定の実践型コースです。</p>
-                    <div class="bottom-area">
-                        <div class="link-btn">
-                            <a href="seminar/seminar_901-3.html">View More</a>
-                        </div>
-                        <div class="price">
-                            <p><span>(キット有り)</span>¥65,780</p>
-                            <p><span>(キット無し)</span>¥54,780</p>
-                            <p><span>(上まつげ BASICコース受講者 キット無し)</span>¥43,780</p>
-                        </div>
                     </div>
                 </div>
             </li>
-            <li class="seminar-contents">
 
+
+            <li class="seminar-contents">
                 <div class="seminar-contents-img">
                     <a href="seminar/crownlashlift-seminar.html">
-                        <img src="../img/top/seminar/contents_seminar_crownlashlift.jpg" alt="">
+                        <img src="../img/top/seminar/contents_seminar_crownlashlift.jpg" alt="CROWN LASH LIFT 束巻きパーマ実践コースの講座イメージ">
                     </a>
                 </div>
                 <div class="seminar-contents-detail">
@@ -316,14 +352,14 @@
                         自分好みの束感まつ毛を叶える次世代オーダーメイドまつ毛パーマです。</p>
                     <div class="bottom-area">
                         <div class="link-btn">
-                            <a href="seminar/crownlashlift-seminar.html">View More</a>
+                            <a href="seminar/crownlashlift-seminar.html" class="view-more-btn"
+                                data-seminar="CROWN LASH LIFT">View More</a>
                         </div>
                         <div class="price">
                             <p><span>(キット有り)</span>¥55,000</p>
                         </div>
                     </div>
                 </div>
-                </a>
             </li>
 
         </ul>
@@ -335,7 +371,7 @@
             <li class="seminar-contents">
                 <div class="seminar-contents-img">
                     <a href="seminar/seminar_101.html">
-                        <img src="../img/top/seminar/contents_seminar_list_school.jpg" alt="">
+                        <img src="../img/top/seminar/contents_seminar_list_school.jpg" alt="アイリスト養成スクール 理論・実技の講座イメージ">
                     </a>
                 </div>
                 <div class="seminar-contents-detail">
@@ -344,7 +380,8 @@
                         美容師免許提示必須です。</p>
                     <div class="bottom-area">
                         <div class="link-btn">
-                            <a href="seminar/seminar_101.html">View More</a>
+                            <a href="seminar/seminar_101.html" class="view-more-btn"
+                                data-seminar="アイリスト養成スクール(理論・実技)">View More</a>
                         </div>
                         <div class="price">
                             <p>¥158,400</p>
@@ -355,7 +392,7 @@
             <li class="seminar-contents">
                 <div class="seminar-contents-img">
                     <a href="seminar/seminar_108.html">
-                        <img src="../img/top/seminar/contents_seminar_list_skill.jpg" alt="">
+                        <img src="../img/top/seminar/contents_seminar_list_skill.jpg" alt="技術スキルチェック 実技の講座イメージ">
                     </a>
                 </div>
                 <div class="seminar-contents-detail">
@@ -364,7 +401,8 @@
                         不安解消！自身を持てるアイリストに。</p>
                     <div class="bottom-area">
                         <div class="link-btn">
-                            <a href="seminar/seminar_108.html">View More</a>
+                            <a href="seminar/seminar_108.html" class="view-more-btn" data-seminar="技術スキルチェック(実技)">View
+                                More</a>
                         </div>
                         <div class="price">
                             <p>¥11,000</p>
@@ -375,7 +413,7 @@
             <li class="seminar-contents">
                 <div class="seminar-contents-img">
                     <a href="seminar/seminar_800.html">
-                        <img src="../img/top/seminar/contents_seminar_list_oneonone.jpg" alt="">
+                        <img src="../img/top/seminar/contents_seminar_list_oneonone.jpg" alt="マンツーマン ボリュームアイラッシュセミナーの講座イメージ">
                     </a>
                 </div>
                 <div class="seminar-contents-detail">
@@ -384,7 +422,8 @@
                         マンツーマンでの授業で一流のアイリストに！</p>
                     <div class="bottom-area">
                         <div class="link-btn">
-                            <a href="seminar/seminar_800.html">View More</a>
+                            <a href="seminar/seminar_800.html" class="view-more-btn"
+                                data-seminar="マンツーマン ボリュームアイラッシュセミナー">View More</a>
                         </div>
                         <div class="price">
                             <p>¥41,800</p>
@@ -400,59 +439,64 @@
     <div class="seminar-index">
         <ul>
             <li class="seminar-contents">
-                    <div class="seminar-contents-img">
+                <div class="seminar-contents-img">
                     <a href="seminar/mimitsubo.html">
-                        <img src="../img/top/seminar/contents_seminar_mimithubo_inperson.jpg" alt="">
+                        <img src="../img/top/seminar/contents_seminar_mimithubo_inperson.jpg" alt="耳つぼジュエリー導入セミナー（対面）の講座イメージ">
                     </a>
-                    </div>
-                    <div class="seminar-contents-detail">
-                        <p class="text">耳つぼジュエリー導入セミナー<span>(対面)</span></p>
-                        <p class="comment">話題の耳つぼジュエリーでサロンの売上アップ！<br>「耳にシールを貼るだけで？」顔色が明るくなり、リフトアップの実感も。
-                            話題の“耳から整える”耳つぼジュエリーをあなたのサロンにも取り入れてみませんか？江戸時代から続く伝統整体「神代家」第18代当主が全面監修。目的別、個人のセルフケアからサロン導入まで全3コースの本格セミナーです。</p>
-                      <div class="bottom-area">
+                </div>
+                <div class="seminar-contents-detail">
+                    <p class="text">耳つぼジュエリー導入セミナー<span>(対面)</span></p>
+                    <p class="comment">話題の耳つぼジュエリーでサロンの売上アップ！<br>「耳にシールを貼るだけで？」顔色が明るくなり、リフトアップの実感も。
+                        話題の“耳から整える”耳つぼジュエリーをあなたのサロンにも取り入れてみませんか？江戸時代から続く伝統整体「神代家」第18代当主が全面監修。目的別、個人のセルフケアからサロン導入まで全3コースの本格セミナーです。
+                    </p>
+                    <div class="bottom-area">
                         <div class="link-btn">
-                            <a href="seminar/mimitsubo.html">View More</a>
+                            <a href="seminar/mimitsubo.html" class="view-more-btn"
+                                data-seminar="耳つぼジュエリー導入セミナー(対面)">View More</a>
                         </div>
                         <div class="price">
                             <p><span>ベーシックコース (キット有り)</span>¥19,800</p>
                             <p><span>アドバンステクニックコース (キット有り) </span>¥38,500</p>
                             <p><span>サロン向け・実践構築コース (キット有り) </span>¥52,000</p>
                         </div>
-                        </div>
                     </div>
+                </div>
             </li>
-                        <li class="seminar-contents">
-                    <div class="seminar-contents-img">
+            <li class="seminar-contents">
+                <div class="seminar-contents-img">
                     <a href="seminar/mimitsubo.html">
-                        <img src="../img/top/seminar/contents_seminar_mimithubo_online.jpg" alt="">
+                        <img src="../img/top/seminar/contents_seminar_mimithubo_online.jpg" alt="耳つぼジュエリー導入セミナー（オンライン）の講座イメージ">
                     </a>
-                    </div>
-                    <div class="seminar-contents-detail">
-                        <p class="text">耳つぼジュエリー導入セミナー<span>(オンライン)</span></p>
-                        <p class="comment">話題の耳つぼジュエリーでサロンの売上アップ！<br>「耳にシールを貼るだけで？」顔色が明るくなり、リフトアップの実感も。
-                            話題の“耳から整える”耳つぼジュエリーをあなたのサロンにも取り入れてみませんか？江戸時代から続く伝統整体「神代家」第18代当主が全面監修。目的別、個人のセルフケアからサロン導入まで全3コースの本格セミナーです。</p>
-                      <div class="bottom-area">
+                </div>
+                <div class="seminar-contents-detail">
+                    <p class="text">耳つぼジュエリー導入セミナー<span>(オンライン)</span></p>
+                    <p class="comment">話題の耳つぼジュエリーでサロンの売上アップ！<br>「耳にシールを貼るだけで？」顔色が明るくなり、リフトアップの実感も。
+                        話題の“耳から整える”耳つぼジュエリーをあなたのサロンにも取り入れてみませんか？江戸時代から続く伝統整体「神代家」第18代当主が全面監修。目的別、個人のセルフケアからサロン導入まで全3コースの本格セミナーです。
+                    </p>
+                    <div class="bottom-area">
                         <div class="link-btn">
-                            <a href="seminar/mimitsubo.html">View More</a>
+                            <a href="seminar/mimitsubo.html" class="view-more-btn"
+                                data-seminar="耳つぼジュエリー導入セミナー (オンライン)">View More</a>
                         </div>
                         <div class="price">
                             <p><span>ベーシックコース (キット有り) </span>¥17,820</p>
                             <p><span>アドバンステクニックコース (キット有り) </span>¥34,650</p>
                             <p><span>サロン向け・実践構築コース (キット有り) </span>¥46,800</p>
                         </div>
-                        </div>
                     </div>
+                </div>
             </li>
         </ul>
     </div>
 
+    <!--
     <p class="seminar-index_title" id="WAXSTYLING">WAX STYLING<span>ワックススタイリング</span></p>
     <div class="seminar-index">
         <ul>
             <li class="seminar-contents">
                     <div class="seminar-contents-img">
                     <a href="seminar/seminar_901-5.html">
-                        <img src="img/top/eyebrow.jpg" alt="">
+                        <img src="img/top/eyebrow.jpg" alt="アイブロウ デザイン＆ワキシング スターターコースの講座イメージ">
                     </a>
                     </div>
                     <div class="seminar-contents-detail">
@@ -460,7 +504,7 @@
                         <p class="comment">これからサロン導入を目指す方へ、WAXの基礎から眉デザイン、気になる小鼻・口回り。うなじWAXまで徹底講習。</p>
                       <div class="bottom-area">
                         <div class="link-btn">
-                            <a href="seminar/seminar_901-5.html">View More</a>
+                            <a href="seminar/seminar_901-5.html" class="view-more-btn" data-seminar="アイブロウ デザイン＆ワキシング スターターコース">View More</a>
                         </div>
                         <div class="price">
                             <p>¥94,600<span>(キット有り)</span></p>
@@ -472,7 +516,7 @@
             <li class="seminar-contents">
                     <div class="seminar-contents-img">
                         <a href="seminar/seminar_901-7.html">
-                        <img src="img/top/wax.jpg" alt="">
+                        <img src="img/top/wax.jpg" alt="フェイス＆うなじ ワキシング実践コースの講座イメージ">
                         </a>
                     </div>
                     <div class="seminar-contents-detail">
@@ -480,7 +524,7 @@
                         <p class="comment">フェイシャル、うなじWAXが習得で来ます。まつ毛や眉のメニューと組み合わせて単価アップも期待できます。</p>
                                               <div class="bottom-area">
                         <div class="link-btn">
-                            <a href="seminar/seminar_901-7.html">View More</a>
+                            <a href="seminar/seminar_901-7.html" class="view-more-btn" data-seminar="フェイス＆うなじ ワキシング実践コース">View More</a>
                         </div>
                         <div class="price">
                             <p>¥66,000<span>(キット有り)</span></p>
@@ -488,12 +532,13 @@
                         </div>
                          </div>
                     </div>
-                </a>
             </li>
 
         </ul>
     </div>
+    -->
 </div>
+
 <!--contact-section -->
 <div class="contact-section">
     <p class="section-title">CONTACT<span>お問い合わせ・お申込み</span></p>
@@ -503,8 +548,8 @@
         <p class="contact-notice">ご質問・不明点はお気軽にお問い合わせください</p>
         <ul class="contact-form">
             <li>
-                <a href="mailto:fea@foula.jp?subject=お問い合わせ" class="c_mail">
-                    <div class="c_icon"><img src="../img/icon/envelope.png" alt=""></div>
+                <a href="mailto:school@foula-academy.com?subject=お問い合わせ" class="c_mail">
+                    <div class="c_icon"><img src="../img/icon/envelope.png" alt="メールアイコン"></div>
                     <div class="c_des">
                         <p>MAILでご相談</p><span>（24時間受付中）</span>
                     </div>
@@ -512,7 +557,7 @@
             </li>
             <li>
                 <a href="tel:0120-428-355" class="c_tel">
-                    <div class="c_icon"><img src="../img/icon/phone-call.png" alt=""></div>
+                    <div class="c_icon"><img src="../img/icon/phone-call.png" alt="電話アイコン"></div>
                     <div class="c_des">
                         <p>0120-428-355</p><span>（土日祝休）</span>
                     </div>
@@ -521,7 +566,7 @@
 <!--
             <li>
                 <a href="https://lin.ee/pPz0x6b" class="c_line"  target="_blank" rel="noopener">
-                    <div class="c_icon"><img src="../img/icon/line.png" alt=""></div>
+                    <div class="c_icon"><img src="../img/icon/line.png" alt="LINEアイコン"></div>
                     <div class="c_des">
                         <p style="margin-bottom: 7px;">LINEでご相談</span>
                     </div>
@@ -536,7 +581,7 @@
                     <div class="c_des">
                         <p style="margin-bottom: 7px;">お申し込みはこちら</span>
                     </div>
-                    <div class="c_icon"><img src="../img/icon/arrow.png" alt=""></div>
+                    <div class="c_icon"><img src="../img/icon/arrow.png" alt="申し込みフォームへの矢印アイコン"></div>
             </a>
         </div>
         -->
@@ -557,7 +602,6 @@
                         〒150-0001<br>
                         東京都渋谷区神宮前6-19-20 第15荒井ビル7階<br>
                         渋谷駅B1出口より徒歩2分<br>
-                        </p>
                     </div>
                 </div>
 
@@ -572,7 +616,6 @@
                         〒530-0051<br>
                         大阪府大阪市北区太融寺町８−１０ 梅田高速ビル 4階<br>
                         御堂筋線梅田駅より徒歩7分<br>
-                        </p>
                     </div>
                 </div>
                 <div class="location-section-content">
@@ -585,7 +628,6 @@
                         <p class="location-section-title">フーラストア福岡天神店</p>
                         〒810-0023<br>福岡市中央区警固1丁目6-56 サウスガーデン4F 401A<br>
                         西鉄福岡天神駅北口 / 地下鉄天神駅から徒歩10分<br>
-                        </p>
                     </div>
                 </div>
             </div>
@@ -597,7 +639,7 @@
 <footer class="footer">
     <div class="footer-inner">
         <div class="company">
-            <a href="/" style="display: block;"><img src="https://www.foula-academy.com/img/fea_logo.png" alt="" 
+            <a href="/" style="display: block;"><img src="https://www.foula-academy.com/img/fea_logo.png" alt="Foula Esthetics Academy ロゴ"
                 class="footer-logo" style="width: 250px;"></a>
             フーラエステティックアカデミー<br>
             〒150-0001<br>
@@ -620,9 +662,9 @@
                 <div class="footer-sns">
                     <!-- <p>OFFICIAL SNS</p> -->
                     <a href="https://www.instagram.com/foulaestheticsacademy/"><img src="../img/icon/instagram.png"
-                            alt=""></a>
-                    <a href="tel:0120-428-355"><img src="../img/icon/phone-call.png" alt=""></a> 
-                     <!-- <a href="https://lin.ee/pPz0x6b" class="c_line"  target="_blank" rel="noopener"><img src="../img/icon/line.png" alt="" style="filter: initial;"></a> -->
+                            alt="Instagramアイコン"></a>
+                    <a href="tel:0120-428-355"><img src="../img/icon/phone-call.png" alt="電話アイコン"></a>
+                     <!-- <a href="https://lin.ee/pPz0x6b" class="c_line"  target="_blank" rel="noopener"><img src="../img/icon/line.png" alt="LINEアイコン" style="filter: initial;"></a> -->
                 </div>
             </div>
         </div>
@@ -631,8 +673,15 @@
     <div class="copyright">
         &copy; 2025 Kate of Tokyo. All Rights Reserved.
     </div>
-    </div>
 </footer>
+
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N8ZMMKKL"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
@@ -666,11 +715,19 @@ clickable: true,
 slidesPerView: 2,
 breakpoints: {
 798: {
-slidesPerView: 5,
+slidesPerView: 4,
 spaceBetween: 15,
 }
-}
+},
+  loop: true, // ループさせる
+  speed: 1500, // 少しゆっくり(デフォルトは300)
+  autoplay: { // 自動再生
+    delay: 1500, // 1.5秒後に次のスライド
+    disableOnInteraction: false, // 矢印をクリックしても自動再生を止めない
+  },
 });
 
 </script>
 
+</body>
+</html>
