@@ -1824,15 +1824,15 @@ WAX STYLINGコース
 
 
 .curriculum-flow {
-  --flow-bg: #fbf8f5;
+  --flow-bg: #fbfbfb;
   --flow-text: #302723;
-  --flow-beige: #ad9682;
-  --flow-beige-light: #ded1c6;
-  --flow-pink: #bf737d;
+  --flow-dark: #352B24;
+  --flow-dark-light: #ded1c6;
+  --flow-sec-dark: #352B24;
   --flow-pink-light: #ebaab2;
   box-sizing: border-box;
   width: 100%;
-  padding: 72px 24px 64px;
+  padding: 25px 24px 64px;
   color: var(--flow-text);
   background: var(--flow-bg);
 }
@@ -1861,9 +1861,9 @@ WAX STYLINGコース
   position: relative;
   display: block;
   height: 1px;
-  background: var(--flow-beige);
+  background: var(--flow-dark);
 }
-
+/* 
 .curriculum-flow__heading-line::before,
 .curriculum-flow__heading-line::after {
   position: absolute;
@@ -1871,11 +1871,11 @@ WAX STYLINGコース
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  background: var(--flow-beige);
+  background: var(--flow-dark);
   content: "";
   transform: translateY(-50%);
 }
-
+ */
 .curriculum-flow__heading-line::before {
   left: 0;
 }
@@ -1883,11 +1883,11 @@ WAX STYLINGコース
 .curriculum-flow__heading-line::after {
   right: 0;
 }
-
+/* 
 .curriculum-flow__title,
 .curriculum-flow__card-title {
   font-family: "Noto Serif JP", "Yu Mincho", "YuMincho", "Hiragino Mincho ProN", serif;
-}
+} */
 
 .curriculum-flow__title {
   margin: 0;
@@ -1901,8 +1901,8 @@ WAX STYLINGコース
 .curriculum-flow__lead {
   margin: 24px 0 46px;
   font-size: 16px;
-  line-height: 2;
-  letter-spacing: 0.04em;
+  line-height:180%;
+/*   letter-spacing: 0.04em; */
   text-align: center;
 }
 
@@ -1925,8 +1925,8 @@ WAX STYLINGコース
   padding: 8px 10px;
   border-radius: 6px 6px 0 0;
   color: #fff;
-  background: var(--flow-beige);
-  font-family: Georgia, "Times New Roman", serif;
+  background: var(--flow-dark);
+/*   font-family: Georgia, "Times New Roman", serif; */
   font-size: 18px;
   font-weight: 700;
   line-height: 1.2;
@@ -1941,7 +1941,7 @@ WAX STYLINGコース
   min-height: 380px;
   height: calc(100% - 38px);
   padding: 34px 12px 26px;
-  border: 1px solid var(--flow-beige-light);
+  border: 1px solid var(--flow-dark-light);
   border-top: 0;
   border-radius: 0 0 6px 6px;
   background: rgba(255, 255, 255, 0.28);
@@ -1952,7 +1952,7 @@ WAX STYLINGコース
 .curriculum-flow__interval svg {
   overflow: visible;
   fill: none;
-  stroke: currentColor;
+      stroke: rgb(112 112 112);
   stroke-linecap: round;
   stroke-linejoin: round;
 }
@@ -1961,20 +1961,20 @@ WAX STYLINGコース
   flex: 0 0 auto;
   width: 62px;
   height: 62px;
-  color: var(--flow-pink);
+  color: rgb(112 112 112);;
   stroke-width: 1.8;
 }
 
 .curriculum-flow__card-title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 70px;
-  margin: 22px 0 18px;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 1.55;
-  text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60px;
+    margin: 22px 0 0px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.55;
+    text-align: center;
 }
 
 .curriculum-flow__description {
@@ -1990,7 +1990,7 @@ WAX STYLINGコース
   align-items: center;
   justify-content: center;
   gap: 16px;
-  color: var(--flow-pink);
+  color: var(--flow-sec-dark);
 }
 
 .curriculum-flow__interval span {
@@ -2000,7 +2000,7 @@ WAX STYLINGコース
   height: 60px;
   border-radius: 50%;
   color: #fff;
-  background: var(--flow-pink);
+  background: var(--flow-sec-dark);
   font-size: 12px;
   font-weight: 700;
   line-height: 1.45;
@@ -2021,20 +2021,20 @@ WAX STYLINGコース
   width: min(86%, 1030px);
   margin: 32px auto 0;
   padding: 20px 38px;
-  border: 2px solid var(--flow-pink);
+  border: 2px solid var(--flow-sec-dark);
   border-radius: 18px;
 }
 
 .curriculum-flow__schedule-icon {
   width: 68px;
   height: 68px;
-  color: var(--flow-pink);
+  color: var(--flow-sec-dark);
   stroke-width: 2.4;
 }
 
 .curriculum-flow__schedule-text h3 {
   margin: 0 0 8px;
-  color: var(--flow-pink);
+  color: var(--flow-sec-dark);
   font-family: "Noto Serif JP", "Yu Mincho", "YuMincho", "Hiragino Mincho ProN", serif;
   font-size: 21px;
   font-weight: 500;
@@ -2056,7 +2056,7 @@ WAX STYLINGコース
   margin: 0;
   border-radius: 50%;
   color: #fff;
-  background: var(--flow-pink);
+  background: var(--flow-sec-dark);
   font-family: "Noto Serif JP", "Yu Mincho", "YuMincho", "Hiragino Mincho ProN", serif;
   font-size: 18px;
   white-space: nowrap;
@@ -2068,7 +2068,7 @@ WAX STYLINGコース
   align-items: center;
   justify-content: center;
   margin: 30px 0 0;
-  color: var(--flow-pink);
+  color: var(--flow-sec-dark);
   font-family: "Noto Serif JP", "Yu Mincho", "YuMincho", "Hiragino Mincho ProN", serif;
   font-size: clamp(17px, 1.7vw, 23px);
   line-height: 1.6;
@@ -2081,12 +2081,12 @@ WAX STYLINGコース
   flex: 1 1 80px;
   max-width: 80px;
   height: 1px;
-  background: var(--flow-pink);
+  background: var(--flow-sec-dark);
   content: "";
 }
 
 .curriculum-flow__message span {
-  color: var(--flow-pink-light);
+  color: var(--flow-sec-dark-light);
 }
 
 @media (max-width: 1100px) {
@@ -2182,18 +2182,17 @@ WAX STYLINGコース
     font-size: 13px;
     line-height: 1.8;
   }
-
-  .curriculum-flow__interval {
+.curriculum-flow__interval {
     gap: 6px;
-    padding: 14px 0;
-  }
+    padding: 15px 0 25px;
+}
 
   .curriculum-flow__interval span {
     width: auto;
     height: auto;
     padding: 6px 16px;
     border-radius: 999px;
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .curriculum-flow__interval span br {
