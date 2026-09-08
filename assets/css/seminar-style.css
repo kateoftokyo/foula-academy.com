@@ -1930,10 +1930,10 @@ WAX STYLINGコース
 
 .curriculum-flow__day {
     margin: 0;
-    padding: 8px 10px;
-    /* border-radius: 6px 6px 0 0; */
+    padding: 15px 10px;
+    border-radius: 15px 15px 0 0;
     color: #fff;
-    background: var(--flow-dark);
+    background: #282828;
     /* font-family: Georgia, "Times New Roman", serif; */
     font-size: 21px;
     /* font-weight: 700; */
@@ -1951,7 +1951,7 @@ WAX STYLINGコース
     padding: 34px 12px 35px;
     border: 1px solid #6b6764;
     border-top: 0;
-    /* border-radius: 0 0 6px 6px; */
+    border-radius: 0 0 15px 15px;
     background: rgb(255 255 255);
 }
 
@@ -1979,11 +1979,12 @@ WAX STYLINGコース
     align-items: center;
     justify-content: center;
     min-height: 60px;
-    margin: 25px 0 15px;
+    margin: 25px 0 20px;
     font-size: 18px;
     font-weight: initial;
     line-height: 1.55;
     text-align: center;
+    color: #001f2d;
 }
 /* .curriculum-flow__card-title::after{
     content: "";
@@ -2016,9 +2017,9 @@ WAX STYLINGコース
     height: 60px;
     border-radius: 50%;
     color: #fff;
-    background: var(--flow-sec-dark);
-    font-size: 12px;
-    font-weight: 700;
+    background: #282828;
+    font-size: 11px;
+    /* font-weight: 700; */
     line-height: 1.45;
     text-align: center;
 }
@@ -2037,7 +2038,7 @@ WAX STYLINGコース
     width: min(86%, 800px);
     margin: 50px auto 0;
     padding: 20px 38px;
-    border: 2px solid var(--flow-sec-dark);
+    border: 2px solid #001f2d;
     border-radius: 18px;
 }
 
@@ -2060,10 +2061,9 @@ WAX STYLINGコース
 
 .curriculum-flow__schedule-text p {
     margin: 0;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1.8;
 }
-
 .curriculum-flow__duration {
     display: grid;
     place-items: center;
@@ -2072,7 +2072,7 @@ WAX STYLINGコース
     margin: 0;
     border-radius: 50%;
     color: #fff;
-    background: var(--flow-sec-dark);
+    background: #282828;
     font-family: "Noto Serif JP", "Yu Mincho", "YuMincho", "Hiragino Mincho ProN", serif;
     font-size: 18px;
     white-space: nowrap;
