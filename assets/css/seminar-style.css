@@ -1892,6 +1892,8 @@ WAX STYLINGコース
 } */
 .curriculum-flow__card img {
     width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 9px 0px #cbc3c3;
 }
 
 .curriculum-flow__title {
