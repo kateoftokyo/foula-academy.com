@@ -2114,6 +2114,10 @@ WAX STYLINGコース
 }
 
 @media (max-width: 900px) {
+    .key-visual img .ees-img {
+        object-position: left;
+    }
+
     .curriculum-flow {
         padding: 56px 20px 50px;
     }
