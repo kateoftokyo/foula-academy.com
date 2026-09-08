@@ -1890,7 +1890,9 @@ WAX STYLINGコース
 .curriculum-flow__card-title {
   font-family: "Noto Serif JP", "Yu Mincho", "YuMincho", "Hiragino Mincho ProN", serif;
 } */
-
+.curriculum-flow__card img{
+    width: 100%;
+}
 .curriculum-flow__title {
     margin: 0;
     font-size: clamp(20px, 2vw, 28px);
