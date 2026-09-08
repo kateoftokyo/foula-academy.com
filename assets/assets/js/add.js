@@ -1,28 +1,28 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const loader = document.querySelector(".loading");
+	const loader = document.querySelector(".loading");
 
-  if (!loader) return;
+	if (!loader) return;
 
-const isFirstVisit = !sessionStorage.getItem("visit");
-sessionStorage.setItem("visit", "true");
-/* const isFirstVisit = true; // ← 毎回ローディング表示（テスト用） */
+	const isFirstVisit = !sessionStorage.getItem("visit");
+	sessionStorage.setItem("visit", "true");
+	/* const isFirstVisit = true; // ← 毎回ローディング表示（テスト用） */
 
-  if (isFirstVisit) {
-    sessionStorage.setItem("visit", "true");
+	if (isFirstVisit) {
+		sessionStorage.setItem("visit", "true");
 
-    // 強制再描画を挟んでからフェードアウト
-    setTimeout(() => {
-      loader.style.transition = "opacity 0.6s ease";
-      loader.offsetHeight; // ← ここで再描画を強制
-      loader.style.opacity = "0";
+		// 強制再描画を挟んでからフェードアウト
+		setTimeout(() => {
+			loader.style.transition = "opacity 0.6s ease";
+			loader.offsetHeight; // ← ここで再描画を強制
+			loader.style.opacity = "0";
 
-      setTimeout(() => {
-        loader.style.display = "none";
-      }, 700); // フェード終了後に非表示
-    }, 1500);
-  } else {
-    loader.style.display = "none";
-  }
+			setTimeout(() => {
+				loader.style.display = "none";
+			}, 700); // フェード終了後に非表示
+		}, 1500);
+	} else {
+		loader.style.display = "none";
+	}
 
 });
 
@@ -106,70 +106,80 @@ filterButtons.forEach((btn) => {
  */
 
 document.addEventListener("DOMContentLoaded", () => {
-  const filterButtons = document.querySelectorAll("#filter-buttons button");
-  const filterCards = document.querySelectorAll("#filterable-cards .card");
+	const filterButtons = document.querySelectorAll("#filter-buttons button");
+	const filterCards = document.querySelectorAll("#filterable-cards .card");
 
-  // 対象DOMが無ければ何もしない
-  if (!filterButtons.length || !filterCards.length) return;
+	// 対象DOMが無ければ何もしない
+	if (!filterButtons.length || !filterCards.length) return;
 
-  const path = (location.pathname || "").replace(/\/+$/, "");
+	const path = (location.pathname || "").replace(/\/+$/, "");
 
-  // URL → 表示カテゴリ
-  const ROUTE_TO_FILTER = new Map([
-    ["/seminar/exlift", "ExLift"],
-    ["/seminar/exlift.html", "ExLift"],
+	// URL → 表示カテゴリ
+	const ROUTE_TO_FILTER = new Map([
+		["/seminar/exlift", "ExLift"],
+		["/seminar/exlift.html", "ExLift"],
 
-    ["/seminar/seminar_901-1", "LASHLIFT"],
-    ["/seminar/seminar_901-1.html", "LASHLIFT"],
-    ["/seminar/seminar_901-2", "LASHLIFT"],
-    ["/seminar/seminar_901-2.html", "LASHLIFT"],
-    ["/seminar/seminar_901-3", "LASHLIFT"],
-    ["/seminar/seminar_901-3.html", "LASHLIFT"],
-    ["/seminar/crownlashlift-seminar", "LASHLIFT"],
-    ["/seminar/crownlashlift-seminar.html", "LASHLIFT"],
+		["/seminar/seminar_901-1", "LASHLIFT"],
+		["/seminar/seminar_901-1.html", "LASHLIFT"],
+		["/seminar/seminar_901-2", "LASHLIFT"],
+		["/seminar/seminar_901-2.html", "LASHLIFT"],
+		["/seminar/seminar_901-3", "LASHLIFT"],
+		["/seminar/seminar_901-3.html", "LASHLIFT"],
+		["/seminar/lashlift-basic", "LASHLIFT"],
+		["/seminar/lashlift-basic.html", "LASHLIFT"],
+		["/seminar/rod-design-seminar", "LASHLIFT"],
+		["/seminar/rod-design-seminar.html", "LASHLIFT"],
+		["/seminar/lashlift-liftup-master", "LASHLIFT"],
+		["/seminar/lashlift-liftup-master.html", "LASHLIFT"],
+		["/seminar/crownlashlift-seminar", "LASHLIFT"],
+		["/seminar/crownlashlift-seminar.html", "LASHLIFT"],
 
-    ["/seminar/seminar_101", "EYELASH_EXTENSIONS"],
-    ["/seminar/seminar_101.html", "EYELASH_EXTENSIONS"],
-    ["/seminar/seminar_108", "EYELASH_EXTENSIONS"],
-    ["/seminar/seminar_108.html", "EYELASH_EXTENSIONS"],
-    ["/seminar/seminar_800", "EYELASH_EXTENSIONS"],
-    ["/seminar/seminar_800.html", "EYELASH_EXTENSIONS"],
+		["/seminar/eyelash-extension-seminar", "EYELASH_EXTENSIONS"],
+		["/seminar/eyelash-extension-seminar.html", "EYELASH_EXTENSIONS"],
+		["/seminar/led-extension-online", "EYELASH_EXTENSIONS"],
+		["/seminar/led-extension-online.html", "EYELASH_EXTENSIONS"],
+		["/seminar/seminar_101", "EYELASH_EXTENSIONS"],
+		["/seminar/seminar_101.html", "EYELASH_EXTENSIONS"],
+		["/seminar/seminar_108", "EYELASH_EXTENSIONS"],
+		["/seminar/seminar_108.html", "EYELASH_EXTENSIONS"],
+		["/seminar/seminar_800", "EYELASH_EXTENSIONS"],
+		["/seminar/seminar_800.html", "EYELASH_EXTENSIONS"],
 
-    ["/seminar/mimitsubo", "MIMITSUBO"],
-    ["/seminar/mimitsubo.html", "MIMITSUBO"],
+		["/seminar/mimitsubo", "MIMITSUBO"],
+		["/seminar/mimitsubo.html", "MIMITSUBO"],
 
-    ["/seminar/seminar_901-5", "WAXSTYLING"],
-    ["/seminar/seminar_901-5.html", "WAXSTYLING"],
-    ["/seminar/seminar_901-7", "WAXSTYLING"],
-    ["/seminar/seminar_901-7.html", "WAXSTYLING"],
-  ]);
+		["/seminar/seminar_901-5", "WAXSTYLING"],
+		["/seminar/seminar_901-5.html", "WAXSTYLING"],
+		["/seminar/seminar_901-7", "WAXSTYLING"],
+		["/seminar/seminar_901-7.html", "WAXSTYLING"],
+	]);
 
-  const applyFilter = (selectedFilter) => {
-    // 表示制御
-    filterCards.forEach((card) => {
-      card.classList.toggle("hide", card.dataset.name !== selectedFilter);
-    });
+	const applyFilter = (selectedFilter) => {
+		// 表示制御
+		filterCards.forEach((card) => {
+			card.classList.toggle("hide", card.dataset.name !== selectedFilter);
+		});
 
-    // active制御（hide が付いていない card に対応する button のみ）
-    filterButtons.forEach((btn) => {
-      const target = btn.dataset.filter;
-      const visibleCard = document.querySelector(
-        `#filterable-cards .card[data-name="${target}"]:not(.hide)`
-      );
-      btn.classList.toggle("active", !!visibleCard);
-    });
-  };
+		// active制御（hide が付いていない card に対応する button のみ）
+		filterButtons.forEach((btn) => {
+			const target = btn.dataset.filter;
+			const visibleCard = document.querySelector(
+				`#filterable-cards .card[data-name="${target}"]:not(.hide)`
+			);
+			btn.classList.toggle("active", !!visibleCard);
+		});
+	};
 
-  // 初期表示
-  const initialFilter = ROUTE_TO_FILTER.get(path) || "ExLift";
-  applyFilter(initialFilter);
+	// 初期表示
+	const initialFilter = ROUTE_TO_FILTER.get(path) || "ExLift";
+	applyFilter(initialFilter);
 
-  // クリック時
-  filterButtons.forEach((btn) => {
-    btn.addEventListener("click", (e) => {
-      applyFilter(e.currentTarget.dataset.filter);
-    });
-  });
+	// クリック時
+	filterButtons.forEach((btn) => {
+		btn.addEventListener("click", (e) => {
+			applyFilter(e.currentTarget.dataset.filter);
+		});
+	});
 });
 
 
@@ -227,5 +237,5 @@ document.querySelectorAll('.faq-section-index').forEach((item) => {
 		}
 	});
 });
-	  
+
 
