@@ -1985,14 +1985,14 @@ WAX STYLINGコース
     line-height: 1.55;
     text-align: center;
 }
-.curriculum-flow__card-title::after{
+/* .curriculum-flow__card-title::after{
     content: "";
     position: absolute;
     width: 100px;
     height: 1px;
     left: 50%;
     bottom: -15px;
-}
+} */
 .curriculum-flow__description {
     margin: 0;
     font-size: 14px;
