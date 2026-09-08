@@ -1986,6 +1986,7 @@ WAX STYLINGコース
     text-align: center;
     color: #001f2d;
 }
+
 /* .curriculum-flow__card-title::after{
     content: "";
     position: absolute;
@@ -2064,6 +2065,7 @@ WAX STYLINGコース
     font-size: 14px;
     line-height: 1.8;
 }
+
 .curriculum-flow__duration {
     display: grid;
     place-items: center;
@@ -2167,8 +2169,7 @@ WAX STYLINGコース
     }
 
     .curriculum-flow__day {
-        padding: 9px 16px;
-        font-size: 17px;
+        font-size: 24px;
     }
 
     .curriculum-flow__card-body {
@@ -2206,16 +2207,16 @@ WAX STYLINGコース
     }
 
     .curriculum-flow__interval {
-        gap: 6px;
+        gap: 10px;
         padding: 15px 0 25px;
     }
 
     .curriculum-flow__interval span {
         width: auto;
         height: auto;
-        padding: 6px 16px;
+        padding: 9px 20px;
         border-radius: 999px;
-        font-size: 16px;
+        font-size: 18px;
         font-weight: initial;
     }
 
@@ -2251,7 +2252,8 @@ WAX STYLINGコース
         height: auto;
         padding: 8px 16px;
         border-radius: 999px;
-        font-size: 15px;
+        font-size: 20px;
+        letter-spacing: 0.1rem;
     }
 
     .curriculum-flow__message {
@@ -2277,8 +2279,9 @@ WAX STYLINGコース
     }
 
     .curriculum-flow__lead {
-        font-size: 13px;
+        font-size: 16px;
         text-align: left;
+        margin: 15px 0;
     }
 
     .curriculum-flow__card-body {
@@ -2304,17 +2307,18 @@ WAX STYLINGコース
         grid-template-columns: 1fr;
         justify-items: center;
         gap: 12px;
-        padding: 22px 18px;
+        padding: 22px 18px 25px;
         text-align: center;
     }
 
     .curriculum-flow__schedule-text h3 {
-        font-size: 17px;
+        font-size: 18px;
     }
 
     .curriculum-flow__schedule-text p {
-        font-size: 12px;
+        font-size: 14px;
         text-align: left;
+        margin-bottom: 10px;
     }
 
     .curriculum-flow__schedule-text p br {
