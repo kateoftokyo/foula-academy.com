@@ -758,6 +758,19 @@ span.adv {
     width: 95%;
     margin: auto;
 }
+.rs-title {
+    background-color: #fafafa;
+    color: #333;
+    border: 1px solid #333;
+    padding: 15px;
+    font-size: 21px;
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    margin: auto;
+}
 
 .request-sentence-dis {
     padding: 25px;
