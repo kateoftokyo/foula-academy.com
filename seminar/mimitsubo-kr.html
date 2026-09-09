@@ -40,7 +40,7 @@ title: 귀침(귀 이침) 쥬얼리 도입 세미나
   font-style: normal;
 }
 
-        .logo {
+        .site-header__logo {
             padding-left: 25px;
             padding-top: 10px;
             width: 100%;
@@ -49,25 +49,24 @@ title: 귀침(귀 이침) 쥬얼리 도입 세미나
         }
 
         @media screen and (max-width: 798px) {
-            .header {
+            .site-header {
                 display: block !important;
             }
         }
     </style>
-    <script src="https://www.foula-academy.com/assets/js/add.js" defer></script>
     <script src="https://www.foula-academy.com/assets/js/scroll-fade.js" defer></script>
     <title>귀침(이침) 쥬얼리 도입 세미나</title>
 </head>
 
 <body>
 
-<div class="page-top">
+<div class="back-to-top">
     <a href="#top"></a>
 </div>
 
 
-<div class="header">
-    <div class="logo">
+<div class="site-header">
+    <div class="site-header__logo">
         <a href="https://foula-store.kr/">
             <img src="https://www.foula-academy.com/img/fea_logo.png" alt="">
         </a>
@@ -422,38 +421,38 @@ title: 귀침(귀 이침) 쥬얼리 도입 세미나
                 <section class="faq-section" id="FAQ">
                     <div class="introduction__title">자주 묻는 질문 (FAQ)</div>
                     <div class="faq-section-inner">
-                        <div class="faq-section-index">
-                            <p class="question">Q.어느 코스를 선택해야 할지 모르겠어요.</p>
-                            <div class="answer">아래를 참고하세요.<br>고민이 되신다면 STEP2 이상 추천합니다.<br>
+                        <div class="faq-item">
+                            <p class="faq-item__question">Q.어느 코스를 선택해야 할지 모르겠어요.</p>
+                            <div class="faq-item__answer">아래를 참고하세요.<br>고민이 되신다면 STEP2 이상 추천합니다.<br>
                                 ・가족이나 가까운 사람에게 → 코스 1<br>
                                 ・고민별 대응하고 싶다 → 코스 2<br>
                                 ・샵에 메뉴로 도입하고 싶다 → 코스 3</div>
                         </div>
 
-                        <div class="faq-section-index">
-                            <p class="question">Q.온라인 수강도 실습이 가능한가요?</p>
-                            <div class="answer">
+                        <div class="faq-item">
+                            <p class="faq-item__question">Q.온라인 수강도 실습이 가능한가요?</p>
+                            <div class="faq-item__answer">
                                 키트를 사전에 배송해 드리며, 웹 도구를 통해 강사가 화면으로 상세하게 지도해 드립니다.</div>
                         </div>
 
-                        <div class="faq-section-index">
-                            <p class="question">Q.결제 방법은 어떻게 되나요?</p>
-                            <div class="answer">
+                        <div class="faq-item">
+                            <p class="faq-item__question">Q.결제 방법은 어떻게 되나요?</p>
+                            <div class="faq-item__answer">
                                 결제 방법은 어떻게 되나요?<br>
                                 <span style="color: #f00; background-color: yellow;">오프라인 매장(시부야, 오사카, 후쿠오카)은 카드, 현금,
                                     PayPay 결제 가능합니다.</span>
                             </div>
                         </div>
-                        <div class="faq-section-index">
-                            <p class="question">Q.미용이나 마사지 경험이 없어도 수강 가능한가요?</p>
-                            <div class="answer">네, 전혀 문제 없습니다.<br>
+                        <div class="faq-item">
+                            <p class="faq-item__question">Q.미용이나 마사지 경험이 없어도 수강 가능한가요?</p>
+                            <div class="faq-item__answer">네, 전혀 문제 없습니다.<br>
                                 Foula 귀침 세미나는 초보자도 이해하기 쉽게 구성되어 있습니다.<br>
                                 셀프케어 영상 강의부터 기초 기술까지 친절하게 지도합니다.
                             </div>
                         </div>
-                        <div class="faq-section-index">
-                            <p class="question">Q.키트만으로 실전에 활용할 수 있을까요?</p>
-                            <div class="answer">
+                        <div class="faq-item">
+                            <p class="faq-item__question">Q.키트만으로 실전에 활용할 수 있을까요?</p>
+                            <div class="faq-item__answer">
                                 네,<br>시술에 필요한 모든 도구가 포함되어 있으며, 수강 당일부터 바로 연습 및 실전에 활용 가능합니다.<br>
                                 또한, 강의 중 키트 사용법도 자세히 설명하므로 안심하고 진행 가능합니다.</div>
                         </div>
@@ -567,8 +566,8 @@ title: 귀침(귀 이침) 쥬얼리 도입 세미나
         </div> -->
 
 <!--footer -->
-<footer class="footer" style=" padding: 25px 0;">
-    <div class="copyright">
+<footer class="site-footer" style=" padding: 25px 0;">
+    <div class="site-footer__copyright">
         &copy; 2025 Kate of Tokyo. All Rights Reserved.
     </div>
 </footer>
@@ -605,14 +604,14 @@ title: 귀침(귀 이침) 쥬얼리 도입 세미나
 
 <script>
     // ハンバーガーメニュー
-    const toggle = document.querySelector(".toggle");
-    const spHeader = document.querySelector(".sp-header");
-    const modalMenu = document.querySelector(".modal-menu__container");
-    const menuContents = document.querySelector(".modal-menu__contents");
-    const menuItems = document.querySelectorAll(".modal-menu__contents-inner ul li");
-    const contact = document.querySelector(".contact");
-    const address = document.querySelector(".address");
-    const sns = document.querySelector(".sns");
+    const toggle = document.querySelector(".mobile-nav-toggle");
+    const spHeader = document.querySelector(".mobile-header");
+    const modalMenu = document.querySelector(".mobile-nav");
+    const menuContents = document.querySelector(".mobile-nav__panel");
+    const menuItems = document.querySelectorAll(".mobile-nav__inner ul li");
+    const contact = document.querySelector(".site-header__contact");
+    const address = document.querySelector(".mobile-nav__address");
+    const sns = document.querySelector(".mobile-nav__social");
 
     const toggleMenu = () => {
         const isOpen = menuContents.classList.toggle("open");
@@ -640,22 +639,22 @@ title: 귀침(귀 이침) 쥬얼리 도입 세미나
     menuItems.forEach((item) => item.addEventListener("click", toggleMenu));
 
     // FAQセクションの開閉処理
-    const questions = document.querySelectorAll('.question');
+    const questions = document.querySelectorAll('.faq-item__question');
     questions.forEach((q) => {
         q.addEventListener('click', () => {
             q.nextElementSibling?.classList.toggle("show");
         });
     });
-    document.querySelectorAll('.faq-section-index').forEach((item) => {
-        const answer = item.querySelector('.answer');
+    document.querySelectorAll('.faq-item').forEach((item) => {
+        const answer = item.querySelector('.faq-item__answer');
 
         item.addEventListener('click', () => {
             const isOpen = item.classList.contains('open');
 
             // すべて閉じる
-            document.querySelectorAll('.faq-section-index').forEach((el) => {
+            document.querySelectorAll('.faq-item').forEach((el) => {
                 el.classList.remove('open');
-                el.querySelector('.answer').style.maxHeight = null;
+                el.querySelector('.faq-item__answer').style.maxHeight = null;
             });
 
             // 開いていなかったら開く

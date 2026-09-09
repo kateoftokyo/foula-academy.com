@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'ja' }}">
+<head>
+  <meta charset="UTF-8">
+  {% if include.noindex %}
+  <meta name="robots" content="noindex, nofollow">
+  {% endif %}
+  {% if include.extra_css %}
+  <link rel="stylesheet" href="{{ include.extra_css | relative_url }}">
+  {% endif %}
+  {% include head.html %}
+</head>
+<body id="top" class="page{% if include.layout_class %} {{ include.layout_class }}{% endif %}{% if include.body_class %} {{ include.body_class }}{% endif %}">
+  {% include header.html %}
+  <main>
+    {{ include.content }}
+  </main>
+  {% include footer.html %}
+  {% include site-scripts.html %}
+</body>
+</html>

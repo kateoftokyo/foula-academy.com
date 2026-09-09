@@ -1,98 +1,94 @@
-<header>
-    
-    <div class="loading">
-        <img class="loading__logo pc-show" src="https://www.foula-academy.com/img/op-logo-fea-pc.png" alt="Foula Esthetics Academy">
-        <img class="loading__logo sp-show" src="https://www.foula-academy.com/img/op-logo-fea-sp.png" alt="Foula Esthetics Academy">
+<header class="site-header-shell">
+  <div class="site-loader" data-js="site-loader">
+    <img class="site-loader__logo u-desktop-only" src="/img/op-logo-fea-pc.png" alt="Foula Esthetics Academy">
+    <img class="site-loader__logo u-mobile-only" src="/img/op-logo-fea-sp.png" alt="Foula Esthetics Academy">
+  </div>
+
+  <div class="back-to-top">
+    <a href="#top" aria-label="ページ上部へ戻る"></a>
+  </div>
+
+  <div class="site-header" data-js="site-header">
+    <div class="site-header__inner">
+      <div class="site-header__logo">
+        <a href="/">
+          <img src="/img/fea_logo.png" alt="Foula Esthetics Academy ロゴ">
+        </a>
+      </div>
+
+      <nav class="site-nav" aria-label="メインナビゲーション">
+        <ul class="site-nav__list">
+          <li><a href="/concept.html">CONCEPT</a></li>
+          <li><a href="/seminar.html">SEMINAR</a></li>
+          <li><a href="/instructor.html">INSTRUCTOR</a></li>
+          <li><a href="/schedule.html">SCHEDULE</a></li>
+          <li><a href="/faq.html">FAQ</a></li>
+          <li><a href="/cancel-policy.html">CANCEL POLICY</a></li>
+          <li><a href="https://book.squareup.com/classes/2xiian6x1y2hf4/location/LQ1P1NDZ9HJ6J/classes">FORM</a></li>
+        </ul>
+      </nav>
     </div>
+  </div>
 
-    <div class="page-top">
-        <a href="#top"></a>
+  <div class="mobile-header" data-js="mobile-header">
+    <div class="mobile-header__logo">
+      <a href="/">
+        <img src="/img/fea_logo.png" alt="Foula Esthetics Academy ロゴ">
+      </a>
     </div>
-    <div class="header">
-        <div class="header-inner">
- 
-        <div class="logo">
-            <a href="/">
-                <img src="https://www.foula-academy.com/img/fea_logo.png" alt="Foula Esthetics Academy ロゴ">
-            </a>
-        </div>
-        <div class="nav-item">
-            <ul>
-                <li><a href="/concept.html">CONCEPT</a></li>
-                <li><a href="/seminar.html">SEMINAR</a></li>
-                <li><a href="/instructor.html">INSTRUCTOR</a></li>
-                <li><a href="/schedule.html">SCHEDULE</a></li>
-                <li><a href="/faq.html">FAQ</a></li>
-                <li><a href="/cancel-policy.html">CANCEL POLICY</a></li>
-                <li><a href="https://book.squareup.com/classes/2xiian6x1y2hf4/location/LQ1P1NDZ9HJ6J/classes">FORM</a></li>
-            </ul>
-        </div>
-      <!--   
-        <div class="contact">
-            <a href="#FORM">
-                <p>MAIL</p>
-                <img src="https://www.foula-academy.com/img/icon/mail.png" alt="メールアイコン">
-            </a>
-        </div>
-        -->     
-
-        </div>
+    <div class="mobile-header__toggle-wrap">
+      <button
+        class="mobile-nav-toggle"
+        type="button"
+        aria-controls="mobile-navigation"
+        aria-expanded="false"
+        aria-label="メニューを開く"
+        data-js="mobile-nav-toggle"
+      >
+        <span></span>
+        <span></span>
+      </button>
     </div>
+  </div>
 
+  <nav
+    class="mobile-nav"
+    id="mobile-navigation"
+    aria-label="モバイルナビゲーション"
+    aria-hidden="true"
+    data-js="mobile-nav"
+  >
+    <div class="mobile-nav__panel" data-js="mobile-nav-panel">
+      <div class="mobile-nav__inner">
+        <ul class="mobile-nav__list" data-js="mobile-nav-list">
+          <li><a href="/concept.html">CONCEPT<span>わたしたちについて</span></a></li>
+          <li><a href="/seminar.html">SEMINAR<span>セミナー</span></a></li>
+          <li><a href="/instructor.html">INSTRUCTOR<span>講師プロフィール</span></a></li>
+          <li><a href="/schedule.html">SCHEDULE<span>スケジュール</span></a></li>
+          <li><a href="/faq.html">FAQ<span>よくある質問</span></a></li>
+          <li><a href="/cancel-policy.html">CANCEL POLICY<span>キャンセルポリシー</span></a></li>
+          <li><a href="https://book.squareup.com/classes/2xiian6x1y2hf4/location/LQ1P1NDZ9HJ6J/classes">FORM<span>申し込みフォーム</span></a></li>
+          <li><a href="tel:03-6419-7164">TEL<span>お電話でのご予約・お問い合わせはこちらから</span></a></li>
+        </ul>
 
-
-    <div class="sp-header">
-        <div class="logo">
-            <a href="/">
-            <img src="https://www.foula-academy.com/img/fea_logo.png" alt="Foula Esthetics Academy ロゴ">
-            </a>
+        <div class="mobile-nav__address" data-js="mobile-nav-detail">
+          <a href="/"><img src="/img/fea_logo.png" alt="Foula Esthetics Academy ロゴ" class="mobile-nav__logo"></a>
+          フーラエステティックアカデミー<br>
+          〒150-0001<br>
+          東京都渋谷区神宮前6-19-20 第15荒井ビル 7F<br>
+          営業時間：10:00 - 17:00<br>
+          休業日：土日祝
         </div>
-        <div class="sp-toggle">
-            <a class="toggle">
-                <span></span>
-                <span></span>
-            </a>
+
+        <div class="mobile-nav__social" data-js="mobile-nav-detail">
+          <a href="https://www.instagram.com/foulaestheticsacademy/" aria-label="Instagram">
+            <img src="/img/icon/instagram.png" alt="">
+          </a>
+          <a href="tel:0120-428-355" aria-label="電話をかける">
+            <img src="/img/icon/phone-call.png" alt="">
+          </a>
         </div>
+      </div>
     </div>
-
-    <div class="modal-menu__container">
-        <div class="modal-menu__contents">
-            <div class="modal-menu__contents-inner">
-                <ul>
-                    <li><a href="/concept.html">CONCEPT
-                            <span>わたしたちについて</span>
-                        </a></li>
-                    <li><a href="/seminar.html">SEMINAR
-                            <span>セミナー</span></a></li>
-                    <li><a href="/instructor.html">INSTRUCTOR
-                            <span>講師プロフィール</span></a></li>
-                    <li><a href="/schedule.html">SCHEDULE<span>スケジュール</span></a></li>
-                    <li><a href="/faq.html">FAQ<span>よくある質問</span></a></li>
-                    <li><a href="/cancel-policy.html">CANCEL POLICY<span>キャンセルポリシー</span></a></li>
-                    <li><a href="https://book.squareup.com/classes/2xiian6x1y2hf4/location/LQ1P1NDZ9HJ6J/classes">FORM<span>申し込みフォーム</span></a></li>
-                    <li><a href="tel:03-6419-7164"><p>TEL</p><span>お電話でのご予約・お問い合わせはこちらから</span></a></li>
-                </ul>
-
-                <div class="contact">
-
-                </div>
-                <div class="address">
-                     <a href="/"><img src="https://www.foula-academy.com/img/fea_logo.png" alt="Foula Esthetics Academy ロゴ"
-                            class="footer-logo"></a>
-                    フーラエステティックアカデミー<br>
-                    〒150-0001<br>
-                    東京都渋谷区神宮前6-19-20 第15荒井ビル 7F<br>
-                    営業時間：10:00 - 17:00<br>
-                    休業日：土日祝
-                </div>
-
-                <div class="sns">
-                    <!--<p>OFFICIAL SNS</p> -->
-                    <a href="https://www.instagram.com/foulaestheticsacademy/"><img src="https://www.foula-academy.com/img/icon/instagram.png" alt="Instagramアイコン"></a>
-                    <a href="tel:0120-428-355"><img src="../img/icon/phone-call.png" alt="電話アイコン"></a> 
-                     <!-- <a href="https://lin.ee/pPz0x6b" class="c_line"  target="_blank" rel="noopener"><img src="../img/icon/line.png" alt="LINEアイコン" style="filter: initial;"></a> -->
-                </div>
-            </div>
-        </div>
-    </div>
+  </nav>
 </header>

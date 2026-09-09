@@ -555,12 +555,12 @@
   margin-bottom: 75px;
 }
 
-.faq-section-index {
+.faq-item {
   background-color: #f8f8f8 !important;
   font-size: 18px !important;
 }
 
-.faq-section-index.open .answer {
+.faq-item.open .faq-item__answer {
   margin-top: 0 !important;
   margin-left: 5px !important;
   ;
@@ -964,7 +964,7 @@
     margin: auto;
   }
 
-  .faq-section-index {
+  .faq-item {
     margin-bottom: 10px;
   }
 
@@ -1012,10 +1012,10 @@
 .mimi-schedule{
   background-color: #fff;
 }
-.schedule-list .btn {
+.schedule-filter .schedule-filter__button {
     font-size: 18px;
 }
-.schedule-list .btn span {
+.schedule-filter .schedule-filter__button span {
     display: block;
     font-size: 14px;
 }

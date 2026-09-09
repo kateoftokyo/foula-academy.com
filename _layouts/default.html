@@ -1,14 +1,1 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-<meta charset="UTF-8">
-{% include head.html %}
-</head>
-<body{% if page.body_class %} class="{{ page.body_class }}"{% endif %}>
-{% include header.html %}
-<main>
-{{ content }}
-</main>
-{% include footer.html %}
-</body>
-</html>
+{% include page-shell.html content=content body_class=page.body_class noindex=page.noindex %}

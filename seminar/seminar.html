@@ -4,28 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/seminar-style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/seminar-style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shippori+Mincho&display=swap"
         rel="stylesheet">
-    <script src="../js/main.js" defer></script>
+    <script src="../assets/js/site.js" defer></script>
     <script src="../assets/js/scroll-fade.js" defer></script>
     <title>【901-1】Lash Lift 上まつ毛BASICコース</title>
 </head>
 
 <body class="fullMoon">
 
-    <div class="page-top">
+    <div class="back-to-top">
         <a href="#top"></a>
     </div>
-    <div class="header">
-        <div class="logo">
+    <div class="site-header" data-js="site-header">
+        <div class="site-header__logo">
             <img src="../img/fea_logo.png" alt="">
         </div>
-        <div class="nav-item">
+        <div class="site-nav">
             <ul>
                 <li><a href="#CONCEPT">CONCEPT</a></li>
                 <li><a href="#SEMINAR">SEMINAR</a></li>
@@ -35,37 +34,37 @@
                 <li><a href="#FAQ">FAQ</a></li>
             </ul>
         </div>
-        <div class="contact">
+        <div class="site-header__contact">
             <a href="#FORM">
                 <p>MAIL</p>
-                <img src="../img/mail.png" alt="">
+                <img src="../img/icon/mail.png" alt="">
             </a>
             <a href="#FORM">
                 <p>TEL</p>
-                <img src="../img/call.png" alt="">
+                <img src="../img/icon/call.png" alt="">
             </a>
         </div>
     </div>
 
 
 
-    <div class="sp-header">
-        <div class="logo">
+    <div class="mobile-header" data-js="mobile-header">
+        <div class="mobile-header__logo">
             <img src="../img/fea_logo.png" alt="">
         </div>
-        <div class="sp-toggle">
-            <a class="toggle">
+        <div class="mobile-header__toggle-wrap">
+            <button class="mobile-nav-toggle" type="button" data-js="mobile-nav-toggle" aria-controls="mobile-navigation" aria-expanded="false" aria-label="メニューを開く">
                 <span></span>
                 <span></span>
-            </a>
+            </button>
         </div>
     </div>
 
 
 
-    <div class="modal-menu__container">
-        <div class="modal-menu__contents">
-            <div class="modal-menu__contents-inner">
+    <div class="mobile-nav" id="mobile-navigation" data-js="mobile-nav" aria-hidden="true">
+        <div class="mobile-nav__panel" data-js="mobile-nav-panel">
+            <div class="mobile-nav__inner" data-js="mobile-nav-list">
                 <ul>
                     <li><a href="#CONCEPT">CONCEPT
                             <span>わたしたちについて</span>
@@ -79,10 +78,10 @@
                     <li><a href="#FORM">FORM(Square)<span>申し込みフォーム</span></a></li>
                 </ul>
 
-                <div class="contact">
+                <div class="site-header__contact">
 
                 </div>
-                <div class="address">
+                <div class="mobile-nav__address">
                     <a href=""><img src="https://www.foula-academy.com/images/new_kotlogo_w.svg" alt=""
                             class="footer-logo"></a>
                     株式会社ケイトオブ東京<br>
@@ -92,19 +91,19 @@
                     休業日：土日祝
                 </div>
 
-                <div class="sns">
+                <div class="mobile-nav__social">
                     <!--<p>OFFICIAL SNS</p> -->
-                    <a href="https://www.instagram.com/foulaeyelashacademy/"><img src="../img/instagram.png" alt=""></a>
-                    <a href="https://twitter.com/academyfoula"><img src="../img/twitter.png" alt=""></a>
-                    <a href="https://www.facebook.com/FoulaEyelashAcademy"><img src="../img/facebook.png" alt=""></a>
+                    <a href="https://www.instagram.com/foulaeyelashacademy/"><img src="../img/icon/instagram.png" alt=""></a>
+                    <a href="https://twitter.com/academyfoula"><img src="../img/icon/twitter.png" alt=""></a>
+                    <a href="https://www.facebook.com/FoulaEyelashAcademy"><img src="../img/icon/facebook.png" alt=""></a>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="key-visual">
-        <img class="slide-img pc-show" src="img/kv-901_1.jpg" alt="">
-        <img class="slide-img sp-show" src="img/kv-901_1_sp.jpg" alt="">
+        <img class="slide-img u-desktop-only" src="img/kv-901_1.jpg" alt="">
+        <img class="slide-img u-mobile-only" src="img/kv-901_1_sp.jpg" alt="">
         <div class="slogan">
             <p class="main-slogan">LASH LIFT<br>上まつ毛BASICコース</p>
             <p class="sub-slogan">業界トップクラスの講師陣による、初心者からブランクがある方、<br>
@@ -290,7 +289,7 @@
             <div class="course-flow-list">
                 <p class="num">STEP 01</p>
                 <div class="course-flow-list-img">
-                    <img src="../img/exam.png" alt="">
+                    <img src="../img/icon/exam.png" alt="">
                 </div>
                 <div class="course-flow-list-title">
                     お申し込みフォームからご予約
@@ -306,7 +305,7 @@
             <div class="course-flow-list">
                 <p class="num">STEP 02</p>
                 <div class="course-flow-list-img">
-                    <img src="../img/shopping-cart.png" alt="">
+                    <img src="../img/icon/shopping-cart.png" alt="">
                 </div>
                 <div class="course-flow-list-title">
                     セミナーチケットのご購入
@@ -320,7 +319,7 @@
             <div class="course-flow-list">
                 <p class="num">STEP 03</p>
                 <div class="course-flow-list-img">
-                    <img src="../img/mail.png" alt="">
+                    <img src="../img/icon/mail.png" alt="">
                 </div>
                 <div class="course-flow-list-title">
                     ご予約完了
@@ -372,37 +371,37 @@
     <div class="faq-section" id="FAQ">
         <p class="section-title">FAQ</p>
         <div class="faq-section-inner">
-            <div class="faq-section-index">
-                <p class="question">Q.施術をする際には美容師免許が必要と聞いたのですが？</p>
-                <div class="answer">
+            <div class="faq-item">
+                <p class="faq-item__question">Q.施術をする際には美容師免許が必要と聞いたのですが？</p>
+                <div class="faq-item__answer">
                     まつ毛エクステの施術を行うには、美容師免許が必要です。<br>日本では、まつ毛エクステは「まつ毛に接着剤を使用して人工のまつ毛をつける」という技術で、美容師法に基づき、免許を持っていないと施術ができません。<br>
 
                     免許を持っていない場合、エクステ技術を提供することは法律違反となる可能性があるので、必ず美容師免許を取得する必要があります。もしまだ免許を取得していない場合は、まず美容師の資格を取ることが求められます。
                 </div>
             </div>
 
-            <div class="faq-section-index">
-                <p class="question">Q.まつげエクステンションのサロンを自宅開業できますか？</p>
-                <div class="answer">
+            <div class="faq-item">
+                <p class="faq-item__question">Q.まつげエクステンションのサロンを自宅開業できますか？</p>
+                <div class="faq-item__answer">
                     自宅でまつ毛エクステンションのサロンを開業するには、美容師免許を取得し、保健所への届出や自宅環境の整備、近隣への配慮、税務手続きなどを行う必要があります。
                 </div>
             </div>
 
-            <div class="faq-section-index">
-                <p class="question">Q.まったくの初心者でも大丈夫でしょうか？</p>
-                <div class="answer">
+            <div class="faq-item">
+                <p class="faq-item__question">Q.まったくの初心者でも大丈夫でしょうか？</p>
+                <div class="faq-item__answer">
                     自宅でまつ毛エクステンションのサロンを開業するには、美容師免許を取得し、保健所への届出や自宅環境の整備、近隣への配慮、税務手続きなどを行う必要があります。
                 </div>
             </div>
-            <div class="faq-section-index">
-                <p class="question">Q.スクール終了後も質問などできますか？</p>
-                <div class="answer">
+            <div class="faq-item">
+                <p class="faq-item__question">Q.スクール終了後も質問などできますか？</p>
+                <div class="faq-item__answer">
                     自宅でまつ毛エクステンションのサロンを開業するには、美容師免許を取得し、保健所への届出や自宅環境の整備、近隣への配慮、税務手続きなどを行う必要があります。
                 </div>
             </div>
-            <div class="faq-section-index">
-                <p class="question">Q.卒業後の商材は？仕入は出来ますか？</p>
-                <div class="answer">
+            <div class="faq-item">
+                <p class="faq-item__question">Q.卒業後の商材は？仕入は出来ますか？</p>
+                <div class="faq-item__answer">
                     自宅でまつ毛エクステンションのサロンを開業するには、美容師免許を取得し、保健所への届出や自宅環境の整備、近隣への配慮、税務手続きなどを行う必要があります。
                 </div>
             </div>
@@ -442,9 +441,9 @@
 
 
     <!--footer -->
-    <footer class="footer">
-        <div class="footer-inner">
-            <div class="company">
+    <footer class="site-footer">
+        <div class="site-footer__inner">
+            <div class="site-footer__company">
                 <a href=""><img src="https://www.foula-academy.com/images/new_kotlogo_w.svg" alt=""
                         class="footer-logo"></a>
                 株式会社ケイトオブ東京<br>
@@ -452,7 +451,7 @@
                 東京都渋谷区神宮前6-19-20<br>
                 第15荒井ビル 7F
             </div>
-            <div class="footer-nav">
+            <div class="site-footer__nav">
                 <ul>
                     <li><a href="#CONCEPT">Foula Esthetics Academyの特徴</a></li>
                     <li><a href="#SEMINAR">セミナーリスト</a></li>
@@ -462,16 +461,16 @@
                     <li><a href="#FORM">申し込みフォーム</a></li>
                     <li><a href="#FAQ">FAQ</a></li>
                 </ul>
-                <div class="footer-sns">
+                <div class="site-footer__social">
                     <!-- <p>OFFICIAL SNS</p> -->
-                    <a href="https://www.instagram.com/foulaeyelashacademy/"><img src="../img/instagram.png" alt=""></a>
-                    <a href="https://twitter.com/academyfoula"><img src="../img/twitter.png" alt=""></a>
-                    <a href="https://www.facebook.com/FoulaEyelashAcademy"><img src="../img/facebook.png" alt=""></a>
+                    <a href="https://www.instagram.com/foulaeyelashacademy/"><img src="../img/icon/instagram.png" alt=""></a>
+                    <a href="https://twitter.com/academyfoula"><img src="../img/icon/twitter.png" alt=""></a>
+                    <a href="https://www.facebook.com/FoulaEyelashAcademy"><img src="../img/icon/facebook.png" alt=""></a>
                 </div>
             </div>
 
         </div>
-        <div class="copyright">
+        <div class="site-footer__copyright">
             &copy; 2021 Kate of Tokyo. All Rights Reserved.
         </div>
     </footer>

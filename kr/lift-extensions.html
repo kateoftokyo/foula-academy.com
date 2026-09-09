@@ -16,19 +16,19 @@
     <link rel="stylesheet" href="css/seminar-style.css">
     <link rel="stylesheet" href="css/lift-extensions.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <script src="/js/main.js" defer></script>
+    <script src="/assets/js/site.js" defer></script>
     <title>Foula Esthetics Academy | 리프트 익스텐션 코스</title>
 </head>
 
 <body>
 
-    <div class="page-top">
+    <div class="back-to-top">
         <a href="#top"></a>
     </div>
 
 
-    <div class="header">
-        <div class="logo">
+    <div class="site-header">
+        <div class="site-header__logo">
             <!-- <a href="https://foula-store.kr/"> -->
             <a href="https://www.foula-academy.com/">
                 <img src="img/op-logo-fea-pc.png" alt="">
@@ -350,41 +350,41 @@
         </div>
         <div class="faq-section">
             <div class="faq-section-inner">
-                <div class="faq-section-index">
-                    <p class="question">Q.리프트 익스텐션은 초보자도 할 수 있나요？</p>
-                    <div class="answer">속눈썹 펌 또는 속눈썹 연장 시술이 가능한 분을 대상으로 합니다.
+                <div class="faq-item">
+                    <p class="faq-item__question">Q.리프트 익스텐션은 초보자도 할 수 있나요？</p>
+                    <div class="faq-item__answer">속눈썹 펌 또는 속눈썹 연장 시술이 가능한 분을 대상으로 합니다.
                         ※ 기본적인 시술 경험이 필요하므로, 아직 경험이 없으신 분들께는 먼저 각 시술 기술을 익히신 후 수강하실 것을 권장드립니다.
                     </div>
                 </div>
 
-                <div class="faq-section-index">
-                    <p class="question">Q.온라인 세미나와 대면 세미나의 차이는 무엇인가요？</p>
-                    <div class="answer">온라인과 대면 세미나 모두 이론부터 실습까지 전 과정을 배울 수 있습니다.
+                <div class="faq-item">
+                    <p class="faq-item__question">Q.온라인 세미나와 대면 세미나의 차이는 무엇인가요？</p>
+                    <div class="faq-item__answer">온라인과 대면 세미나 모두 이론부터 실습까지 전 과정을 배울 수 있습니다.
                         대면 세미나의 경우, 실제 시연을 직접 보며 배울 수 있고, 질의응답도 함께 진행되어 보다 깊이 있는 이해가 가능합니다.
                     </div>
                 </div>
 
-                <div class="faq-section-index">
-                    <p class="question">Q.세미나는 어떤 내용인가요？</p>
-                    <div class="answer">리프트 엑스텐션의 기초부터 시술에 적합한 절차, 제품 활용법, 그리고 실제 데모 시연까지 폭넓게 배우는 실습 중심의 세미나입니다.
+                <div class="faq-item">
+                    <p class="faq-item__question">Q.세미나는 어떤 내용인가요？</p>
+                    <div class="faq-item__answer">리프트 엑스텐션의 기초부터 시술에 적합한 절차, 제품 활용법, 그리고 실제 데모 시연까지 폭넓게 배우는 실습 중심의 세미나입니다.
                     </div>
                 </div>
-                <div class="faq-section-index">
-                    <p class="question">Q.LED 라이트를 가지고 있지 않지만, 도입은 가능한가요？</p>
-                    <div class="answer">
+                <div class="faq-item">
+                    <p class="faq-item__question">Q.LED 라이트를 가지고 있지 않지만, 도입은 가능한가요？</p>
+                    <div class="faq-item__answer">
                         네, 도입이 가능합니다. 세미나에 참여하시면 해당 라이트를 선물로 제공해드리기 때문에 별도 구매 없이 바로 도입하실 수 있습니다.
                     </div>
                 </div>
-                <div class="faq-section-index">
-                    <p class="question">Q.이미 다른 글루를 사용하여 엑스텐션을 부착한 후에 파마 시술을 진행하고 있습니다. LED 글루로 변경할 필요가 있을까요？</p>
-                    <div class="answer">
+                <div class="faq-item">
+                    <p class="faq-item__question">Q.이미 다른 글루를 사용하여 엑스텐션을 부착한 후에 파마 시술을 진행하고 있습니다. LED 글루로 변경할 필요가 있을까요？</p>
+                    <div class="faq-item__answer">
                         리프트 엑스텐션의 효과를 극대화하기 위해 LED 전용 글루의 사용을 권장드립니다.
                         일반 글루를 사용할 경우, 시술 속도나 지속력 면에서 차이가 있을 수 있습니다.
                     </div>
                 </div>
             </div>
         </div>
-        <div class="copyright">
+        <div class="site-footer__copyright">
             <!-- &copy; 2021 Kate of Tokyo. All Rights Reserved. -->
             <img src="img/op-logo-fea-pc.png" alt="">
         </div>
@@ -440,9 +440,9 @@
     </script>
 
     <script>
-        const faqIndex = document.querySelectorAll('.faq-section-index');
-        const questions = document.querySelectorAll('.question');
-        const answers = document.querySelectorAll('.answer');
+        const faqIndex = document.querySelectorAll('.faq-item');
+        const questions = document.querySelectorAll('.faq-item__question');
+        const answers = document.querySelectorAll('.faq-item__answer');
 
         questions.forEach((index) => {
             index.addEventListener('click', () => {

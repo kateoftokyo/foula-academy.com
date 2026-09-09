@@ -2,7 +2,7 @@
 
 body {}
 
-.page-top {
+.back-to-top {
     display: none !important;
 }
 
@@ -253,7 +253,8 @@ body {}
         width: 70px;
     }
 
-    .logo img {
+    .mobile-header__logo img,
+    .mobile-header > .site-header__logo img {
         filter: initial !important;
     }
 }
@@ -626,7 +627,7 @@ whatis-section
     padding: 35px 15px 50px;
 }
 
-.whatis-section__slider .sp-show {
+.whatis-section__slider .u-mobile-only {
     display: none;
 }
 
@@ -795,11 +796,11 @@ whatis-section
 
 @media screen and (max-width: 768px) {
 
-    .be-af-Swiper.pc-show {
+    .be-af-Swiper.u-desktop-only {
         display: none;
     }
 
-    .whatis-section__slider .sp-show {
+    .whatis-section__slider .u-mobile-only {
         display: block;
     }
 
@@ -1282,30 +1283,30 @@ faq-section
     padding-top: 0;
 }
 
-.faq-section-index {
+.faq-item {
     background: #f8f7f3;
 }
 
-.faq-section-index .answer {
+.faq-item .faq-item__answer {
     background: #f8f7f3;
 }
 
-.faq-section-index .answer.show {
+.faq-item .faq-item__answer.show {
     display: block;
 }
 
 
-.faq-section-index .answer {
+.faq-item .faq-item__answer {
     padding-top: 15px;
     padding-left: 5px;
     display: none;
 }
 
-.faq-section-index.open .answer {
+.faq-item.open .faq-item__answer {
     display: block;
 }
 
-.question.open .answer {
+.faq-item__question.open .faq-item__answer {
     display: block;
 }
 
@@ -1317,7 +1318,7 @@ faq-section
     margin-right: 5px;
 }
 
-.faq-section-index::after {
+.faq-item::after {
     position: absolute;
     z-index: 999;
     content: "";
@@ -1331,7 +1332,7 @@ faq-section
     clip-path: polygon(0 calc(50% - 1px), calc(50% - 1px) calc(50% - 1px), calc(50% - 1px) 0%, calc(50% + 1px) 0%, calc(50% + 1px) calc(50% - 1px), 100% calc(50% - 1px), 100% calc(50% + 1px), calc(50% + 1px) calc(50% + 1px), calc(50% + 1px) 100%, calc(50% - 1px) 100%, calc(50% - 1px) calc(50% + 1px), 0 calc(50% + 1px));
 }
 
-.faq-section-index.open::after {
+.faq-item.open::after {
     clip-path: polygon(0 50%, 100% 50%, 100% 60%, 0 60%);
 }
 

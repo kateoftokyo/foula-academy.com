@@ -1,17 +1,17 @@
 <!--schedule-section -->
 <div class="schedule-section">
 <p class="section-title">SCHEDULE<span>スケジュール</span></p>
-<ul class="schedule-list" id="filter-buttons">
-<li><button class="btn active" data-filter="ExLift">ExLift<span>エクスリフト</span></button></li>
-<li><button class="btn" data-filter="LASHLIFT">LASHLIFT<span>ラッシュリフト</span></button></li>
-<li><button class="btn" data-filter="EYELASH_EXTENSIONS">EYELASH EXTENSIONS<span>エクステ</span></button></li>
-<li><button class="btn" data-filter="MIMITSUBO">MIMITSUBO<span>耳つぼ</span></button></li>
-<!-- <li><button class="btn" data-filter="WAXSTYLING">WAX STYLING<span>ワックススタイリング</span></button></li> -->
+<ul class="schedule-filter" data-js="schedule-filter" aria-label="セミナーカテゴリー">
+<li><button class="schedule-filter__button is-active" type="button" data-filter="ExLift" aria-pressed="true">ExLift<span>エクスリフト</span></button></li>
+<li><button class="schedule-filter__button" type="button" data-filter="LASHLIFT" aria-pressed="false">LASHLIFT<span>ラッシュリフト</span></button></li>
+<li><button class="schedule-filter__button" type="button" data-filter="EYELASH_EXTENSIONS" aria-pressed="false">EYELASH EXTENSIONS<span>エクステ</span></button></li>
+<li><button class="schedule-filter__button" type="button" data-filter="MIMITSUBO" aria-pressed="false">MIMITSUBO<span>耳つぼ</span></button></li>
+<!-- <li><button class="schedule-filter__button" type="button" data-filter="WAXSTYLING" aria-pressed="false">WAX STYLING<span>ワックススタイリング</span></button></li> -->
 </ul>
 </div>
 
 <!-- schedule-section -->
-<div class="" id="filterable-cards">
+<div class="schedule-panels" data-js="schedule-panels">
 
 
 
@@ -21,7 +21,7 @@
 ExLift
 
 *************************************************************************************-->
-<div class="card" data-name="ExLift">
+<div class="schedule-panel" data-name="ExLift">
 <div class="schedule-content">
 <p class="section-index-title">ExLift</p>
 
@@ -306,7 +306,7 @@ class="offer-link">申し込み</a>
 LASHLIFT
 
 *************************************************************************-->
-<div class="card hide" data-name="LASHLIFT">
+<div class="schedule-panel is-hidden" data-name="LASHLIFT">
 <div class="schedule-content">
 <p class="section-index-title">LASHLIFT</p>
 
@@ -1193,7 +1193,7 @@ EYELASH EXTENSIONS
 
 *************************************************************************************-->
 
-<div class="card hide" data-name="EYELASH_EXTENSIONS">
+<div class="schedule-panel is-hidden" data-name="EYELASH_EXTENSIONS">
 <div class="schedule-content">
 <p class="section-index-title">EYELASH EXTENSIONS</p>
 <p class="section-index-month">随時<span>(要予約) ※日程はご相談ください</span></p>
@@ -1316,7 +1316,7 @@ class="offer-link">申し込み</a>
 MIMITSUBO
 
 *************************************************************************-->
-<div class="card hide" data-name="MIMITSUBO">
+<div class="schedule-panel is-hidden" data-name="MIMITSUBO">
 <div class="schedule-content">
 <p class="section-index-title">MIMITSUBO</p>
 
@@ -2114,7 +2114,7 @@ WAX STYLING
 
 *************************************************************************************-->
 <!--
-<div class="card hide" data-name="WAXSTYLING">
+<div class="schedule-panel is-hidden" data-name="WAXSTYLING">
 <div class="schedule-content">
 <p class="section-index-title">WAX STYLING</p>
 <p class="section-index-month">随時<span>(要予約) ※日程はご相談ください</span></p>

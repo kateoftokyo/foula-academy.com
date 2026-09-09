@@ -20,27 +20,26 @@
     <link rel="stylesheet" href="../assets/css/seminar-style.css">
     <link rel="stylesheet" href="../assets/css/lift-extensions.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <script src="../assets/js/add.js" defer></script>
-        <script src="../assets/js/scroll-fade.js" defer></script>
+    <script src="../assets/js/scroll-fade.js" defer></script>
     <title>ExLift Seminar</title>
 </head>
 
 <body>
     <!--
-    <div class="loading">
-    <img class="loading__logo pc-show logo-exlift" src="https://cite-lashlift.com/assets/img/cite_logo.png"
+    <div class="site-loader">
+    <img class="site-loader__logo u-desktop-only logo-exlift" src="https://cite-lashlift.com/assets/img/cite_logo.png"
     alt="Foula Esthetics Academy">
-    <img class="loading__logo sp-show logo-exlift" src="https://cite-lashlift.com/assets/img/cite_logo.png"
+    <img class="site-loader__logo u-mobile-only logo-exlift" src="https://cite-lashlift.com/assets/img/cite_logo.png"
     alt="Foula Esthetics Academy">
     </div>
     -->
 
-    <div class="page-top">
+    <div class="back-to-top">
         <a href="#top"></a>
     </div>
-    <div class="header">
-        <div class="header-inner">
-            <div class="logo" style="width: 100%; text-align: center;">
+    <div class="site-header">
+        <div class="site-header__inner">
+            <div class="site-header__logo" style="width: 100%; text-align: center;">
                 <a>
                     <img src="../img/fea_logo.png" alt="">
                 </a>
@@ -50,8 +49,8 @@
 
 
 
-    <div class="sp-header">
-        <div class="logo">
+    <div class="mobile-header">
+        <div class="site-header__logo">
             <a href="https://www.foula-academy.com/">
                 <img src="../img/fea_logo.png" alt="">
             </a>
@@ -171,7 +170,7 @@
 
             <div class="whatis-section__slider">
                 <p>Before / After</p>
-                <div class="swiper be-af-Swiper pc-show">
+                <div class="swiper be-af-Swiper u-desktop-only">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <img src="../img/seminar/exlift/tec01_en.jpg" alt="">
@@ -186,7 +185,7 @@
                     <div class="swiper-pagination"></div>
                 </div>
 
-                <ul class="sp-show">
+                <ul class="u-mobile-only">
                     <img src="../img/seminar/exlift/tec-01_en.jpg" alt="">
                     <img src="../img/seminar/exlift/tec-02_en.jpg" alt="">
                     <img src="../img/seminar/exlift/tec-03_en.jpg" alt="">
@@ -232,7 +231,7 @@
                     <div class="swiper item-Swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img src="../dummy/img/test01.png" alt="">
+                                <img src="../img/seminar/exlift/test01.png" alt="">
                             </div>
                         </div>
                         <div class="item-detail">
@@ -256,7 +255,7 @@
                     <div class="swiper item-Swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img src="../dummy/img/test02.png" alt="">
+                                <img src="../img/seminar/exlift/test02.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -278,7 +277,7 @@
                     <div class="swiper item-Swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img src="../dummy/img/test03.png" alt="">
+                                <img src="../img/seminar/exlift/test03.png" alt="">
                             </div>
                         </div>
 
@@ -534,8 +533,8 @@
 
 
     <!--footer -->
-    <footer class="footer">
-        <div class="copyright">
+    <footer class="site-footer">
+        <div class="site-footer__copyright">
             &copy; 2021 Kate of Tokyo. All Rights Reserved.
         </div>
     </footer>
@@ -545,14 +544,14 @@
 
     <script>
         // ハンバーガーメニュー
-        const toggle = document.querySelector(".toggle");
-        const spHeader = document.querySelector(".sp-header");
-        const modalMenu = document.querySelector(".modal-menu__container");
-        const menuContents = document.querySelector(".modal-menu__contents");
-        const menuItems = document.querySelectorAll(".modal-menu__contents-inner ul li");
-        const contact = document.querySelector(".contact");
-        const address = document.querySelector(".address");
-        const sns = document.querySelector(".sns");
+        const toggle = document.querySelector(".mobile-nav-toggle");
+        const spHeader = document.querySelector(".mobile-header");
+        const modalMenu = document.querySelector(".mobile-nav");
+        const menuContents = document.querySelector(".mobile-nav__panel");
+        const menuItems = document.querySelectorAll(".mobile-nav__inner ul li");
+        const contact = document.querySelector(".site-header__contact");
+        const address = document.querySelector(".mobile-nav__address");
+        const sns = document.querySelector(".mobile-nav__social");
 
         const toggleMenu = () => {
             const isOpen = menuContents.classList.toggle("open");
@@ -580,22 +579,22 @@
         menuItems.forEach((item) => item.addEventListener("click", toggleMenu));
 
         // FAQセクションの開閉処理
-        const questions = document.querySelectorAll('.question');
+        const questions = document.querySelectorAll('.faq-item__question');
         questions.forEach((q) => {
             q.addEventListener('click', () => {
                 q.nextElementSibling?.classList.toggle("show");
             });
         });
-        document.querySelectorAll('.faq-section-index').forEach((item) => {
-            const answer = item.querySelector('.answer');
+        document.querySelectorAll('.faq-item').forEach((item) => {
+            const answer = item.querySelector('.faq-item__answer');
 
             item.addEventListener('click', () => {
                 const isOpen = item.classList.contains('open');
 
                 // すべて閉じる
-                document.querySelectorAll('.faq-section-index').forEach((el) => {
+                document.querySelectorAll('.faq-item').forEach((el) => {
                     el.classList.remove('open');
-                    el.querySelector('.answer').style.maxHeight = null;
+                    el.querySelector('.faq-item__answer').style.maxHeight = null;
                 });
 
                 // 開いていなかったら開く
@@ -665,9 +664,9 @@
     </script>
 
     <script>
-        /*     const faqIndex = document.querySelectorAll('.faq-section-index');
-        const questions = document.querySelectorAll('.question');
-        const answers = document.querySelectorAll('.answer');
+        /*     const faqIndex = document.querySelectorAll('.faq-item');
+        const questions = document.querySelectorAll('.faq-item__question');
+        const answers = document.querySelectorAll('.faq-item__answer');
 
         questions.forEach((index) => {
         index.addEventListener('click', () => {

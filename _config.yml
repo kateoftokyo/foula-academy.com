@@ -9,6 +9,7 @@ lang: "ja"
 theme: null
 exclude:
   - README.md
+  - Gemfile
+  - Gemfile.lock
   - node_modules
-include:
-  - assets
+  - vendor
