@@ -1939,7 +1939,9 @@ WAX STYLINGコース
     max-width: 1180px;
     margin: 0 auto;
 }
-
+.curriculum-flow__steps:nth-child(1) .curriculum-flow__day{
+background: #343700;
+}
 .curriculum-flow__card {
     align-self: stretch;
     min-width: 0;
@@ -2032,12 +2034,12 @@ WAX STYLINGコース
 .curriculum-flow__interval span {
     display: grid;
     place-items: center;
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     color: #fff;
     background: #282828;
-    font-size: 11px;
+    font-size:13px;
     /* font-weight: 700; */
     line-height: 1.45;
     text-align: center;
@@ -2147,7 +2149,7 @@ WAX STYLINGコース
     gap: 28px;
     align-items: center;
     width: min(86%, 800px);
-    margin: 50px auto 0;
+    margin: 75px auto 0;
     padding: 20px 38px;
     border: 2px solid #001f2d;
     border-radius: 18px;
