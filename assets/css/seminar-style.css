@@ -2059,10 +2059,6 @@ WAX STYLINGコース
         grid-row: 1;
     }
 
-    .curriculum-flow__steps> :nth-child(1) .curriculum-flow__day {
-        background: #810000;
-    }
-
     .curriculum-flow__steps> :nth-child(2) {
         grid-column: 4 / 5;
         grid-row: 1;
